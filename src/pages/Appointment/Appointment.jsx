@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Appointment = () => {
   return (
@@ -6,4 +6,4 @@ const Appointment = () => {
   )
 }
 
-export default Appointment
+export default Appointment;
