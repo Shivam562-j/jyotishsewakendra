@@ -1,6 +1,6 @@
 import React from 'react';
-import bgImg from '../assets/images/hand-marks-service_img.png'
-import bgLoader from '../assets/images/loader.png'
+import bgImg from '../../assets/images/hand-marks-service_img.png'
+import bgLoader from '../../assets/images/loader.png'
 
 const ComingSoon = () => {
   return (
