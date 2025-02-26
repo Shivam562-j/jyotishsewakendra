@@ -24,6 +24,9 @@ export default {
           "100%": { width: "100%" },
         },
       },
+      backgroundImage: {
+        'custom-footer': "url('/assets/footer-bg.png')",
+      },
     },
   },
   plugins: [],
