@@ -37,7 +37,7 @@ const Footer = () => {
 
                     <p className='text-2xl font-bold text-[#182036]'>Quick Links</p>
 
-                    <div className='flex flex-col gap-2'>
+                    <div className='flex flex-col gap-1'>
                         {navItems.map(({ path, label }) => (
                             <NavLink
                                 key={path}
@@ -53,7 +53,7 @@ const Footer = () => {
                 <div className='w-1/2 sm:w-1/2 md:w-1/4 flex flex-col gap-2 pb-[30px]'>
                     <p className='text-2xl font-bold text-[#182036]'>Our Services</p>
 
-                    <div className='flex flex-col gap-2'>
+                    <div className='flex flex-col gap-1'>
                         {ourServicesFooterItem.map(({ path, label }) => (
                             <NavLink
                                 key={path}
