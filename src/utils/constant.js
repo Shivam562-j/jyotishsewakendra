@@ -8,3 +8,12 @@ export const navItems = [
     { path: "/gallery", label: "Gallery" },
     { path: "/contact-us", label: "Contact Us" },
 ];
+
+export const ourServicesFooterItem = [
+    {path: '/janam-kundali', label: "Janam Kundali"},
+    {path: '/kundali-vishleshan', label: "Kundali Vishleshan"},
+    {path: '/child-astrology', label: "Child Astrology"},
+    {path: '/future-astrology', label: "Future Astrology"},
+    {path: '/marriage-astrology', label: "Marriage Astrology"},
+    {path: '/vastu-shastra', label: "Vastu Shastra"},
+]
