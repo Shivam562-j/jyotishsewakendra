@@ -9,7 +9,7 @@ function App() {
     <div className='relative'>
       <AppRouter />
 
-      <div className='fixed right-[50px] bottom-[50px]'>
+      <div className='fixed right-[50px] bottom-[50px] flex flex-col gap-3'>
         <motion.a
           href="tel:+919939967984"
           className="hidden sm:flex md:flex items-center gap-1 p-4 bg-[#02c100] rounded-full text-[#fff] shadow-lg"
@@ -28,7 +28,7 @@ function App() {
         <motion.a
           href="https://api.whatsapp.com/send?phone=+919431425134&text=Hi%20Jyotish%20Sewa%20Kendra%20from%20Website"
           target='_blank'
-          className="flex items-center mt-6 gap-1 p-3 bg-[#02c100] rounded-full text-[#fff] shadow-lg"
+          className="flex items-center gap-1 p-3 bg-[#02c100] rounded-full text-[#fff] shadow-lg"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           animate={{
