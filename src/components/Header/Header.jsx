@@ -23,8 +23,8 @@ const Header = () => {
               <a href="mailto:info@example.com" className="flex items-center gap-1 text-sm">
                 <MdEmail fontSize={16} color="#ff7900" /> info@example.com
               </a>
-              <a href="tel:+919876543210" className=" hidden sm:flex md:flex items-center gap-1 text-sm">
-                <FaPhoneAlt fontSize={14} color="#ff7900" /> +91 98765 43210
+              <a href="tel:+919939967984" className=" hidden sm:flex md:flex items-center gap-1 text-sm">
+                <FaPhoneAlt fontSize={14} color="#ff7900" /> +91 99399 67984
               </a>
             </div>
             <div className="py-2 flex flex-row gap-2">
