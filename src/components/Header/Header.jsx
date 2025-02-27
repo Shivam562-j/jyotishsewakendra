@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaFacebookF, FaPhoneAlt } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
@@ -10,7 +10,6 @@ import { IoLogoYoutube } from "react-icons/io5";
 import { layoutContainer, navItems } from "../../utils/constant";
 
 const Header = () => {
-  const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
