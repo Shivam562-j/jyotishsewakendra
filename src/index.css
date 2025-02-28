@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*::selection{
+    background-color: #ffcd57;
+    color: #0d1128 !important;
+}
 
 html::-webkit-scrollbar {
     width: 10px;

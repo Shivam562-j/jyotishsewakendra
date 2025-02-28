@@ -12,7 +12,7 @@ function App() {
       <div className='fixed right-[50px] bottom-[50px] flex flex-col gap-3'>
         <motion.a
           href="tel:+919939967984"
-          className="hidden sm:flex md:flex items-center gap-1 p-4 bg-[#02c100] rounded-full text-[#fff] shadow-lg"
+          className="flex sm:flex md:hidden items-center gap-1 p-4 bg-[#02c100] rounded-full text-[#fff] shadow-lg"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           animate={{
