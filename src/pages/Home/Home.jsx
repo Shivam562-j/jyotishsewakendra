@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Footer, Header, SectionContent, ImageContent } from '../../components';
+import { Footer, Header, SectionContent, ImageContent } from '../../components';
 import bgImage from "../../assets/images/bg.png";
 import { layoutContainer } from '../../utils/constant';
 
@@ -39,10 +39,17 @@ const Home = () => {
             subHeadingColor="text-[#ff7900]"
             headingColor="text-[#182036]"
             descriptionColor="text-[#0a122b]"
+            subHeading="About Us ━━"
+            heading='Medinikant Jha – 35+ Years of Astrological Expertise'
+            description='With expertise in Vedic astrology, horoscope analysis, and personalized guidance, Medinikant Jha helps individuals gain clarity in life, career, and relationships. His deep insights and remedies empower you to make informed decisions for a balanced and successful life.'
+            ctaText='About Medinikant Jha'
           />
 
         </div>
       </section>
+
+
+      
 
       <Footer />
     </div>
