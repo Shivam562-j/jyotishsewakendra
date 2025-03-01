@@ -113,11 +113,11 @@ const Home = () => {
                 <LuGoal className="text-white text-3xl transition-all duration-300 group-hover:text-[#182036]" />
               </div>
 
+              <h4 className="font-bold text-2xl text-[#182036]">Mission</h4>
+
               <h4 className="font-semibold text-lg text-[#ff7900]">
                 35+ Years of Trusted Astrology
               </h4>
-              <h4 className="font-bold text-2xl text-[#182036]">Mission</h4>
-
 
               <p className="text-sm text-gray-600 leading-relaxed">
                 Our mission is to provide accurate and life-changing astrological
@@ -131,11 +131,11 @@ const Home = () => {
                 <LuGoal className="text-white text-3xl transition-all duration-300 group-hover:text-[#ff7900]" />
               </div>
 
+              <h4 className="font-bold text-2xl text-[#182036]">Vision</h4>
+
               <h4 className="font-semibold text-lg text-[#ff7900]">
                 Wisdom Refined Over 35+ Years
               </h4>
-              <h4 className="font-bold text-2xl text-[#182036]">Vision</h4>
-
 
               <p className="text-sm text-gray-600 leading-relaxed">
                 With decades of experience, we help individuals gain clarity, overcome challenges, and unlock their true potential.
@@ -148,11 +148,11 @@ const Home = () => {
                 <LuGoal className="text-white text-3xl transition-all duration-300 group-hover:text-[#182036]" />
               </div>
 
+              <h4 className="font-bold text-2xl text-[#182036]">24/7 Expert Support</h4>
+
               <h4 className="font-semibold text-lg text-[#ff7900]">
                 Guidance Anytime, Anywhere
               </h4>
-              <h4 className="font-bold text-2xl text-[#182036]">24/7 Expert Support</h4>
-
 
               <p className="text-sm text-gray-600 leading-relaxed">
                 With 35+ years of expertise, we ensure you get astrological advice whenever you need it.
