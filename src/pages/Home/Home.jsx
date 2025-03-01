@@ -1,7 +1,7 @@
 import React from 'react';
-import { Footer, Header, SectionContent, ImageContent } from '../../components';
+import { Footer, Header, SectionContent, ImageContent, Button, ImageBox } from '../../components';
 import bgImage from "../../assets/images/bg.png";
-import { layoutContainer } from '../../utils/constant';
+import { layoutContainer, servicesBoxContent } from '../../utils/constant';
 
 const Home = () => {
   return (
@@ -30,12 +30,12 @@ const Home = () => {
 
         <div className={`${layoutContainer} py-14 flex flex-col sm:flex-row gap-5 justify-between w-full border-[#182036] pt-24`}>
 
-          <ImageContent 
+          <ImageContent
             imgUrl1="https://placehold.co/40x208"
             imgUrl2="https://placehold.co/263x208"
             className='flex-row p-0 h-full'
           />
-          <SectionContent 
+          <SectionContent
             subHeadingColor="text-[#ff7900]"
             headingColor="text-[#182036]"
             descriptionColor="text-[#0a122b]"
@@ -48,8 +48,40 @@ const Home = () => {
         </div>
       </section>
 
+      <section className='w-full h-full bg-custom-footer bg-no-repeat bg-[length:100%_auto] bg-[-800px_-800px]'>
 
-      
+        <div className={`${layoutContainer} py-14 flex flex-col gap-8 justify-between w-full border-[#182036] pt-24`}>
+
+          <div className='flex flex-col items-center gap-2'>
+            <h4 className='text-xl text-[#ff7900] pb-1 border-b border-[#ff7900] w-fit uppercase font-bold'>Our Services</h4>
+            <h1 className='text-4xl font-bold text-[#182036]'>Guiding Your Life with Astrology</h1>
+
+          </div>
+
+          <div className='flex w-full flex-col sm:flex-row gap-3'>
+            {servicesBoxContent?.slice(0, 3)?.map((service) =>
+              <ImageBox
+                key={service.id}
+                image={service.image}
+                name={service.name}
+                description={service.description}
+                buttonName={service.buttonName}
+                link={service.link}
+              />)}
+          </div>
+
+          <div className='flex flex-col items-center gap-2'>
+            <Button to={'/services'}>
+              View All
+            </Button>
+          </div>
+
+        </div>
+
+      </section>
+
+
+
 
       <Footer />
     </div>

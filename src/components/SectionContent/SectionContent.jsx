@@ -14,7 +14,7 @@ const SectionContent = ({
     }) => {
     return (
         <div className={`w-full sm:w-1/2 flex flex-col gap-5 ${className}`}>
-            <h4 className={`text-xl font-semibold ${subHeadingColor}`}>{subHeading}</h4>
+            <h4 className={`text-xl font-bold ${subHeadingColor}`}>{subHeading}</h4>
             <h1 className={`text-4xl font-bold ${headingColor}`}>{heading}</h1>
             <p className={`text-base font-medium ${descriptionColor}`}>{description}</p>
             <Button to={ctaUrl}>{ctaText}</Button>

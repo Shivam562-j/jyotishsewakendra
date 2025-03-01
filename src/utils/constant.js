@@ -17,3 +17,61 @@ export const ourServicesFooterItem = [
     {path: '/marriage-astrology', label: "Marriage Astrology"},
     {path: '/vastu-shastra', label: "Vastu Shastra"},
 ]
+
+
+export const servicesBoxContent = [
+    {
+        id: 1,
+        image: "https://placehold.co/287x183",
+        name: "Janam Kundali",
+        description: "Get a detailed birth chart analysis to understand your life path.",
+        buttonName: "View Details",
+        link: "/janam-kundali"
+    },
+
+    {
+        id: 2,
+        image: "https://placehold.co/287x183",
+        name: "Kundali Vishleshan",
+        description: "Analyze planetary positions and their impact on your life journey.",
+        buttonName: "View Details",
+        link: "/kundali-vishleshan"
+    },
+
+    {
+        id: 3,
+        image: "https://placehold.co/287x183",
+        name: "Child Astrology",
+        description: "Discover your child’s potential, strengths, and future opportunities.",
+        buttonName: "View Details",
+        link: "/child-astrology"
+    },
+
+    {
+        id: 4,
+        image: "https://placehold.co/287x183",
+        name: "Future Astrology",
+        description: " Gain insights into upcoming life events and make informed decisions.",
+        buttonName: "View Details",
+        link: "/future-astrology"
+    },
+
+    {
+        id: 5,
+        image: "https://placehold.co/287x183",
+        name: "Marriage Astrology",
+        description: " Ensure compatibility and harmony for a successful married life.",
+        buttonName: "View Details",
+        link: "/marriage-astrology"
+    },
+
+    {
+        id: 6,
+        image: "https://placehold.co/287x183",
+        name: "Vastu Shastra",
+        description: "Align your home or office with Vastu for positivity and success.",
+        buttonName: "View Details",
+        link: "/vastu-shastra"
+    },
+
+]
