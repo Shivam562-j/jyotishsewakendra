@@ -1,5 +1,5 @@
 import React from 'react';
-import { Footer, Header, SectionContent, ImageContent, Button, ImageBox } from '../../components';
+import { SectionContent, ImageContent, Button, ImageBox } from '../../components';
 import bgImage from "../../assets/images/bg.png";
 import { layoutContainer, servicesBoxContent, shortDetails } from '../../utils/constant';
 import TestimonialSlider from '../Components/Testimonials';

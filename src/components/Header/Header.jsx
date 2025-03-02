@@ -52,58 +52,60 @@ const Header = () => {
       </div>
 
       {/* Navbar */}
-      <div className={`${layoutContainer} bg-white shadow-md py-3`}>
-        <div className="container mx-auto flex justify-between items-center">
-          <NavLink className="text-2xl font-bold text-[#ff7900]" to={'/'}>MyLogo</NavLink>
+      <div className="bg-white shadow-md py-3">
+        <div className={`${layoutContainer}`}>
+          <div className="container mx-auto flex justify-between items-center">
+            <NavLink className="text-2xl font-bold text-[#ff7900]" to={'/'}>MyLogo</NavLink>
 
-          <nav className="hidden md:flex space-x-4">
-            {headerNavItems.map(({ path, label, subMenu }) => (
-              <div
-                key={path}
-                className="relative group"
-                onMouseEnter={() => setOpenDropdown(label)}
-              >
-                <NavLink
-                  to={path}
-                  className={({ isActive }) =>
-                    `p-1 text-sm font-medium px-3 flex items-center gap-1 rounded-sm transition-all ${isActive ? "bg-[#ff7900] text-white" : "text-[#182036] hover:bg-[#ff7900] hover:text-white"
-                    }`
-                  }
-                  onClick={() => setOpenDropdown(null)}
+            <nav className="hidden md:flex space-x-4">
+              {headerNavItems.map(({ path, label, subMenu }) => (
+                <div
+                  key={path}
+                  className="relative group"
+                  onMouseEnter={() => setOpenDropdown(label)}
                 >
-                  {label} {subMenu && <IoIosArrowDown />}
-                </NavLink>
-
-                {/* Submenu */}
-                {subMenu && openDropdown === label && (
-                  <div
-                    className="absolute left-0 mt-2 bg-white shadow-lg rounded-md w-48 z-50"
-                    onMouseEnter={() => setOpenDropdown(label)}
-                    onMouseLeave={() => setOpenDropdown(null)}
+                  <NavLink
+                    to={path}
+                    className={({ isActive }) =>
+                      `p-1 text-sm font-medium px-3 flex items-center gap-1 rounded-sm transition-all ${isActive ? "bg-[#ff7900] text-white" : "text-[#182036] hover:bg-[#ff7900] hover:text-white"
+                      }`
+                    }
+                    onClick={() => setOpenDropdown(null)}
                   >
-                    {subMenu.map(({ path, label }) => (
-                      <NavLink
-                        key={path}
-                        to={path}
-                        className="block px-4 py-2 text-sm text-gray-800 hover:bg-[#ff7900] hover:text-white"
-                        onClick={() => setOpenDropdown(null)}
-                      >
-                        {label}
-                      </NavLink>
-                    ))}
-                  </div>
-                )}
-              </div>
+                    {label} {subMenu && <IoIosArrowDown />}
+                  </NavLink>
+
+                  {/* Submenu */}
+                  {subMenu && openDropdown === label && (
+                    <div
+                      className="absolute left-0 mt-2 bg-white shadow-lg rounded-md w-48 z-50"
+                      onMouseEnter={() => setOpenDropdown(label)}
+                      onMouseLeave={() => setOpenDropdown(null)}
+                    >
+                      {subMenu.map(({ path, label }) => (
+                        <NavLink
+                          key={path}
+                          to={path}
+                          className="block px-4 py-2 text-sm text-gray-800 hover:bg-[#ff7900] hover:text-white"
+                          onClick={() => setOpenDropdown(null)}
+                        >
+                          {label}
+                        </NavLink>
+                      ))}
+                    </div>
+                  )}
+                </div>
 
 
-            ))}
-          </nav>
+              ))}
+            </nav>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <button onClick={() => setMenuOpen(!menuOpen)}>
-              {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-            </button>
+            {/* Mobile Menu Button */}
+            <div className="md:hidden">
+              <button onClick={() => setMenuOpen(!menuOpen)}>
+                {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+              </button>
+            </div>
           </div>
         </div>
       </div>
