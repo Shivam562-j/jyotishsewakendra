@@ -13,6 +13,17 @@ import { headerNavItems, layoutContainer } from "../../utils/constant";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // 50px se zyada scroll hone par state change
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   // const [galleryDropdownOpen, setGalleryDropdownOpen] = useState(null);
 
   // Prevent scrolling when the menu is open
@@ -28,7 +39,10 @@ const Header = () => {
   }, [menuOpen]);
 
   return (
-    <header className="w-full">
+    // <header className="w-full">
+    <header className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
+      isScrolled ? "bg-[#182036] shadow-md" : "bg-white"
+    }`}>
       {/* Top Bar */}
       <div className="bg-gray-900 text-white text-sm py-2 flex justify-between items-center">
         <div className={`${layoutContainer}`}>
