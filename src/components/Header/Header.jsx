@@ -54,7 +54,7 @@ const Header = () => {
       {/* Navbar */}
       <div className={`${layoutContainer} bg-white shadow-md py-3`}>
         <div className="container mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold text-[#ff7900]">MyLogo</div>
+          <NavLink className="text-2xl font-bold text-[#ff7900]" to={'/'}>MyLogo</NavLink>
 
           <nav className="hidden md:flex space-x-4">
             {headerNavItems.map(({ path, label, subMenu }) => (
