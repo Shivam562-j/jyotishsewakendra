@@ -21,8 +21,8 @@ export const ourServicesFooterItem = [
 ]
 
 export const galleryItems = [
-    { path: "/gallery/our-products", label: "Products" },
-    { path: "/gallery/our-video", label: "Videos" },
+    { path: "/gallery/our-products", label: "Our Products" },
+    { path: "/gallery/our-video", label: "Our Videos" },
 ];
 
 export const headerNavItems = [

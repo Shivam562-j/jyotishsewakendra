@@ -34,18 +34,18 @@ const Header = () => {
         <div className={`${layoutContainer}`}>
           <div className="flex flex-row items-center justify-between gap-4">
             <div className="flex flex-row items-end gap-2 py-2">
-              <a href="mailto:info@example.com" className="flex items-center gap-1 text-sm">
-                <MdEmail fontSize={16} color="#ff7900" /> info@example.com
+              <a href="mailto:rajashishjha535@gmail.com" target="_blank" className="flex items-center gap-1 text-sm">
+                <MdEmail fontSize={16} color="#ff7900" /> rajashishjha535@gmail.com
               </a>
               <a href="tel:+919939967984" className="hidden sm:flex md:flex items-center gap-1 text-sm">
                 <FaPhoneAlt fontSize={14} color="#ff7900" /> +91 99399 67984
               </a>
             </div>
             <div className="py-2 flex flex-row gap-2">
-              <a href="#" className="p-1 bg-white rounded-full text-[#ff7900]"><IoLogoYoutube fontSize={14} /></a>
-              <a href="#" className="p-1 bg-white rounded-full text-[#ff7900]"><FaFacebookF fontSize={14} /></a>
-              <a href="#" className="p-1 bg-white rounded-full text-[#ff7900]"><RiInstagramFill fontSize={14} /></a>
-              <a href="#" className="p-1 bg-white rounded-full text-[#ff7900]"><FaXTwitter fontSize={14} /></a>
+              <a href="https://www.youtube.com/@PtMediniKantJha" target="_blank" className="p-1 bg-white rounded-full text-[#ff7900]"><IoLogoYoutube fontSize={14} /></a>
+              <a href="https://www.facebook.com/ptmedinikantjha.jha" target="_blank" className="p-1 bg-white rounded-full text-[#ff7900]"><FaFacebookF fontSize={14} /></a>
+              <a href="https://www.instagram.com/pt.medinikant_jha/" target="_blank" className="p-1 bg-white rounded-full text-[#ff7900]"><RiInstagramFill fontSize={14} /></a>
+              <a href="https://x.com/medini_jha" target="_blank" className="p-1 bg-white rounded-full text-[#ff7900]"><FaXTwitter fontSize={14} /></a>
             </div>
           </div>
         </div>
