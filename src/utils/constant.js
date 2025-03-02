@@ -6,7 +6,7 @@ export const navItems = [
     { path: "/services", label: "Services" },
     { path: "/appointment", label: "Appointment" },
     { path: "/gallery", label: "Gallery" },
-    { path: "/gallery/videos", label: "Our Videos" },
+    { path: "/gallery/our-video", label: "Our Videos" },
     { path: "/contact-us", label: "Contact Us" },
 ];
 
@@ -17,29 +17,36 @@ export const ourServicesFooterItem = [
     { path: '/services/future-astrology', label: "Future Astrology" },
     { path: '/services/marriage-astrology', label: "Marriage Astrology" },
     { path: '/services/vastu-shastra', label: "Vastu Shastra" },
-    { path: "/gallery/products", label: "Our Products" },
+    { path: "/gallery/our-products", label: "Our Products" },
 ]
 
 export const galleryItems = [
-    { path: "/gallery/products", label: "Products" },
-    { path: "/gallery/videos", label: "Videos" },
+    { path: "/gallery/our-products", label: "Products" },
+    { path: "/gallery/our-video", label: "Videos" },
 ];
 
 export const headerNavItems = [
-  { path: "/home", label: "Home" },
-  { path: "/about-us", label: "About Us" },
-  {
-    path: "/services",
-    label: "Services",
-    subMenu: [...ourServicesFooterItem],
-  },
-  { path: "/appointment", label: "Appointment" },
-  {
-    path: "/gallery",
-    label: "Gallery",
-    subMenu: [...galleryItems],
-  },
-  { path: "/contact-us", label: "Contact Us" },
+    { path: "/home", label: "Home" },
+    { path: "/about-us", label: "About Us" },
+    {
+        path: "/services",
+        label: "Services",
+        subMenu: [
+            { path: '/services/janam-kundali', label: "Janam Kundali" },
+            { path: '/services/kundali-vishleshan', label: "Kundali Vishleshan" },
+            { path: '/services/child-astrology', label: "Child Astrology" },
+            { path: '/services/future-astrology', label: "Future Astrology" },
+            { path: '/services/marriage-astrology', label: "Marriage Astrology" },
+            { path: '/services/vastu-shastra', label: "Vastu Shastra" }
+        ],
+    },
+    { path: "/appointment", label: "Appointment" },
+    {
+        path: "/gallery",
+        label: "Gallery",
+        subMenu: [...galleryItems],
+    },
+    { path: "/contact-us", label: "Contact Us" },
 ];
 
 export const servicesBoxContent = [

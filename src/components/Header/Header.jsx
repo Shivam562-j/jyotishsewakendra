@@ -7,11 +7,13 @@ import { RiInstagramFill } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io5";
+import { IoIosArrowForward } from "react-icons/io";
 import { headerNavItems, layoutContainer } from "../../utils/constant";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  // const [galleryDropdownOpen, setGalleryDropdownOpen] = useState(null);
 
   // Prevent scrolling when the menu is open
   useEffect(() => {
@@ -77,7 +79,7 @@ const Header = () => {
                   <div
                     className="absolute left-0 mt-2 bg-white shadow-lg rounded-md w-48 z-50"
                     onMouseEnter={() => setOpenDropdown(label)}
-                    onMouseLeave={() => setOpenDropdown(null)} 
+                    onMouseLeave={() => setOpenDropdown(null)}
                   >
                     {subMenu.map(({ path, label }) => (
                       <NavLink
@@ -108,34 +110,43 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-[#182036] shadow-md py-3 w-2/3 fixed right-0 top-50 h-full z-50 overflow-y-scroll">
+        <div className="md:hidden bg-[#182036] shadow-md py-3 w-full fixed right-0 top-50 h-full z-50 overflow-y-scroll">
 
           <div className="flex flex-col mt-[10px] mb-[150px]">
             {headerNavItems.map(({ path, label, subMenu }) => (
               <div key={path} className="relative">
                 <div
                   onClick={() => setOpenDropdown(openDropdown === label ? null : label)}
-                  className="flex flex-row gap-1 justify-between px-5 py-3 text-sm font-semibold text-white"
+                  className="flex flex-row justify-between text-sm font-semibold text-white"
                 >
-                  <NavLink to={path} className="w-full" onClick={() => setMenuOpen(false)}>
+                  <NavLink to={path}
+                    className={({ isActive }) =>
+                      `w-full text-sm font-semibold px-5 py-3 transition-all block uppercase ${isActive
+                        ? "bg-[#ff7900] text-[#fff]"
+                        : "bg-transparent text-[#fff] hover:bg-[#ff7900] hover:text-white"
+                      }`
+                    }
+                    onClick={() => setMenuOpen(false)}
+                  >
                     {label}
                   </NavLink>
-                  {subMenu && <IoIosArrowDown className="p-1 text-white text-[20px]" />}
+                  {subMenu && <IoIosArrowDown className="p-1 py-2 self-center bg-[#fff] text-[#ff7900] text-[20px] cursor-pointer" size={'40'} />}
                 </div>
 
                 {/* Mobile Submenu */}
                 {subMenu && openDropdown === label && (
-                  <div className="ml-6 bg-gray-100 rounded-md">
+                  <div className="">
                     {subMenu.map(({ path, label }) => (
                       <NavLink
                         key={path}
                         to={path}
-                        className="block px-5 py-2 text-sm text-gray-800 hover:bg-[#ff7900] hover:text-white"
+                        className="flex gap-1 items-center flex-row justify-start px-5 pl-10 py-2 text-sm text-[#fff] uppercase hover:bg-[#ff7900] hover:text-white"
                         onClick={() => {
                           setOpenDropdown(null);
                           setMenuOpen(false);
                         }}
                       >
+                        <IoIosArrowForward />
                         {label}
                       </NavLink>
                     ))}
