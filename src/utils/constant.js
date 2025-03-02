@@ -108,10 +108,10 @@ export const servicesBoxContent = [
 
 
 export const shortDetails = [
-    { name: "+35", description: "Years of Experience" },
-    { name: "+5k", description: "Kundli Provides" },
-    { name: "+5", description: "Countries Served" },
-    { name: "+10k", description: "Happy Clients" },
+    { name: "35+", description: "Years of Experience" },
+    { name: "5k+", description: "Kundli Provides" },
+    { name: "5+", description: "Countries Served" },
+    { name: "10k+", description: "Happy Clients" },
 ];
 
 export const testimonials = [

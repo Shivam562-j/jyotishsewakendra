@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionContent, ImageContent, Button, ImageBox } from '../../components';
+import { SectionContent, ImageContent, Button, ImageBox, AnimatedCount } from '../../components';
 import bgImage from "../../assets/images/bg.png";
 import { layoutContainer, servicesBoxContent, shortDetails } from '../../utils/constant';
 import TestimonialSlider from '../Components/Testimonials';
@@ -101,9 +101,10 @@ const Home = () => {
           className={`${layoutContainer} relative z-10 py-14 flex flex-row flex-wrap gap-8 justify-between w-full border-[#182036] pt-24`}
         >
 
-          {shortDetails.map((item) => <div key={item.name} className='flex flex-col gap-2'>
-            <p className='text-6xl font-bold text-[#ff7900]'>{item?.name}</p>
-            <span className='text-xl font-medium text-[#fff]'>{item?.description}</span>
+          {shortDetails.map((item) => <div key={item.name} className='flex flex-col items-center gap-2'>
+            {/* <p className='text-7xl font-extrabold text-[#ff7900]'>{item?.name}</p> */}
+            <AnimatedCount value={item.name} />
+            <span className='text-3xl font-semibold text-[#fff]'>{item?.description}</span>
           </div>)}
 
         </div>
