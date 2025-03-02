@@ -6,6 +6,7 @@ export const navItems = [
     { path: "/services", label: "Services" },
     { path: "/appointment", label: "Appointment" },
     { path: "/gallery", label: "Gallery" },
+    { path: "/gallery/videos", label: "Our Videos" },
     { path: "/contact-us", label: "Contact Us" },
 ];
 
@@ -16,8 +17,30 @@ export const ourServicesFooterItem = [
     { path: '/services/future-astrology', label: "Future Astrology" },
     { path: '/services/marriage-astrology', label: "Marriage Astrology" },
     { path: '/services/vastu-shastra', label: "Vastu Shastra" },
+    { path: "/gallery/products", label: "Our Products" },
 ]
 
+export const galleryItems = [
+    { path: "/gallery/products", label: "Products" },
+    { path: "/gallery/videos", label: "Videos" },
+];
+
+export const headerNavItems = [
+  { path: "/home", label: "Home" },
+  { path: "/about-us", label: "About Us" },
+  {
+    path: "/services",
+    label: "Services",
+    subMenu: [...ourServicesFooterItem],
+  },
+  { path: "/appointment", label: "Appointment" },
+  {
+    path: "/gallery",
+    label: "Gallery",
+    subMenu: [...galleryItems],
+  },
+  { path: "/contact-us", label: "Contact Us" },
+];
 
 export const servicesBoxContent = [
     {
@@ -86,28 +109,28 @@ export const shortDetails = [
 
 export const testimonials = [
     {
-      id: 1,
-      name: "Rahul Sharma",
-      feedback: "The consultation was eye-opening! Medinikant Jha Ji provided deep insights into my career path, and his advice truly helped me make the right decisions.",
-      image: "https://placehold.co/80",
+        id: 1,
+        name: "Rahul Sharma",
+        feedback: "The consultation was eye-opening! Medinikant Jha Ji provided deep insights into my career path, and his advice truly helped me make the right decisions.",
+        image: "https://placehold.co/80",
     },
     {
-      id: 2,
-      name: "Pooja Verma",
-      feedback: "Accurate horoscope analysis! I was amazed at how precisely my life events matched the predictions. Highly recommended for anyone seeking clarity.",
-      image: "https://placehold.co/80",
+        id: 2,
+        name: "Pooja Verma",
+        feedback: "Accurate horoscope analysis! I was amazed at how precisely my life events matched the predictions. Highly recommended for anyone seeking clarity.",
+        image: "https://placehold.co/80",
     },
     {
-      id: 3,
-      name: "Amit Khanna",
-      feedback: "The remedies suggested were simple yet effective. I have seen a positive shift in my personal and professional life since following them.",
-      image: "https://placehold.co/80",
+        id: 3,
+        name: "Amit Khanna",
+        feedback: "The remedies suggested were simple yet effective. I have seen a positive shift in my personal and professional life since following them.",
+        image: "https://placehold.co/80",
     },
     {
-      id: 4,
-      name: "Neha Agarwal",
-      feedback: "I was struggling with my relationship, and their guidance helped me bring stability and peace. A truly life-changing experience!",
-      image: "https://placehold.co/80",
+        id: 4,
+        name: "Neha Agarwal",
+        feedback: "I was struggling with my relationship, and their guidance helped me bring stability and peace. A truly life-changing experience!",
+        image: "https://placehold.co/80",
     },
-  ];
-  
+];
+
