@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className='w-full h-full bg-custom-footer bg-no-repeat bg-[length:100%_auto] bg-[-800px_-800px]'>
+        <footer className='w-full h-full bg-custom-footer bg-no-repeat bg-[length:100%_auto] bg-[0_0] sm:bg-[-800px_-800px]'>
 
             <div className={`${layoutContainer} flex flex-row justify-between w-full flex-wrap border-b-2 border-[#182036] pt-24`}>
 
