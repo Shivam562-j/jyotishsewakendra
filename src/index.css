@@ -39,3 +39,17 @@ body{
   padding: 2rem;
   text-align: center;
 } */
+
+
+.custom-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #ff7900; /* Custom color */
+    opacity: 0.5;
+    transition: all 0.3s ease;
+  }
+  
+.custom-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    transform: scale(1.2);
+}
