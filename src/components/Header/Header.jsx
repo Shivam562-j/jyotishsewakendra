@@ -14,17 +14,24 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
+  // const [galleryDropdownOpen, setGalleryDropdownOpen] = useState(null);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50); // 50px se zyada scroll hone par state change
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // const [galleryDropdownOpen, setGalleryDropdownOpen] = useState(null);
 
   // Prevent scrolling when the menu is open
   useEffect(() => {
@@ -40,9 +47,8 @@ const Header = () => {
 
   return (
     // <header className="w-full">
-    <header className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
-      isScrolled ? "bg-[#182036] shadow-md" : "bg-white"
-    }`}>
+    <header className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${isScrolled ? "bg-[#182036] shadow-md" : "bg-white"
+      }`}>
       {/* Top Bar */}
       <div className="bg-gray-900 text-white text-sm py-2 flex justify-between items-center">
         <div className={`${layoutContainer}`}>
@@ -69,7 +75,7 @@ const Header = () => {
       <div className="bg-white shadow-md py-3">
         <div className={`${layoutContainer}`}>
           <div className="container mx-auto flex justify-between items-center">
-            <NavLink className="text-2xl font-bold text-[#ff7900]" to={'/'}>MyLogo</NavLink>
+            <NavLink className="text-2xl font-bold text-[#ff7900]" to={'/'} onClick={scrollToTop}>MyLogo</NavLink>
 
             <nav className="hidden md:flex space-x-4">
               {headerNavItems.map(({ path, label, subMenu }) => (
@@ -84,7 +90,7 @@ const Header = () => {
                       `p-1 text-sm font-medium px-3 flex items-center gap-1 rounded-sm transition-all ${isActive ? "bg-[#ff7900] text-white" : "text-[#182036] hover:bg-[#ff7900] hover:text-white"
                       }`
                     }
-                    onClick={() => setOpenDropdown(null)}
+                    onClick={() => {setOpenDropdown(null); scrollToTop()}}
                   >
                     {label} {subMenu && <IoIosArrowDown />}
                   </NavLink>
@@ -101,7 +107,7 @@ const Header = () => {
                           key={path}
                           to={path}
                           className="block px-4 py-2 text-sm text-gray-800 hover:bg-[#ff7900] hover:text-white"
-                          onClick={() => setOpenDropdown(null)}
+                          onClick={() => {setOpenDropdown(null); scrollToTop()}}
                         >
                           {label}
                         </NavLink>
@@ -142,7 +148,7 @@ const Header = () => {
                         : "bg-transparent text-[#fff] hover:bg-[#ff7900] hover:text-white"
                       }`
                     }
-                    onClick={() => setMenuOpen(false)}
+                    onClick={() => {setMenuOpen(false); scrollToTop()}}
                   >
                     {label}
                   </NavLink>
@@ -160,6 +166,7 @@ const Header = () => {
                         onClick={() => {
                           setOpenDropdown(null);
                           setMenuOpen(false);
+                          scrollToTop();
                         }}
                       >
                         <IoIosArrowForward />

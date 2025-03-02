@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { layoutContainer, navItems, ourServicesFooterItem } from '../../utils/constant';
 import { FaFacebookF } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
@@ -7,6 +7,14 @@ import { IoLogoYoutube } from "react-icons/io5";
 import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
+
     return (
         <footer className='w-full h-full bg-custom-footer bg-no-repeat bg-[length:100%_auto] bg-[0_0] sm:bg-[-800px_-800px]'>
 
@@ -18,7 +26,7 @@ const Footer = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi quod harum nobis, nulla magni obcaecati? Dignissimos quas sed ad quod reiciendis facilis optio eaque.
                     </p>
                     <div className='flex flex-row gap-1 flex-wrap justify-center sm:justify-start'>
-                        <a  href="https://www.youtube.com/@PtMediniKantJha" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 p-3 bg-[#f2f3f9] rounded-full transition text-[#182036] hover:bg-[#ff7900] hover:text-[#fff]">
+                        <a href="https://www.youtube.com/@PtMediniKantJha" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 p-3 bg-[#f2f3f9] rounded-full transition text-[#182036] hover:bg-[#ff7900] hover:text-[#fff]">
                             <IoLogoYoutube fontSize={25} />
                         </a>
                         <a href="https://www.facebook.com/ptmedinikantjha.jha" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 p-3 bg-[#f2f3f9] rounded-full transition text-[#182036] hover:bg-[#ff7900] hover:text-[#fff]">
@@ -43,6 +51,7 @@ const Footer = () => {
                                 key={path}
                                 to={path}
                                 className={`p-1 text-base font-medium px-3 transition-all rounded-sm bg-transparent text-[#182036] hover:text-[#ff7900] pl-0`}
+                                onClick={scrollToTop}
                             >
                                 {label}
                             </NavLink>
@@ -59,6 +68,7 @@ const Footer = () => {
                                 key={path}
                                 to={path}
                                 className={`p-1 text-base font-medium px-3 transition-all rounded-sm bg-transparent text-[#182036] hover:text-[#ff7900] pl-0`}
+                                onClick={scrollToTop}
                             >
                                 {label}
                             </NavLink>

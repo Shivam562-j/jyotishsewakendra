@@ -179,5 +179,9 @@ export const bannerData = {
         heading: "Vastu Shastra",
         description: "Enhance the energy of your home or workplace with Vastu Shastra principles. Achieve peace, prosperity, and well-being by aligning your space with cosmic energies.",
         isSubBannerLink: "/services"
+    },
+    "/thank-you": {
+        heading: "Thank You!",
+        description: "We appreciate your trust in us. Your request has been received, and we will get back to you soon. Stay connected for more insights and guidance.",
     }
 };
