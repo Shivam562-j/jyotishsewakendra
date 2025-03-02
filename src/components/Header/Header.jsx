@@ -13,7 +13,25 @@ import { headerNavItems, layoutContainer } from "../../utils/constant";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [isScrolled, setIsScrolled] = useState(false);
   // const [galleryDropdownOpen, setGalleryDropdownOpen] = useState(null);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
 
   // Prevent scrolling when the menu is open
   useEffect(() => {
@@ -28,82 +46,86 @@ const Header = () => {
   }, [menuOpen]);
 
   return (
-    <header className="w-full">
+    // <header className="w-full">
+    <header className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${isScrolled ? "bg-[#182036] shadow-md" : "bg-white"
+      }`}>
       {/* Top Bar */}
       <div className="bg-gray-900 text-white text-sm py-2 flex justify-between items-center">
         <div className={`${layoutContainer}`}>
           <div className="flex flex-row items-center justify-between gap-4">
             <div className="flex flex-row items-end gap-2 py-2">
-              <a href="mailto:info@example.com" className="flex items-center gap-1 text-sm">
-                <MdEmail fontSize={16} color="#ff7900" /> info@example.com
+              <a href="mailto:rajashishjha535@gmail.com" target="_blank" className="flex items-center gap-1 text-sm">
+                <MdEmail fontSize={16} color="#ff7900" /> rajashishjha535@gmail.com
               </a>
               <a href="tel:+919939967984" className="hidden sm:flex md:flex items-center gap-1 text-sm">
                 <FaPhoneAlt fontSize={14} color="#ff7900" /> +91 99399 67984
               </a>
             </div>
             <div className="py-2 flex flex-row gap-2">
-              <a href="#" className="p-1 bg-white rounded-full text-[#ff7900]"><IoLogoYoutube fontSize={14} /></a>
-              <a href="#" className="p-1 bg-white rounded-full text-[#ff7900]"><FaFacebookF fontSize={14} /></a>
-              <a href="#" className="p-1 bg-white rounded-full text-[#ff7900]"><RiInstagramFill fontSize={14} /></a>
-              <a href="#" className="p-1 bg-white rounded-full text-[#ff7900]"><FaXTwitter fontSize={14} /></a>
+              <a href="https://www.youtube.com/@PtMediniKantJha" target="_blank" className="p-1 bg-white rounded-full text-[#ff7900]"><IoLogoYoutube fontSize={14} /></a>
+              <a href="https://www.facebook.com/ptmedinikantjha.jha" target="_blank" className="p-1 bg-white rounded-full text-[#ff7900]"><FaFacebookF fontSize={14} /></a>
+              <a href="https://www.instagram.com/pt.medinikant_jha/" target="_blank" className="p-1 bg-white rounded-full text-[#ff7900]"><RiInstagramFill fontSize={14} /></a>
+              <a href="https://x.com/medini_jha" target="_blank" className="p-1 bg-white rounded-full text-[#ff7900]"><FaXTwitter fontSize={14} /></a>
             </div>
           </div>
         </div>
       </div>
 
       {/* Navbar */}
-      <div className={`${layoutContainer} bg-white shadow-md py-3`}>
-        <div className="container mx-auto flex justify-between items-center">
-          <NavLink className="text-2xl font-bold text-[#ff7900]" to={'/'}>MyLogo</NavLink>
+      <div className="bg-white shadow-md py-3">
+        <div className={`${layoutContainer}`}>
+          <div className="container mx-auto flex justify-between items-center">
+            <NavLink className="text-2xl font-bold text-[#ff7900]" to={'/'} onClick={scrollToTop}>MyLogo</NavLink>
 
-          <nav className="hidden md:flex space-x-4">
-            {headerNavItems.map(({ path, label, subMenu }) => (
-              <div
-                key={path}
-                className="relative group"
-                onMouseEnter={() => setOpenDropdown(label)}
-              >
-                <NavLink
-                  to={path}
-                  className={({ isActive }) =>
-                    `p-1 text-sm font-medium px-3 flex items-center gap-1 rounded-sm transition-all ${isActive ? "bg-[#ff7900] text-white" : "text-[#182036] hover:bg-[#ff7900] hover:text-white"
-                    }`
-                  }
-                  onClick={() => setOpenDropdown(null)}
+            <nav className="hidden md:flex space-x-4">
+              {headerNavItems.map(({ path, label, subMenu }) => (
+                <div
+                  key={path}
+                  className="relative group"
+                  onMouseEnter={() => setOpenDropdown(label)}
                 >
-                  {label} {subMenu && <IoIosArrowDown />}
-                </NavLink>
-
-                {/* Submenu */}
-                {subMenu && openDropdown === label && (
-                  <div
-                    className="absolute left-0 mt-2 bg-white shadow-lg rounded-md w-48 z-50"
-                    onMouseEnter={() => setOpenDropdown(label)}
-                    onMouseLeave={() => setOpenDropdown(null)}
+                  <NavLink
+                    to={path}
+                    className={({ isActive }) =>
+                      `p-1 text-sm font-medium px-3 flex items-center gap-1 rounded-sm transition-all ${isActive ? "bg-[#ff7900] text-white" : "text-[#182036] hover:bg-[#ff7900] hover:text-white"
+                      }`
+                    }
+                    onClick={() => {setOpenDropdown(null); scrollToTop()}}
                   >
-                    {subMenu.map(({ path, label }) => (
-                      <NavLink
-                        key={path}
-                        to={path}
-                        className="block px-4 py-2 text-sm text-gray-800 hover:bg-[#ff7900] hover:text-white"
-                        onClick={() => setOpenDropdown(null)}
-                      >
-                        {label}
-                      </NavLink>
-                    ))}
-                  </div>
-                )}
-              </div>
+                    {label} {subMenu && <IoIosArrowDown />}
+                  </NavLink>
+
+                  {/* Submenu */}
+                  {subMenu && openDropdown === label && (
+                    <div
+                      className="absolute left-0 mt-2 bg-white shadow-lg rounded-md w-48 z-50"
+                      onMouseEnter={() => setOpenDropdown(label)}
+                      onMouseLeave={() => setOpenDropdown(null)}
+                    >
+                      {subMenu.map(({ path, label }) => (
+                        <NavLink
+                          key={path}
+                          to={path}
+                          className="block px-4 py-2 text-sm text-gray-800 hover:bg-[#ff7900] hover:text-white"
+                          onClick={() => {setOpenDropdown(null); scrollToTop()}}
+                        >
+                          {label}
+                        </NavLink>
+                      ))}
+                    </div>
+                  )}
+                </div>
 
 
-            ))}
-          </nav>
+              ))}
+            </nav>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <button onClick={() => setMenuOpen(!menuOpen)}>
-              {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-            </button>
+            {/* Mobile Menu Button */}
+            <div className="md:hidden">
+              <button onClick={() => setMenuOpen(!menuOpen)}>
+                {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -126,7 +148,7 @@ const Header = () => {
                         : "bg-transparent text-[#fff] hover:bg-[#ff7900] hover:text-white"
                       }`
                     }
-                    onClick={() => setMenuOpen(false)}
+                    onClick={() => {setMenuOpen(false); scrollToTop()}}
                   >
                     {label}
                   </NavLink>
@@ -144,6 +166,7 @@ const Header = () => {
                         onClick={() => {
                           setOpenDropdown(null);
                           setMenuOpen(false);
+                          scrollToTop();
                         }}
                       >
                         <IoIosArrowForward />

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../../components'
+import { RiWhatsappFill } from "react-icons/ri";
 import bgImage from "../../assets/images/bg.png";
 import { layoutContainer } from '../../utils/constant';
 
@@ -29,7 +29,9 @@ const Cta = () => {
                 </div>
 
                 <div>
-                    <Button isWhatsApp={true}>Chat with Us on WhatsApp</Button>
+                    <a target='_blank' href={'https://api.whatsapp.com/send?phone=+919431425134&text=Hi%20Jyotish%20Sewa%20Kendra%20from%20Website'}
+                    className='bg-[#02c100] text-[#fff] px-[30px] py-[15px] text-base rounded flex flex-row gap-2 items-center cursor-pointer font-medium hover:scale-95 scale-100 transition-transform duration-300 ease-in-out w-fit'
+                    > <RiWhatsappFill fontSize={24} /> Chat with Us on WhatsApp</a>
                 </div>
 
 

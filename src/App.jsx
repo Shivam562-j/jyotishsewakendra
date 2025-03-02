@@ -1,9 +1,33 @@
 import AppRouter from './router/AppRouter';
 import { motion } from "framer-motion";
-import { FaPhoneAlt } from "react-icons/fa";
+import { useEffect, useState } from 'react';
+import { FaPhoneAlt, FaArrowUp } from "react-icons/fa";
 import { RiWhatsappFill } from "react-icons/ri";
 
+
 function App() {
+
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollButton(window.scrollY > 500);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   return (
     <div className='relative'>
@@ -41,6 +65,21 @@ function App() {
         </motion.a>
 
       </div>
+
+      {showScrollButton && (
+        <motion.button
+          onClick={scrollToTop}
+          className="fixed left-[50px] bottom-[50px] p-3 bg-[#ff7900] text-white rounded-full shadow-lg z-50"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 50 }}
+        >
+          <FaArrowUp fontSize={20} />
+
+        </motion.button>
+      )}
     </div>
   )
 }
