@@ -9,8 +9,6 @@ import Cta from '../Components/Cta';
 const Home = () => {
   return (
     <div>
-      <Header />
-
 
       {/* hero section */}
       <section className='relative w-full h-full bg-transparent' style={{
@@ -118,7 +116,6 @@ const Home = () => {
 
       <Cta />
 
-      <Footer />
     </div>
   )
 }

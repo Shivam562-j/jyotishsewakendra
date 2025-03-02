@@ -8,11 +8,11 @@ import Home from "./Home/Home";
 import JanamKundali from "./JanamKundali/JanamKundali";
 import KundaliVishleshan from "./KundaliVishleshan/KundaliVishleshan";
 import MarriageAstrology from "./MarriageAstrology/MarriageAstrology";
+import OurProducts from "./OurProducts/OurProducts";
+import OurVideo from "./OurVideo/OurVideo";
 import Services from "./Services/Services";
 import ThankYou from "./ThankYou/ThankYou";
 import VastuShastra from "./VastuShastra/VastuShastra";
-
-
 
 export {
     Home,
@@ -27,5 +27,7 @@ export {
     ChildAstrology,
     FutureAstrology,
     MarriageAstrology,
-    VastuShastra
+    VastuShastra, 
+    OurVideo,
+    OurProducts
 }

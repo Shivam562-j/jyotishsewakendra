@@ -10,12 +10,12 @@ export const navItems = [
 ];
 
 export const ourServicesFooterItem = [
-    { path: '/janam-kundali', label: "Janam Kundali" },
-    { path: '/kundali-vishleshan', label: "Kundali Vishleshan" },
-    { path: '/child-astrology', label: "Child Astrology" },
-    { path: '/future-astrology', label: "Future Astrology" },
-    { path: '/marriage-astrology', label: "Marriage Astrology" },
-    { path: '/vastu-shastra', label: "Vastu Shastra" },
+    { path: '/services/janam-kundali', label: "Janam Kundali" },
+    { path: '/services/kundali-vishleshan', label: "Kundali Vishleshan" },
+    { path: '/services/child-astrology', label: "Child Astrology" },
+    { path: '/services/future-astrology', label: "Future Astrology" },
+    { path: '/services/marriage-astrology', label: "Marriage Astrology" },
+    { path: '/services/vastu-shastra', label: "Vastu Shastra" },
 ]
 
 
