@@ -15,7 +15,7 @@ const Banner = ({
 
     const navigate = useNavigate();
     return (
-        <section className='relative w-full h-full bg-transparent' style={{
+        <section className='relative w-full mt-[110px] h-full bg-transparent' style={{
             backgroundImage: `linear-gradient(220deg, #5846df 38%, #0a122b 0%)`,
         }}>
             <div

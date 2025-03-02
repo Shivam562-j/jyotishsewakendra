@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ComingSoon } from '../components';
 import { AboutUs, Appointment, ChildAstrology, ContactUs, FutureAstrology, Gallery, Home, JanamKundali, KundaliVishleshan, MarriageAstrology, OurProducts, OurVideo, Services, ThankYou, VastuShastra } from '../pages';
 import Layout from '../Layout/Layout';

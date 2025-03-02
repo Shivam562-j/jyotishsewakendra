@@ -141,3 +141,43 @@ export const testimonials = [
     },
 ];
 
+
+export const bannerData = {
+    "/about-us": { heading: "About Us", description: "With 35+ years of expertise, we provide accurate horoscope analysis, personalized guidance, and astrological remedies to help you achieve clarity, balance, and success in life." },
+    "/services": { heading: "Our Services", description: "We offer expert astrology services, including horoscope analysis, personalized guidance, and Vastu consultations, helping you find clarity, balance, and success in life." },
+    "/appointment": { heading: "Book an Appointment", description: "Schedule a consultation with our expert astrologer for personalized insights and guidance. Get clarity on your life, career, relationships, and more with a one-on-one session." },
+    "/contact-us": { heading: "Contact Us", description: "Reach out to us for inquiries, consultations, or assistance. We are here to guide you with expert astrological insights and personalized support." },
+    "/gallery": { heading: "Our Gallery", description: "Explore our gallery to see moments from consultations, events, and satisfied clients. Witness the transformative impact of astrology through our journey." },
+    "/gallery/our-products": { heading: "Our Products", description: "Discover our range of astrological products designed to bring positivity, balance, and prosperity into your life. Explore remedies, gemstones, yantras, and more.", isSubBannerLink: "/gallery" },
+    "/gallery/our-video": { heading: "Our Video", description: "Watch our insightful videos on astrology, horoscope analysis, and expert guidance. Gain deeper knowledge and practical tips for a harmonious life.", isSubBannerLink: "/gallery" },
+    "/services/janam-kundali": {
+        heading: "Janam Kundali",
+        description: "Discover the blueprint of your life with a detailed Janam Kundali analysis. Get insights into your strengths, weaknesses, and future possibilities.",
+        isSubBannerLink: "/services"
+    },
+    "/services/kundali-vishleshan": {
+        heading: "Kundali Vishleshan",
+        description: "A deep analysis of your birth chart to uncover hidden aspects of your personality, career, relationships, and life path.",
+        isSubBannerLink: "/services"
+    },
+    "/services/child-astrology": {
+        heading: "Child Astrology",
+        description: "Understand your child’s potential, strengths, and future prospects with a personalized astrological reading designed for their growth and success.",
+        isSubBannerLink: "/services"
+    },
+    "/services/future-astrology": {
+        heading: "Future Astrology",
+        description: "Gain clarity on upcoming opportunities and challenges in your life. Our expert guidance helps you make informed decisions for a prosperous future.",
+        isSubBannerLink: "/services"
+    },
+    "/services/marriage-astrology": {
+        heading: "Marriage Astrology",
+        description: "Find out the compatibility between partners and receive astrological guidance for a happy, harmonious, and successful married life.",
+        isSubBannerLink: "/services"
+    },
+    "/services/vastu-shastra": {
+        heading: "Vastu Shastra",
+        description: "Enhance the energy of your home or workplace with Vastu Shastra principles. Achieve peace, prosperity, and well-being by aligning your space with cosmic energies.",
+        isSubBannerLink: "/services"
+    }
+};

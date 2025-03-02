@@ -4,9 +4,8 @@ import Banner from '../Components/Banner';
 const AboutUs = () => {
   return (
     <div>
-
-      <Banner />
       
+            
     </div>
   )
 }
