@@ -1,4 +1,4 @@
-export const layoutContainer = "w-full px-3 md:container m-0 mx-auto lg:max-w-[1200px] lg:w-full" ;
+export const layoutContainer = "w-full px-3 md:container m-0 mx-auto lg:max-w-[1200px] lg:w-full";
 
 export const navItems = [
     { path: "/home", label: "Home" },
@@ -10,12 +10,12 @@ export const navItems = [
 ];
 
 export const ourServicesFooterItem = [
-    {path: '/janam-kundali', label: "Janam Kundali"},
-    {path: '/kundali-vishleshan', label: "Kundali Vishleshan"},
-    {path: '/child-astrology', label: "Child Astrology"},
-    {path: '/future-astrology', label: "Future Astrology"},
-    {path: '/marriage-astrology', label: "Marriage Astrology"},
-    {path: '/vastu-shastra', label: "Vastu Shastra"},
+    { path: '/janam-kundali', label: "Janam Kundali" },
+    { path: '/kundali-vishleshan', label: "Kundali Vishleshan" },
+    { path: '/child-astrology', label: "Child Astrology" },
+    { path: '/future-astrology', label: "Future Astrology" },
+    { path: '/marriage-astrology', label: "Marriage Astrology" },
+    { path: '/vastu-shastra', label: "Vastu Shastra" },
 ]
 
 
@@ -75,3 +75,11 @@ export const servicesBoxContent = [
     },
 
 ]
+
+
+export const shortDetails = [
+    { name: "45+", description: "Years of Experience" },
+    { name: "5+", description: "Countries Served" },
+    { name: "500+", description: "Satisfied Clients" },
+    { name: "100%", description: "Customer Satisfaction" },
+];

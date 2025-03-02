@@ -1,8 +1,9 @@
 import React from 'react';
 import { Footer, Header, SectionContent, ImageContent, Button, ImageBox } from '../../components';
 import bgImage from "../../assets/images/bg.png";
-import { layoutContainer, servicesBoxContent } from '../../utils/constant';
+import { layoutContainer, servicesBoxContent, shortDetails } from '../../utils/constant';
 import { LuGoal } from "react-icons/lu";
+import TestimonialSlider from '../Components/Testimonials';
 
 const Home = () => {
   return (
@@ -94,6 +95,30 @@ const Home = () => {
         ></div>
 
         <div
+          className={`${layoutContainer} relative z-10 py-14 flex flex-row flex-wrap gap-8 justify-between w-full border-[#182036] pt-24`}
+        >
+
+          {shortDetails.map((item) => <div key={item.name} className='flex flex-col gap-2'>
+            <p className='text-6xl font-bold text-[#ff7900]'>{item?.name}</p>
+            <span className='text-xl font-medium text-[#fff]'>{item?.description}</span>
+          </div>)}
+
+        </div>
+
+      </section>
+
+      {/* <section
+        className="relative w-full h-full bg-transparent"
+        style={{
+          backgroundImage: `linear-gradient(220deg, #0a122b 38%, #0a122b 0%)`,
+        }}
+      >
+        <div
+          className="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-20 transition-opacity duration-300"
+          style={{ backgroundImage: `url(${bgImage})` }}
+        ></div>
+
+        <div
           className={`${layoutContainer} relative z-10 py-14 flex flex-col gap-8 justify-between w-full border-[#182036] pt-24`}
         >
           <div className="flex flex-col items-center gap-2">
@@ -160,10 +185,38 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section> */}
+
+
+      <TestimonialSlider />
+
+      <section
+        className="relative w-full h-full bg-transparent"
+        style={{
+          backgroundImage: `linear-gradient(220deg, #0a122b 38%, #0a122b 0%)`,
+        }}
+      >
+        <div
+          className="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-20 transition-opacity duration-300"
+          style={{ backgroundImage: `url(${bgImage})` }}
+        ></div>
+
+        <div
+          className={`${layoutContainer} relative z-10 py-14 flex flex-row flex-wrap gap-8 justify-between w-full border-[#182036]`}
+        >
+
+          <div className='flex flex-col gap-2'>
+
+            <p className='text-3xl text-[#fff]'>Get Personalized Astrological Guidance!</p>
+            <h5 className='text-base text-[#eee]'>Have questions about your future? Connect with our expert astrologer for accurate insights and life-changing advice.</h5>
+
+          </div>
+
+          <Button>Chat with Us on WhatsApp</Button>
+          
+
+        </div>
       </section>
-
-
-
 
 
       <Footer />
