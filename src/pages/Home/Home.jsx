@@ -2,9 +2,7 @@ import React from 'react';
 import { SectionContent, ImageContent, Button, ImageBox, AnimatedCount } from '../../components';
 import bgImage from "../../assets/images/bg.png";
 import { layoutContainer, servicesBoxContent, shortDetails } from '../../utils/constant';
-import TestimonialSlider from '../Components/Testimonials';
 import WhyChooseUs from '../Components/WhyChooseUs';
-import Cta from '../Components/Cta';
 
 const Home = () => {
   return (
@@ -113,9 +111,6 @@ const Home = () => {
 
       <WhyChooseUs />
 
-      <TestimonialSlider />
-
-      <Cta />
 
     </div>
   )

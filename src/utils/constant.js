@@ -185,3 +185,23 @@ export const bannerData = {
         description: "We appreciate your trust in us. Your request has been received, and we will get back to you soon. Stay connected for more insights and guidance.",
     }
 };
+
+
+export const productBoxContent = [
+    {
+        id: 1,
+        image: "https://placehold.co/287x183",
+        name: "Puja Pushpanjali",
+        description: "Get a detailed birth chart analysis to understand your life path.",
+        buttonName: "View Details",
+        link: "/"
+    }, 
+    {
+        id: 1,
+        image: "https://placehold.co/287x183",
+        name: "Puja Pushpanjali 2",
+        description: "Get a detailed birth chart analysis to understand your life path.",
+        buttonName: "View Details",
+        link: "/"
+    }, 
+]
