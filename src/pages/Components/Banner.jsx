@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Banner = ({
     heading = "About Us",
-    description = "With 35+ years of expertise, we provide accurate horoscope analysis, personalized guidance, and astrological remedies to help you achieve clarity, balance, and success in life.",
+    description = "With 40+ years of expertise, we provide accurate horoscope analysis, personalized guidance, and astrological remedies to help you achieve clarity, balance, and success in life.",
     btnText = "Back to Home",
     btnLink = "/",
     isSubBannerLink = ""

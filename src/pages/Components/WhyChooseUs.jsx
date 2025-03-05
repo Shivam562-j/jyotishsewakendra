@@ -15,7 +15,7 @@ const WhyChooseUs = () => {
                     descriptionColor="text-[#0a122b]"
                     subHeading="Why Choose Us? ━━"
                     heading='Trusted Astrology, Proven Guidance'
-                    description="With 35+ years of expertise, we provide accurate astrological insights to guide your life decisions. Our personalized solutions, deep Vedic knowledge, and proven predictions ensure clarity, success, and peace of mind. Trusted by clients worldwide, we help you navigate challenges with confidence and unlock your true potential."
+                    description="With 40+ years of expertise, we provide accurate astrological insights to guide your life decisions. Our personalized solutions, deep Vedic knowledge, and proven predictions ensure clarity, success, and peace of mind. Trusted by clients worldwide, we help you navigate challenges with confidence and unlock your true potential."
                     ctaText='About Medinikant Jha'
                 />
 
@@ -50,10 +50,10 @@ const WhyChooseUs = () => {
                         <div className="flex items-center justify-center w-16 h-16 rounded-full border border-[#ff7900] bg-[#ff7900] transition-all duration-300">
                             <LuGoal className="text-white text-4xl transition-all duration-300" />
                         </div>
-                        <h4 className="font-bold text-2xl text-[#182036]">35+ Years of Expertise
+                        <h4 className="font-bold text-2xl text-[#182036]">40+ Years of Expertise
                         </h4>
                         <p className="text-sm text-gray-600 leading-relaxed">
-                            With over 35 years in Vedic astrology, we bring wisdom and reliability to every consultation.
+                            With over 40 years in Vedic astrology, we bring wisdom and reliability to every consultation.
                         </p>
 
                     </div>
