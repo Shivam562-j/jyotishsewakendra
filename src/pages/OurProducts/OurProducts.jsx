@@ -11,7 +11,7 @@ const OurProducts = () => {
 
           {productBoxContent?.map((product, index) =>
             <div key={index}
-              className={`flex flex-row gap-10 py-10 ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}
+              className={`flex flex-col sm:flex-row gap-10 py-10 ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}
             >
               <ImageContent
                 imgUrl1="https://placehold.co/300x208"
