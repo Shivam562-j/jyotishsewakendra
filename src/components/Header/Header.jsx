@@ -75,7 +75,18 @@ const Header = () => {
       <div className="bg-white shadow-md py-3">
         <div className={`${layoutContainer}`}>
           <div className="container mx-auto flex justify-between items-center">
-            <NavLink className="text-2xl font-bold text-[#ff7900]" to={'/'} onClick={scrollToTop}>MyLogo</NavLink>
+            <NavLink className="text-2xl font-bold text-[#ff7900]" to={'/'} onClick={scrollToTop}>
+              <div className='flex flex-row gap-3 items-center justify-start'>
+                <svg height="66.67642266389554" viewBox="0 0 40 58.07844450623186" class="looka-1j8o68f"><defs id="SvgjsDefs6928"></defs><g id="SvgjsG6929" featurekey="symbolFeature-0" transform="matrix(0.6266894264227408,0,0,0.6266894264227408,-10.985833801993168,-2.754300017174794)" fill="#ff7900"><g xmlns="http://www.w3.org/2000/svg"><path fill="#ff7900" d="M27.984,42.838C45.23,25.729,47.746,11.361,41.939,4.395c0,0,43.898,18.04,18.077,59.882   c-4.42,7.105-15.459,15.498-9.688,32.793C50.327,97.07-4.908,81.605,27.984,42.838z"></path><path fill="#ff7900" d="M54.645,96.217c-0.944-3.51-5.154-11.154,7.686-26.359c6.861-8.104,11.557-25.906,9.27-30.157   c0,0,21.914,28.944-3.447,46.278C53.117,96.283,54.645,96.217,54.645,96.217z"></path></g></g>
+                </svg>
+
+                <div className='flex flex-col'>
+                  <p className='font-extrabold text-[#0a122b] text-2xl'>Jyoti Sewa Kendra</p>
+                  <span className='text-[#ff7900] font-semibold text-base'>Medini Kant Jha</span>
+                </div>
+
+              </div>
+            </NavLink>
 
             <nav className="hidden md:flex space-x-4">
               {headerNavItems.map(({ path, label, subMenu }) => (
@@ -90,7 +101,7 @@ const Header = () => {
                       `p-1 text-sm font-medium px-3 flex items-center gap-1 rounded-sm transition-all ${isActive ? "bg-[#ff7900] text-white" : "text-[#182036] hover:bg-[#ff7900] hover:text-white"
                       }`
                     }
-                    onClick={() => {setOpenDropdown(null); scrollToTop()}}
+                    onClick={() => { setOpenDropdown(null); scrollToTop() }}
                   >
                     {label} {subMenu && <IoIosArrowDown />}
                   </NavLink>
@@ -107,7 +118,7 @@ const Header = () => {
                           key={path}
                           to={path}
                           className="block px-4 py-2 text-sm text-gray-800 hover:bg-[#ff7900] hover:text-white"
-                          onClick={() => {setOpenDropdown(null); scrollToTop()}}
+                          onClick={() => { setOpenDropdown(null); scrollToTop() }}
                         >
                           {label}
                         </NavLink>
@@ -148,7 +159,7 @@ const Header = () => {
                         : "bg-transparent text-[#fff] hover:bg-[#ff7900] hover:text-white"
                       }`
                     }
-                    onClick={() => {setMenuOpen(false); scrollToTop()}}
+                    onClick={() => { setMenuOpen(false); scrollToTop() }}
                   >
                     {label}
                   </NavLink>
