@@ -108,7 +108,7 @@ export const servicesBoxContent = [
 
 
 export const shortDetails = [
-    { name: "35+", description: "Years of Experience" },
+    { name: "40+", description: "Years of Experience" },
     { name: "5k+", description: "Kundli Provides" },
     { name: "5+", description: "Countries Served" },
     { name: "10k+", description: "Happy Clients" },
@@ -143,7 +143,7 @@ export const testimonials = [
 
 
 export const bannerData = {
-    "/about-us": { heading: "About Us", description: "With 35+ years of expertise, we provide accurate horoscope analysis, personalized guidance, and astrological remedies to help you achieve clarity, balance, and success in life." },
+    "/about-us": { heading: "About Us", description: "With 40+ years of expertise, we provide accurate horoscope analysis, personalized guidance, and astrological remedies to help you achieve clarity, balance, and success in life." },
     "/services": { heading: "Our Services", description: "We offer expert astrology services, including horoscope analysis, personalized guidance, and Vastu consultations, helping you find clarity, balance, and success in life." },
     "/appointment": { heading: "Book an Appointment", description: "Schedule a consultation with our expert astrologer for personalized insights and guidance. Get clarity on your life, career, relationships, and more with a one-on-one session." },
     "/contact-us": { heading: "Contact Us", description: "Reach out to us for inquiries, consultations, or assistance. We are here to guide you with expert astrological insights and personalized support." },
@@ -185,3 +185,23 @@ export const bannerData = {
         description: "We appreciate your trust in us. Your request has been received, and we will get back to you soon. Stay connected for more insights and guidance.",
     }
 };
+
+
+export const productBoxContent = [
+    {
+        id: 1,
+        image: "https://placehold.co/287x183",
+        name: "Puja Pushpanjali",
+        description: "Get a detailed birth chart analysis to understand your life path.",
+        buttonName: "Buy Now",
+        link: "/"
+    }, 
+    {
+        id: 1,
+        image: "https://placehold.co/287x183",
+        name: "Puja Pushpanjali 2",
+        description: "Get a detailed birth chart analysis to understand your life path.",
+        buttonName: "Buy Now",
+        link: "/"
+    }, 
+]
