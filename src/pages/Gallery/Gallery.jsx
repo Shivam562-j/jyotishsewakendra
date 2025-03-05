@@ -74,7 +74,7 @@ const Gallery = () => {
               )}
             </div>
 
-            <div className='flex flex-col items-center gap-2'>
+            <div className=' hidden sm:flex flex-col items-center gap-2'>
               <Button to={'/gallery/our-products'}>
                 View All
               </Button>
