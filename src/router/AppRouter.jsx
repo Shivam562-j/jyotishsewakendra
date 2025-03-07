@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ComingSoon } from '../components';
 import { AboutUs, Appointment, ChildAstrology, ContactUs, FutureAstrology, Gallery, Home, JanamKundali, KundaliVishleshan, MarriageAstrology, OurProducts, OurVideo, Services, ThankYou, VastuShastra } from '../pages';
 import Layout from '../Layout/Layout';
+import NotFound from '../components/NotFound/NotFound';
 
 const AppRouter = () => {
   return (
@@ -25,6 +26,7 @@ const AppRouter = () => {
           <Route path='/gallery/our-products' element={<OurProducts />} />
           <Route path='/contact-us' element={<ContactUs />} />
           <Route path='/thank-you' element={<ThankYou />} />
+          <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
     </Router>
