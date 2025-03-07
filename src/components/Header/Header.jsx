@@ -54,8 +54,8 @@ const Header = () => {
         <div className={`${layoutContainer}`}>
           <div className="flex flex-row items-center justify-between gap-4">
             <div className="flex flex-row items-end gap-2 py-2">
-              <a href="mailto:rajashishjha535@gmail.com" target="_blank" className="flex items-center gap-1 text-sm">
-                <MdEmail fontSize={16} color="#ff7900" /> rajashishjha535@gmail.com
+              <a href="mailto:jyotishsewakendra801@gmail.com" target="_blank" className="flex items-center gap-1 text-sm">
+                <MdEmail fontSize={16} color="#ff7900" /> Jyotishsewakendra801@gmail.com
               </a>
               <a href="tel:+919939967984" className="hidden sm:flex md:flex items-center gap-1 text-sm">
                 <FaPhoneAlt fontSize={14} color="#ff7900" /> +91 99399 67984
