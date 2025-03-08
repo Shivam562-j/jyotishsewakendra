@@ -48,7 +48,6 @@ function App() {
           <FaPhoneAlt fontSize={20} />
         </motion.a>
 
-        {/* WhatsApp Button with Animation */}
         <motion.a
           href="https://api.whatsapp.com/send?phone=+919431425134&text=Hi%20Jyotish%20Sewa%20Kendra%20from%20Website"
           target='_blank'

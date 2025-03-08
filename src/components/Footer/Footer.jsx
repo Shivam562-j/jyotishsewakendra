@@ -5,6 +5,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io5";
 import { NavLink } from 'react-router-dom';
+import { FaAngleRight } from "react-icons/fa6";
 
 const Footer = () => {
 
@@ -61,9 +62,10 @@ const Footer = () => {
                             <NavLink
                                 key={path}
                                 to={path}
-                                className={`p-1 text-base font-medium px-3 transition-all rounded-sm bg-transparent text-[#182036] hover:text-[#ff7900] pl-0`}
+                                className={`p-1 text-base font-medium px-3 transition-all rounded-sm bg-transparent text-[#182036] hover:text-[#ff7900] pl-0  flex flex-row gap-2 items-center`}
                                 onClick={scrollToTop}
                             >
+                                <FaAngleRight fontSize={14}/>
                                 {label}
                             </NavLink>
                         ))}
@@ -78,9 +80,10 @@ const Footer = () => {
                             <NavLink
                                 key={path}
                                 to={path}
-                                className={`p-1 text-base font-medium px-3 transition-all rounded-sm bg-transparent text-[#182036] hover:text-[#ff7900] pl-0`}
+                                className={`p-1 text-base font-medium px-3 transition-all rounded-sm bg-transparent text-[#182036] hover:text-[#ff7900] pl-0 flex flex-row gap-2 items-center`}
                                 onClick={scrollToTop}
                             >
+                                <FaAngleRight fontSize={14}/>
                                 {label}
                             </NavLink>
                         ))}

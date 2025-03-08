@@ -15,7 +15,7 @@ const TestimonialSlider = () => {
 
   return (
 
-    <section className='w-full h-full bg-custom-footer bg-no-repeat bg-[length:100%_auto] bg-[-800px_-800px]'>
+    <section className='w-full h-full bg-custom-footer bg-no-repeat bg-[length:100%_auto] bg-[-800px_-800px] overflow-y-hidden'>
 
       <div className={`${layoutContainer} py-14 flex flex-col gap-8 justify-between w-full border-[#182036] pt-24`}>
 
@@ -29,9 +29,9 @@ const TestimonialSlider = () => {
           <div className="relative">
             <button
               ref={prevRef}
-              className="absolute left-[-50px] top-1/2 transform -translate-y-1/2 bg-[#ff7900] text-white p-3 rounded-full shadow-md hover:bg-[#e66b00] z-10"
+              className="absolute left-[-25px] top-1/2 transform -translate-y-1/2 bg-[#ff7900] text-white p-3 text-base rounded-full shadow-md hover:bg-[#e66b00] z-10"
             >
-              <FaArrowLeft size={20} />
+              <FaArrowLeft />
             </button>
 
             <Swiper
@@ -83,9 +83,9 @@ const TestimonialSlider = () => {
             </Swiper>
             <button
               ref={nextRef}
-              className="absolute right-[-50px] top-1/2 transform -translate-y-1/2 bg-[#ff7900] text-white p-3 rounded-full shadow-md hover:bg-[#e66b00] z-10"
+              className="absolute right-[-25px] top-1/2 transform -translate-y-1/2 bg-[#ff7900] text-white p-3 text-base rounded-full shadow-md hover:bg-[#e66b00] z-10"
             >
-              <FaArrowRight size={20} />
+              <FaArrowRight />
             </button>
           </div>
 
