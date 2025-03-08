@@ -11,22 +11,28 @@ const AboutUs = () => {
       {/* about us section */}
       <section className='w-full h-full bg-custom-footer bg-no-repeat bg-[length:100%_auto] bg-[-800px_-800px]'>
 
-        <div className={`${layoutContainer} py-14 flex flex-col sm:flex-row gap-5 justify-between w-full border-[#182036] pt-24`}>
+        <div className={`${layoutContainer} py-14 flex flex-col gap-5 justify-between w-full border-[#182036] pt-24`}>
 
-          <ImageContent
-            imgUrl1="https://placehold.co/40x208"
-            imgUrl2="https://placehold.co/263x208"
-            className='flex-row p-0 h-full'
-          />
-          <SectionContent
-            subHeadingColor="text-[#ff7900]"
-            headingColor="text-[#182036]"
-            descriptionColor="text-[#0a122b]"
-            subHeading="About Us ━━"
-            heading='Medinikant Jha – 40+ Years of Astrological Expertise'
-            description='With expertise in Vedic astrology, horoscope analysis, and personalized guidance, Medinikant Jha helps individuals gain clarity in life, career, and relationships. His deep insights and remedies empower you to make informed decisions for a balanced and successful life.'
-            ctaText={false}
-          />
+          <div className='flex flex-col sm:flex-row gap-5 justify-between w-full'>
+
+            <ImageContent
+              imgUrl1="https://placehold.co/40x208"
+              imgUrl2="https://placehold.co/263x208"
+              className='flex-row p-0 h-full'
+            />
+            <SectionContent
+              subHeadingColor="text-[#ff7900]"
+              headingColor="text-[#182036]"
+              descriptionColor="text-[#0a122b]"
+              subHeading="About Us ━━"
+              heading='Medinikant Jha – 40+ Years of Astrological Expertise'
+              description='With expertise in Vedic astrology, horoscope analysis, and personalized guidance, Medinikant Jha helps individuals gain clarity in life, career, and relationships. His deep insights and remedies empower you to make informed decisions for a balanced and successful life.'
+              ctaText={false}
+            />
+          </div>
+          <p className='text-base font-medium text-[#0a122b]'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quos nemo ex quis, reprehenderit delectus assumenda, quia neque numquam labore eaque magni vel ipsum quaerat laborum repellat? Consequuntur accusamus maxime, tempora esse distinctio ipsum. Distinctio excepturi omnis vero mollitia ipsum officia dicta est iusto aperiam, rerum, quia, ad temporibus natus vitae maiores! Neque quidem similique consectetur vero unde itaque saepe eius ea accusantium voluptatum odio ex necessitatibus sequi tempora magni, facere atque. Odit enim ipsum vitae animi amet iure, porro nisi eos aperiam. Atque itaque quis culpa rem quisquam sed tempora neque. Molestias debitis adipisci autem similique facilis, perferendis sint.
+          </p>
 
         </div>
       </section>
