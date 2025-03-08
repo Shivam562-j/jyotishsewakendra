@@ -79,7 +79,7 @@ const TestimonialSlider = () => {
                   </div>
                 </SwiperSlide>
               ))}
-              <div className="custom-pagination flex justify-center mt-4 space-x-2"></div>
+              <div className="custom-pagination flex justify-center mt-5 space-x-2"></div>
             </Swiper>
             <button
               ref={nextRef}

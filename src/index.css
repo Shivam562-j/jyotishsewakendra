@@ -44,9 +44,10 @@ body{
 .custom-pagination .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
-    background: #ff7900; /* Custom color */
+    background: #ff7900;
     opacity: 0.5;
     transition: all 0.3s ease;
+    cursor: pointer;
   }
   
 .custom-pagination .swiper-pagination-bullet-active {
