@@ -16,8 +16,8 @@ const AboutUs = () => {
           <div className='flex flex-col sm:flex-row gap-5 justify-between w-full'>
 
             <ImageContent
-              imgUrl1="https://placehold.co/40x208"
-              imgUrl2="https://placehold.co/263x208"
+              imgUrl1="https://placehold.co/263x208"
+              imgUrl2={false}
               className='flex-row p-0 h-full'
             />
             <SectionContent
