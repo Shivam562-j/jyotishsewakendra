@@ -81,7 +81,7 @@ const Header = () => {
                 </svg>
 
                 <div className='flex flex-col'>
-                  <p className='font-extrabold text-[#0a122b] text-2xl'>Jyoti Sewa Kendra</p>
+                  <p className='font-extrabold text-[#0a122b] text-2xl'>Jyotish Sewa Kendra</p>
                   <span className='text-[#ff7900] font-semibold text-base'>Medini Kant Jha</span>
                 </div>
 
