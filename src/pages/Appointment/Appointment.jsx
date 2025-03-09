@@ -79,7 +79,7 @@ const Appointment = () => {
 
           <div className='flex flex-col sm:flex-row gap-2'>
 
-            <input type="text" name="dop" value={formData.dop} onChange={handleFormChange} placeholder="Birth of Place" className="w-full sm:w-1/2 px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none" />
+            <input type="text" name="dop" value={formData.dop} onChange={handleFormChange} placeholder="Place of Birth " className="w-full sm:w-1/2 px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none" />
 
             <input type='text' placeholder='Birth Time' name='birthTime' value={formData?.birthTime} onChange={handleFormChange} className='w-full sm:w-1/2 px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none' />
 
