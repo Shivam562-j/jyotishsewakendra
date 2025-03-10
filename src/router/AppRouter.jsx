@@ -10,8 +10,9 @@ const AppRouter = () => {
     <Router>
       <ScrollToTop />
       <Routes>
-        <Route path='/' element={<ComingSoon />} />
+        {/* <Route path='/' element={<ComingSoon />} /> */}
         <Route element={<Layout />} >
+          <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
           <Route path='/about-us' element={<AboutUs />} />
           <Route path='/services' element={<Services />} />
