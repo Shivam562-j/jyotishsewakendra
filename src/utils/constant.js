@@ -193,16 +193,16 @@ export const productBoxContent = [
         // image: "https://placehold.co/287x183",
         image: "https://rukminim2.flixcart.com/image/832/832/xif0q/regionalbooks/v/n/a/puja-pushpanjali-original-imagu4vugdrwzrwn.jpeg?q=70&crop=false",
         name: "Puja Pushpanjali",
-        description: "Get a detailed birth chart analysis to understand your life path.",
+        description: '"Puja Pushpanjali" includes detailed procedures for Shiv Pooja Vidhi, Kalash Poojan, Bhagwati Pujan Vidhi, Maha Mrityunjay Jap Vidhi, Lakshmi Poojan Vidhi, Rudrabhishek, Havan Vidhi, Parthiv Shiv Poojan Vidhi, Shree Suktam, Kumbh Vivah, Chhag Balidan, and Mash Bali. This sacred text presents traditional Sanatan Dharma rituals in a simple and authentic manner, enabling devotees to perform pujas correctly and attain maximum spiritual benefits.',
         buttonName: "Buy Now",
         link: "https://dl.flipkart.com/s/ATo9INuuuN"
     },
     {
         id: 1,
         image: "https://placehold.co/287x183",
-        name: "Puja Pushpanjali 2",
-        description: "Get a detailed birth chart analysis to understand your life path.",
+        name: "ShreeTantra Mishran",
+        description: "ShreeTantra Mishran is a powerful blend of 30 Ayurvedic herbs, energized through tantric rituals to eliminate negative energy. Sprinkling it into a sacred fire for 21 days purifies your home, removes evil influences, and attracts peace, prosperity, and positivity. Protect your space and restore harmony with this ancient remedy.",
         buttonName: "Buy Now",
-        link: "/"
+        link: "https://api.whatsapp.com/send?phone=+919431425134&text=Hi,%20I%20was%20looking%20at%20this%20Tantra%20Samagri.%20How%20can%20I%20buy%20it?%20Please%20guide%20me%20through%20the%20process."
     },
 ]

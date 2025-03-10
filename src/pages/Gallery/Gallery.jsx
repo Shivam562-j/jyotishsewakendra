@@ -1,6 +1,9 @@
 import React from 'react';
 import { Button, ImageContent, SectionContent } from '../../components';
 import { layoutContainer, productBoxContent } from '../../utils/constant';
+import product1Img from "../../assets/images/product1.png";
+import product2Img from "../../assets/images/product2.png";
+
 
 const Gallery = () => {
   return (
@@ -55,11 +58,9 @@ const Gallery = () => {
                 <div key={index}
                   className={`flex flex-col gap-10 py-10 ${index % 2 == 0 ? 'sm:flex-row-reverse' : 'sm:flex-row'}`}
                 >
-                  <ImageContent
-                    imgUrl1="https://placehold.co/300x208"
-                    imgUrl2={false}
-                    className='h-full'
-                  />
+                  <div className={`w-full sm:w-1/2 flex justify-center gap-5`}>
+                    <img src={index == 0 ? product1Img : product2Img} alt='image'  className={`h-[350px] w-auto`} />
+                  </div>
                   <SectionContent
                     subHeadingColor="text-[#ff7900]"
                     headingColor="text-[#182036]"
@@ -67,8 +68,8 @@ const Gallery = () => {
                     subHeading="Product ━━"
                     heading={product.name}
                     description={product.description}
-                    ctaText={product.buttonName}
-                    ctaUrl={product.link}
+                    ctaText={'Get Details'}
+                    ctaUrl={'/gallery/our-products'}
                   />
                 </div>
               )}
