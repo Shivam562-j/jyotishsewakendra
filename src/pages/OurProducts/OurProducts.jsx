@@ -13,11 +13,15 @@ const OurProducts = () => {
             <div key={index}
               className={`flex flex-col gap-10 py-10 ${index % 2 == 0 ? 'sm:flex-row-reverse' : 'sm:flex-row'}`}
             >
-              <ImageContent
-                imgUrl1="https://placehold.co/300x208"
-                imgUrl2={false}
-                className='h-full'
-              />
+              <div className={`w-full sm:w-1/2 flex justify-center gap-5 h-full`}>
+                <img src={product?.image} alt='image' className="w-full" />
+              </div>
+              <div className={`w-full sm:w-1/2' flex flex-col gap-5`}>
+                <h4 className={`text-xl font-bold text-[#ff7900]`}>Product ━━ </h4>
+                <h1 className={`text-4xl font-bold text-[#182036]`}>{product.name}</h1>
+                <p className={`text-base font-medium text-[#0a122b]`}>{product.description}</p>
+                <a className='cursor-pointer bg-[#ff7900] text-[#fff] px-[30px] py-[15px] text-base font-medium hover:scale-95 scale-100 transition-transform duration-300 ease-in-out w-fit'></a>
+              </div>
               <SectionContent
                 subHeadingColor="text-[#ff7900]"
                 headingColor="text-[#182036]"

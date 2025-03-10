@@ -46,21 +46,39 @@ const KundaliVishleshan = () => {
               subHeadingColor="text-[#ff7900]"
               headingColor="text-[#182036]"
               descriptionColor="text-[#0a122b]"
-              subHeading="Janam Kundali ━━"
-              heading='Medinikant Jha – 40+ Years of Astrological Expertise'
-              description='With expertise in Vedic astrology, horoscope analysis, and personalized guidance, Medinikant Jha helps individuals gain clarity in life, career, and relationships. His deep insights and remedies empower you to make informed decisions for a balanced and successful life.'
+              subHeading="Kundali Vishleshan ━━"
+              heading='Kundali Vishleshan – In-Depth Analysis of Your Life Path'
+              description='Kundali Vishleshan (Horoscope Analysis) is a detailed examination of your Janam Kundali (Birth Chart) to understand the deeper aspects of your life. It provides clarity on your strengths, challenges, opportunities, and the influence of planetary movements on various life events.'
               ctaText={false}
             />
           </div>
           <div className='flex flex-col sm:flex-row gap-5 justify-between w-full'>
 
-            <p className='text-base font-medium text-[#0a122b] w-full sm:w-1/2'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quos nemo ex quis, reprehenderit delectus assumenda, quia neque numquam labore eaque magni vel ipsum quaerat laborum repellat? Consequuntur accusamus maxime, tempora esse distinctio ipsum. Distinctio excepturi omnis vero mollitia ipsum officia dicta est iusto aperiam, rerum, quia, ad temporibus natus vitae maiores! Neque quidem similique consectetur vero unde itaque saepe eius ea accusantium voluptatum odio ex necessitatibus sequi tempora magni, facere atque. Odit enim ipsum vitae animi amet iure, porro nisi eos aperiam. Atque itaque quis culpa rem quisquam sed tempora neque. Molestias debitis adipisci autem similique facilis, perferendis sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia fugiat asperiores culpa autem nostrum ipsam ut eligendi, consectetur minus?
-            </p>
+            <div className='text-base font-medium text-[#0a122b] w-full sm:w-1/2 flex flex-col gap-2'>
+              <h4 className='text-[#ff7900] font-bold text-2xl'>Why is Kundali Vishleshan Important?</h4>
+              A thorough Kundali analysis helps in:
+              <div>
+                <b className='text-[#0a122b]'>✔ Understanding Life Purpose – </b>Gain deep insights into your personality, karmic patterns, and life’s purpose.
+
+              </div>
+              <div>
+                <b className='text-[#0a122b]'>✔ Career & Success Guidance –</b>  Identify the right career path and professional opportunities.
+
+              </div>
+              <div>
+                <b className='text-[#0a122b]'>✔ Marriage & Relationship Compatibility –</b>  Analyze planetary alignments for a harmonious married life.
+              </div>
+              <div>
+                <b className='text-[#0a122b]'>✔ Health & Well-being – </b> Predict potential health issues and remedies.
+              </div>
+              <div>
+                <b className='text-[#0a122b]'>✔ Planetary Remedies –  </b>Neutralize negative influences through Vedic solutions.
+              </div>
+            </div>
 
             <div className='w-full sm:w-1/2 flex flex-col gap-2'>
 
-              <h4 className='text-[#182036] font-bold text-2xl'> Quick Contact</h4>
+              <h4 className='text-[#182036] font-bold text-2xl'> Get Your Personalized Kundali Vishleshan!</h4>
               <input type='text' placeholder='Name' name='name' value={formData?.name} onChange={handleFormChange} className='w-full px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none' />
 
               <input type='email' placeholder='Email' name='email' value={formData?.email} onChange={handleFormChange} className='w-full px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none' />
@@ -73,6 +91,30 @@ const KundaliVishleshan = () => {
 
             </div>
 
+          </div>
+
+          <div className='flex flex-col gap-2 mt-5 justify-between w-full text-base font-medium text-[#0a122b]'>
+
+            <h4 className='text-[#ff7900] font-bold text-2xl'>Our Kundali Vishleshan Services</h4>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Planetary Position Analysis –</b>  Examining the placement of planets and their impact on life.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Dasha & Transit Reports –  </b>Understanding the influence of major planetary periods.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Career, Finance & Business Guidance –</b>  Insights into job, business, and financial stability.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Marriage & Relationship Compatibility – </b>  Kundali matching and guidance for a blissful relationship.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Astrological Remedies & Solutions –  </b>Gemstone recommendations, mantra chanting, yantras, and rituals for a balanced life.
+
+
+
+
+            </div>
           </div>
 
         </div>

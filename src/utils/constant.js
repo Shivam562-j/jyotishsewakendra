@@ -190,12 +190,13 @@ export const bannerData = {
 export const productBoxContent = [
     {
         id: 1,
-        image: "https://placehold.co/287x183",
+        // image: "https://placehold.co/287x183",
+        image: "https://rukminim2.flixcart.com/image/832/832/xif0q/regionalbooks/v/n/a/puja-pushpanjali-original-imagu4vugdrwzrwn.jpeg?q=70&crop=false",
         name: "Puja Pushpanjali",
         description: "Get a detailed birth chart analysis to understand your life path.",
         buttonName: "Buy Now",
-        link: "/"
-    }, 
+        link: "https://dl.flipkart.com/s/ATo9INuuuN"
+    },
     {
         id: 1,
         image: "https://placehold.co/287x183",
@@ -203,5 +204,5 @@ export const productBoxContent = [
         description: "Get a detailed birth chart analysis to understand your life path.",
         buttonName: "Buy Now",
         link: "/"
-    }, 
+    },
 ]

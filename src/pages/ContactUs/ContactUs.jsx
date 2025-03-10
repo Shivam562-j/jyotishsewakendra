@@ -5,6 +5,10 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io5";
 import { Button } from '../../components';
+import { MdEmail } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
+
 
 const ContactUs = () => {
 
@@ -82,15 +86,15 @@ const ContactUs = () => {
             <div className=' flex flex-col gap-2'>
 
               <h4 className='text-[#182036] font-bold text-2xl'>Visit Our Office</h4>
-              <p className='text-base text-[#67768e] font-medium ml-2'>Jyotish Sewa Kendra ,Pandit Medinikant Jha, Nyanagar-Dudhpura road, Samastipur, Bihar,848101
-              </p>
+              <a href="https://maps.app.goo.gl/CsUSweMhXXv4GdfJ8" target="_blank" className='text-base text-[#67768e] font-medium ml-2 flex flex-row gap-1 items-start'><FaMapMarkerAlt color='#182036' className='mt-1' />Jyotish Sewa Kendra, Pandit Medinikant Jha, Nyanagar-Dudhpura road, Samastipur, Bihar, 848101
+              </a>
             </div>
 
             <div className=' flex flex-col gap-2'>
 
               <h4 className='text-[#182036] font-bold text-2xl'>Message Us</h4>
-              <p className='text-base text-[#67768e] font-medium ml-2'> Jyotishsewakendra801@gmail.com </p>
-              <p className='text-base text-[#67768e] font-medium ml-2'> +91 99399 67984 </p>
+              <a href="mailto:jyotishsewakendra801@gmail.com" target="_blank" className='text-base text-[#67768e] font-medium ml-2 flex flex-row gap-1 items-center'><MdEmail color="#182036" /> Jyotishsewakendra801@gmail.com </a>
+              <a href="tel:+919939967984" className='text-base text-[#67768e] font-medium ml-2 flex flex-row gap-1 items-center cursor-pointer'> <FaPhoneAlt color="#182036"/> +91 99399 67984 </a>
             </div>
 
             <div className=' flex flex-col gap-2'>
