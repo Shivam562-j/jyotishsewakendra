@@ -119,25 +119,26 @@ export const testimonials = [
         id: 1,
         name: "Rahul Sharma",
         feedback: "The consultation was eye-opening! Medinikant Jha Ji provided deep insights into my career path, and his advice truly helped me make the right decisions.",
-        image: "https://placehold.co/80",
+        // image: "https://placehold.co/80",
+        image: "https://xsgames.co/randomusers/assets/avatars/male/61.jpg",
     },
     {
         id: 2,
         name: "Pooja Verma",
         feedback: "Accurate horoscope analysis! I was amazed at how precisely my life events matched the predictions. Highly recommended for anyone seeking clarity.",
-        image: "https://placehold.co/80",
+        image: "https://xsgames.co/randomusers/assets/avatars/female/32.jpg",
     },
     {
         id: 3,
         name: "Amit Khanna",
         feedback: "The remedies suggested were simple yet effective. I have seen a positive shift in my personal and professional life since following them.",
-        image: "https://placehold.co/80",
+        image: "https://xsgames.co/randomusers/assets/avatars/male/73.jpg",
     },
     {
         id: 4,
         name: "Neha Agarwal",
         feedback: "I was struggling with my relationship, and their guidance helped me bring stability and peace. A truly life-changing experience!",
-        image: "https://placehold.co/80",
+        image: "https://xsgames.co/randomusers/assets/avatars/female/60.jpg",
     },
 ];
 
