@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { ComingSoon } from '../components';
+import { ComingSoon, ScrollToTop } from '../components';
 import { AboutUs, Appointment, ChildAstrology, ContactUs, FutureAstrology, Gallery, Home, JanamKundali, KundaliVishleshan, MarriageAstrology, OurProducts, OurVideo, Services, ThankYou, VastuShastra } from '../pages';
 import Layout from '../Layout/Layout';
 import NotFound from '../components/NotFound/NotFound';
@@ -8,6 +8,7 @@ import NotFound from '../components/NotFound/NotFound';
 const AppRouter = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<ComingSoon />} />
         <Route element={<Layout />} >
