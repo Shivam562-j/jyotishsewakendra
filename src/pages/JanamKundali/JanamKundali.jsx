@@ -52,7 +52,7 @@ const JanamKundali = () => {
               ctaText={false}
             />
           </div>
-          <div className='flex flex-col sm:flex-row gap-5 justify-between w-full'>
+          <div className='flex flex-col sm:flex-row gap-5 justify-between w-full mt-10'>
 
             <div className='text-base font-medium text-[#0a122b] w-full sm:w-1/2 flex flex-col gap-2'>
               <h4 className='text-[#ff7900] font-bold text-2xl'>Why is Janam Kundali Important?</h4>

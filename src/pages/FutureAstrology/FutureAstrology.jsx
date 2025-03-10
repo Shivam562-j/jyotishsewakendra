@@ -47,16 +47,31 @@ const FutureAstrology = () => {
               headingColor="text-[#182036]"
               descriptionColor="text-[#0a122b]"
               subHeading="Future Astrology ━━"
-              heading='Medinikant Jha – 40+ Years of Astrological Expertise'
-              description='With expertise in Vedic astrology, horoscope analysis, and personalized guidance, Medinikant Jha helps individuals gain clarity in life, career, and relationships. His deep insights and remedies empower you to make informed decisions for a balanced and successful life.'
+              heading='Future Astrology – Unlock the Secrets of Your Destiny'
+              description='Future Astrology is a powerful Vedic science that helps you gain deep insights into your future based on planetary movements, birth charts, and cosmic influences. Through this, you can prepare for upcoming opportunities, overcome challenges, and make well-informed decisions for a successful life.'
               ctaText={false}
             />
           </div>
-          <div className='flex flex-col sm:flex-row gap-5 justify-between w-full'>
+          <div className='flex flex-col sm:flex-row gap-5 justify-between w-full mt-10'>
 
-            <p className='text-base font-medium text-[#0a122b] w-full sm:w-1/2'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quos nemo ex quis, reprehenderit delectus assumenda, quia neque numquam labore eaque magni vel ipsum quaerat laborum repellat? Consequuntur accusamus maxime, tempora esse distinctio ipsum. Distinctio excepturi omnis vero mollitia ipsum officia dicta est iusto aperiam, rerum, quia, ad temporibus natus vitae maiores! Neque quidem similique consectetur vero unde itaque saepe eius ea accusantium voluptatum odio ex necessitatibus sequi tempora magni, facere atque. Odit enim ipsum vitae animi amet iure, porro nisi eos aperiam. Atque itaque quis culpa rem quisquam sed tempora neque. Molestias debitis adipisci autem similique facilis, perferendis sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia fugiat asperiores culpa autem nostrum ipsam ut eligendi, consectetur minus?
-            </p>
+            <div className='text-base font-medium text-[#0a122b] w-full sm:w-1/2 flex flex-col gap-2'>
+              <h4 className='text-[#ff7900] font-bold text-2xl'>Why is Future Astrology Important?</h4>
+              <div>
+                <b className='text-[#0a122b]'>✔ Career & Finance:</b>  Get guidance on career growth, job changes, and financial stability.
+              </div>
+              <div>
+                <b className='text-[#0a122b]'>✔ Health Predictions:</b>  Understand potential health risks and remedies for a healthier life.
+              </div>
+              <div>
+                <b className='text-[#0a122b]'>✔ Marriage & Relationships:  </b>Know the ideal time for marriage and compatibility analysis.
+              </div>
+              <div>
+                <b className='text-[#0a122b]'>✔ Business Success: </b> Plan investments and business ventures with astrological insights.
+              </div>
+              <div>
+                <b className='text-[#0a122b]'>✔ Life Challenges:</b> Identify and overcome obstacles with effective astrological solutions.
+              </div>
+            </div>
 
             <div className='w-full sm:w-1/2 flex flex-col gap-2'>
 
@@ -73,6 +88,28 @@ const FutureAstrology = () => {
 
             </div>
 
+          </div>
+
+          <div className='flex flex-col gap-2 mt-5 justify-between w-full text-base font-medium text-[#0a122b]'>
+
+            <h4 className='text-[#ff7900] font-bold text-2xl'>Our Future Astrology Services</h4>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Personalized Horoscope Analysis –</b>  Detailed study of your Kundali for future predictions.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'> 🔹 Dasha & Transit Reports –  </b> Insights into planetary movements affecting your life.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Remedial Solutions – </b>  Gemstone recommendations, mantra chanting, and rituals for positive outcomes.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Yearly Forecasts –  </b> Predictions for the coming months and years.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Vastu & Muhurat Consultation –  </b>Find auspicious timings and directions for important life events.
+
+
+            </div>
           </div>
 
         </div>

@@ -47,16 +47,31 @@ const VastuShastra = () => {
               headingColor="text-[#182036]"
               descriptionColor="text-[#0a122b]"
               subHeading="Vastu Shastra ━━"
-              heading='Medinikant Jha – 40+ Years of Astrological Expertise'
-              description='With expertise in Vedic astrology, horoscope analysis, and personalized guidance, Medinikant Jha helps individuals gain clarity in life, career, and relationships. His deep insights and remedies empower you to make informed decisions for a balanced and successful life.'
+              heading='Vastu Shastra – Align Your Space for Prosperity and Harmony'
+              description='Vastu Shastra is an ancient Indian architectural science that harmonizes your home, office, and surroundings with natural energies. By following Vastu principles, you can attract positivity, prosperity, and success into your life.'
               ctaText={false}
             />
           </div>
           <div className='flex flex-col sm:flex-row gap-5 justify-between w-full'>
 
-            <p className='text-base font-medium text-[#0a122b] w-full sm:w-1/2'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quos nemo ex quis, reprehenderit delectus assumenda, quia neque numquam labore eaque magni vel ipsum quaerat laborum repellat? Consequuntur accusamus maxime, tempora esse distinctio ipsum. Distinctio excepturi omnis vero mollitia ipsum officia dicta est iusto aperiam, rerum, quia, ad temporibus natus vitae maiores! Neque quidem similique consectetur vero unde itaque saepe eius ea accusantium voluptatum odio ex necessitatibus sequi tempora magni, facere atque. Odit enim ipsum vitae animi amet iure, porro nisi eos aperiam. Atque itaque quis culpa rem quisquam sed tempora neque. Molestias debitis adipisci autem similique facilis, perferendis sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia fugiat asperiores culpa autem nostrum ipsam ut eligendi, consectetur minus?
-            </p>
+            <div className='text-base font-medium text-[#0a122b] w-full sm:w-1/2 flex flex-col gap-2'>
+              <h4 className='text-[#ff7900] font-bold text-2xl'>Why is Vastu Shastra Important?</h4>
+              <div>
+                <b className='text-[#0a122b]'>✔ Balances Natural Energies – </b>  Aligns your space with cosmic forces for a peaceful environment.
+              </div>
+              <div>
+                <b className='text-[#0a122b]'>✔ Enhances Health & Well-Being – </b>   Promotes physical and mental wellness.
+              </div>
+              <div>
+                <b className='text-[#0a122b]'>✔ Attracts Wealth & Prosperity – </b>   Ensures financial growth and stability.
+              </div>
+              <div>
+                <b className='text-[#0a122b]'>✔ Improves Relationships – </b>   Strengthens family bonds and harmony.
+              </div>
+              <div>
+                <b className='text-[#0a122b]'>✔ Boosts Career & Success – </b>   Creates opportunities for professional growth.
+              </div>
+            </div>
 
             <div className='w-full sm:w-1/2 flex flex-col gap-2'>
 
@@ -73,6 +88,26 @@ const VastuShastra = () => {
 
             </div>
 
+          </div>
+
+          <div className='flex flex-col gap-2 mt-5 justify-between w-full text-base font-medium text-[#0a122b]'>
+
+            <h4 className='text-[#ff7900] font-bold text-2xl'>Our Vastu Shastra Services:</h4>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Home Vastu Consultation –</b>  Optimize your living space for happiness and prosperity.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'> 🔹 Office & Business Vastu –   </b> Align your workplace for growth and productivity.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Industrial Vastu –  </b> Ensure stability and success in your business ventures.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Vastu for Plots & Constructions –  </b> Choose the right location and layout for long-term benefits.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹Vastu Remedies –  </b>  Effective solutions without structural changes.
+            </div>
           </div>
 
         </div>

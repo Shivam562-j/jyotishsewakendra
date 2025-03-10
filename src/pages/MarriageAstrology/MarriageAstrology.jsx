@@ -47,16 +47,31 @@ const MarriageAstrology = () => {
               headingColor="text-[#182036]"
               descriptionColor="text-[#0a122b]"
               subHeading="Marriage Astrology ━━"
-              heading='Medinikant Jha – 40+ Years of Astrological Expertise'
-              description='With expertise in Vedic astrology, horoscope analysis, and personalized guidance, Medinikant Jha helps individuals gain clarity in life, career, and relationships. His deep insights and remedies empower you to make informed decisions for a balanced and successful life.'
+              heading='Marriage Astrology – Find Your Perfect Life Partner with Astrological Guidance'
+              description='Marriage Astrology is the ancient science of analyzing planetary positions to determine compatibility, the right time for marriage, and potential challenges in a relationship. It helps you make informed decisions for a happy and prosperous married life.'
               ctaText={false}
             />
           </div>
-          <div className='flex flex-col sm:flex-row gap-5 justify-between w-full'>
+          <div className='flex flex-col sm:flex-row gap-5 justify-between w-full mt-10'>
 
-            <p className='text-base font-medium text-[#0a122b] w-full sm:w-1/2'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quos nemo ex quis, reprehenderit delectus assumenda, quia neque numquam labore eaque magni vel ipsum quaerat laborum repellat? Consequuntur accusamus maxime, tempora esse distinctio ipsum. Distinctio excepturi omnis vero mollitia ipsum officia dicta est iusto aperiam, rerum, quia, ad temporibus natus vitae maiores! Neque quidem similique consectetur vero unde itaque saepe eius ea accusantium voluptatum odio ex necessitatibus sequi tempora magni, facere atque. Odit enim ipsum vitae animi amet iure, porro nisi eos aperiam. Atque itaque quis culpa rem quisquam sed tempora neque. Molestias debitis adipisci autem similique facilis, perferendis sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia fugiat asperiores culpa autem nostrum ipsam ut eligendi, consectetur minus?
-            </p>
+            <div className='text-base font-medium text-[#0a122b] w-full sm:w-1/2 flex flex-col gap-2'>
+              <h4 className='text-[#ff7900] font-bold text-2xl'>Why is Marriage Astrology Important?</h4>
+              <div>
+                <b className='text-[#0a122b]'>✔ Ideal Marriage Timing: </b>  Discover the most auspicious time to get married.
+              </div>
+              <div>
+                <b className='text-[#0a122b]'>✔  Compatibility Analysis: </b>  Ensure a strong emotional and spiritual bond with your partner.
+              </div>
+              <div>
+                <b className='text-[#0a122b]'>✔ Love or Arranged Marriage: </b>  Understand the success and challenges of your marriage type.
+              </div>
+              <div>
+                <b className='text-[#0a122b]'>✔ Relationship Harmony: </b>   Resolve misunderstandings and strengthen marital life.
+              </div>
+              <div>
+                <b className='text-[#0a122b]'>✔ Remedies for Delays: </b>  Get effective astrological solutions if your marriage is delayed.
+              </div>
+            </div>
 
             <div className='w-full sm:w-1/2 flex flex-col gap-2'>
 
@@ -73,6 +88,27 @@ const MarriageAstrology = () => {
 
             </div>
 
+          </div>
+
+          <div className='flex flex-col gap-2 mt-5 justify-between w-full text-base font-medium text-[#0a122b]'>
+
+            <h4 className='text-[#ff7900] font-bold text-2xl'>Our Marriage Astrology Services:</h4>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Kundali Matching (Gun Milan) –</b> Matchmaking based on Vedic astrology principles.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'> 🔹 Manglik Dosha Analysis –   </b> Identify and resolve Manglik Dosha issues.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Love & Relationship Compatibility – </b>  Understand the strengths and weaknesses of your relationship.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Marriage Muhurat Consultation –   </b> Find the best wedding dates for lifelong happiness.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Post-Marriage Solutions –  </b> Remedies for marital disputes and relationship strengthening.
+
+            </div>
           </div>
 
         </div>

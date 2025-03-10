@@ -47,16 +47,23 @@ const ChildAstrology = () => {
               headingColor="text-[#182036]"
               descriptionColor="text-[#0a122b]"
               subHeading="Child Astrology ━━"
-              heading='Medinikant Jha – 40+ Years of Astrological Expertise'
-              description='With expertise in Vedic astrology, horoscope analysis, and personalized guidance, Medinikant Jha helps individuals gain clarity in life, career, and relationships. His deep insights and remedies empower you to make informed decisions for a balanced and successful life.'
+              heading='Child Astrology – Unveiling Your Child’s Future'
+              description="Child astrology (Bal Jyotish) helps parents understand their child’s personality, strengths, weaknesses, and future possibilities. By analyzing the child’s birth chart (Janam Kundali), astrologers can provide deep insights into their education, career, health, and overall well-being."
               ctaText={false}
             />
           </div>
-          <div className='flex flex-col sm:flex-row gap-5 justify-between w-full'>
+          <div className='flex flex-col sm:flex-row gap-5 justify-between w-full mt-10'>
 
-            <p className='text-base font-medium text-[#0a122b] w-full sm:w-1/2'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quos nemo ex quis, reprehenderit delectus assumenda, quia neque numquam labore eaque magni vel ipsum quaerat laborum repellat? Consequuntur accusamus maxime, tempora esse distinctio ipsum. Distinctio excepturi omnis vero mollitia ipsum officia dicta est iusto aperiam, rerum, quia, ad temporibus natus vitae maiores! Neque quidem similique consectetur vero unde itaque saepe eius ea accusantium voluptatum odio ex necessitatibus sequi tempora magni, facere atque. Odit enim ipsum vitae animi amet iure, porro nisi eos aperiam. Atque itaque quis culpa rem quisquam sed tempora neque. Molestias debitis adipisci autem similique facilis, perferendis sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia fugiat asperiores culpa autem nostrum ipsam ut eligendi, consectetur minus?
-            </p>
+            <div className='text-base font-medium text-[#0a122b] w-full sm:w-1/2 flex flex-col gap-2'>
+              <h4 className='text-[#ff7900] font-bold text-2xl'>Why is Child Astrology Important?</h4>
+              Every child is unique, and their planetary positions influence their behavior, intelligence, and success. Child astrology helps parents:
+              <div> ✔  Identify their child's natural talents and abilities. </div>
+              <div> ✔  Understand their emotional and intellectual development. </div>
+              <div> ✔  Get guidance on education and career choices. </div>
+              <div> ✔  Prevent potential challenges related to health or relationships. </div>
+              <div> ✔  Strengthen their child’s future with astrological remedies. </div>
+
+            </div>
 
             <div className='w-full sm:w-1/2 flex flex-col gap-2'>
 
@@ -73,6 +80,26 @@ const ChildAstrology = () => {
 
             </div>
 
+          </div>
+
+          <div className='flex flex-col gap-2 mt-5 justify-between w-full text-base font-medium text-[#0a122b]'>
+
+            <h4 className='text-[#ff7900] font-bold text-2xl'>Key Aspects of Child Astrology</h4>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Janam Kundali Analysis –</b>  A detailed examination of planetary positions at birth.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Education & Intelligence –   </b> Predictions about academic performance and learning abilities.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Career Guidance – </b>  Identifying the best career paths based on planetary influences.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Health & Well-being –  </b>Insights into health concerns and suitable remedies.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Behavioral Traits –  </b> Understanding temperament, strengths, and weaknesses.
+            </div>
           </div>
 
         </div>
