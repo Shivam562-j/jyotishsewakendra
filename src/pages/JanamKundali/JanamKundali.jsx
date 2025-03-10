@@ -47,20 +47,36 @@ const JanamKundali = () => {
               headingColor="text-[#182036]"
               descriptionColor="text-[#0a122b]"
               subHeading="Janam Kundali ━━"
-              heading='Medinikant Jha – 40+ Years of Astrological Expertise'
-              description='With expertise in Vedic astrology, horoscope analysis, and personalized guidance, Medinikant Jha helps individuals gain clarity in life, career, and relationships. His deep insights and remedies empower you to make informed decisions for a balanced and successful life.'
+              heading='Janam Kundali – Unlock the Secrets of Your Destiny'
+              description='Your Janam Kundali (Birth Chart) is a cosmic blueprint of your life, created based on the date, time, and place of your birth. It reveals the influence of celestial bodies on your personality, career, relationships, health, and overall destiny.'
               ctaText={false}
             />
           </div>
           <div className='flex flex-col sm:flex-row gap-5 justify-between w-full'>
 
-            <p className='text-base font-medium text-[#0a122b] w-full sm:w-1/2'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quos nemo ex quis, reprehenderit delectus assumenda, quia neque numquam labore eaque magni vel ipsum quaerat laborum repellat? Consequuntur accusamus maxime, tempora esse distinctio ipsum. Distinctio excepturi omnis vero mollitia ipsum officia dicta est iusto aperiam, rerum, quia, ad temporibus natus vitae maiores! Neque quidem similique consectetur vero unde itaque saepe eius ea accusantium voluptatum odio ex necessitatibus sequi tempora magni, facere atque. Odit enim ipsum vitae animi amet iure, porro nisi eos aperiam. Atque itaque quis culpa rem quisquam sed tempora neque. Molestias debitis adipisci autem similique facilis, perferendis sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia fugiat asperiores culpa autem nostrum ipsam ut eligendi, consectetur minus?
-            </p>
+            <div className='text-base font-medium text-[#0a122b] w-full sm:w-1/2 flex flex-col gap-2'>
+              <h4 className='text-[#ff7900] font-bold text-2xl'>Why is Janam Kundali Important?</h4>
+              A properly analyzed Kundali helps in:
+              <div>
+                <b className='text-[#0a122b]'>✔ Understanding Personality & Strengths –</b> Gain insights into your nature, strengths, and weaknesses.
+              </div>
+              <div>
+                <b className='text-[#0a122b]'>✔ Career & Financial Growth –</b> Identify the right career path and financial opportunities.
+              </div>
+              <div>
+                <b className='text-[#0a122b]'>✔ Relationship Compatibility –</b> Assess compatibility for marriage and relationships.
+              </div>
+              <div>
+                <b className='text-[#0a122b]'>✔ Health & Well-being –</b> Predict potential health concerns and remedies.
+              </div>
+              <div>
+                <b className='text-[#0a122b]'>✔ Future Predictions & Remedies –</b> Navigate life’s challenges with the help of astrological guidance and Vedic remedies.
+              </div>
+            </div>
 
             <div className='w-full sm:w-1/2 flex flex-col gap-2'>
 
-              <h4 className='text-[#182036] font-bold text-2xl'> Quick Contact</h4>
+              <h4 className='text-[#182036] font-bold text-2xl'> Get Your Janam Kundali Today!</h4>
               <input type='text' placeholder='Name' name='name' value={formData?.name} onChange={handleFormChange} className='w-full px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none' />
 
               <input type='email' placeholder='Email' name='email' value={formData?.email} onChange={handleFormChange} className='w-full px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none' />
@@ -73,6 +89,28 @@ const JanamKundali = () => {
 
             </div>
 
+          </div>
+
+          <div className='flex flex-col gap-2 mt-5 justify-between w-full text-base font-medium text-[#0a122b]'>
+
+            <h4 className='text-[#ff7900] font-bold text-2xl'>Our Janam Kundali Services</h4>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Detailed Kundali Analysis –</b>  Personalized interpretation of planetary positions and their impact.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Dasha & Transit Reports – </b> Analysis of planetary periods affecting different phases of life.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Career & Financial Guidance – </b> Choose the right career and financial decisions based on planetary influences.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Marriage & Relationship Compatibility – </b>Kundali matching for a happy and prosperous married life.
+            </div>
+            <div>
+              <b className='text-[#0a122b]'>🔹 Astrological Remedies – </b>Gemstone recommendations, mantra chanting, yantras, and Vedic rituals for positivity and success.
+
+
+            </div>
           </div>
 
         </div>
