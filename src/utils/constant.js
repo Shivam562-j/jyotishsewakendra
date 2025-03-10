@@ -56,7 +56,7 @@ export const servicesBoxContent = [
         name: "Janam Kundali",
         description: "Get a detailed birth chart analysis to understand your life path.",
         buttonName: "View Details",
-        link: "/janam-kundali"
+        link: "/services/janam-kundali"
     },
 
     {
@@ -65,7 +65,7 @@ export const servicesBoxContent = [
         name: "Kundali Vishleshan",
         description: "Analyze planetary positions and their impact on your life journey.",
         buttonName: "View Details",
-        link: "/kundali-vishleshan"
+        link: "/services/kundali-vishleshan"
     },
 
     {
@@ -74,7 +74,7 @@ export const servicesBoxContent = [
         name: "Child Astrology",
         description: "Discover your child’s potential, strengths, and future opportunities.",
         buttonName: "View Details",
-        link: "/child-astrology"
+        link: "/services/child-astrology"
     },
 
     {
@@ -83,7 +83,7 @@ export const servicesBoxContent = [
         name: "Future Astrology",
         description: " Gain insights into upcoming life events and make informed decisions.",
         buttonName: "View Details",
-        link: "/future-astrology"
+        link: "/services/future-astrology"
     },
 
     {
@@ -92,7 +92,7 @@ export const servicesBoxContent = [
         name: "Marriage Astrology",
         description: " Ensure compatibility and harmony for a successful married life.",
         buttonName: "View Details",
-        link: "/marriage-astrology"
+        link: "/services/marriage-astrology"
     },
 
     {
@@ -101,7 +101,7 @@ export const servicesBoxContent = [
         name: "Vastu Shastra",
         description: "Align your home or office with Vastu for positivity and success.",
         buttonName: "View Details",
-        link: "/vastu-shastra"
+        link: "/services/vastu-shastra"
     },
 
 ]

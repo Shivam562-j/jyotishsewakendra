@@ -26,12 +26,22 @@ const AboutUs = () => {
               descriptionColor="text-[#0a122b]"
               subHeading="About Us ━━"
               heading='Medinikant Jha – 40+ Years of Astrological Expertise'
-              description='With expertise in Vedic astrology, horoscope analysis, and personalized guidance, Medinikant Jha helps individuals gain clarity in life, career, and relationships. His deep insights and remedies empower you to make informed decisions for a balanced and successful life.'
+              description='Greetings! I am Medinikant Jha, a dedicated and experienced astrologer with over 35 years of deep knowledge and practice in the ancient science of astrology. My journey has helped me understand the profound influence of celestial forces on human life, enabling me to guide individuals towards positive transformations.'
               ctaText={false}
             />
           </div>
           <p className='text-base font-medium text-[#0a122b]'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quos nemo ex quis, reprehenderit delectus assumenda, quia neque numquam labore eaque magni vel ipsum quaerat laborum repellat? Consequuntur accusamus maxime, tempora esse distinctio ipsum. Distinctio excepturi omnis vero mollitia ipsum officia dicta est iusto aperiam, rerum, quia, ad temporibus natus vitae maiores! Neque quidem similique consectetur vero unde itaque saepe eius ea accusantium voluptatum odio ex necessitatibus sequi tempora magni, facere atque. Odit enim ipsum vitae animi amet iure, porro nisi eos aperiam. Atque itaque quis culpa rem quisquam sed tempora neque. Molestias debitis adipisci autem similique facilis, perferendis sint.
+
+            <b className='text-[#ff7900]'>Specialization:</b> I specialize in Vedic astrology, horoscope analysis, relationship guidance, career counseling, and personal development. I have developed a keen ability to identify the internal forces influencing your life and provide personalized guidance. I also recommend astrological remedies based on planetary positions and alignments, helping you achieve success and balance in various areas of life.
+            <br />
+            <br />
+            <b className='text-[#ff7900]'>Vision and Belief:</b> I believe that astrology is not just about predicting the future, but about offering deeper insights into the universal truths of life. “Astrology provides a new perspective on life, and with wisdom and effort, we can shape our destiny.” This belief shapes the way I approach my practice. I aim to help every individual become aware of their strengths and challenges, leading them towards a path of clarity, balance, and fulfillment.
+            <br />
+            <br />
+            <b className='text-[#ff7900]'>Vision:</b> My approach is holistic and personalized, ensuring that I understand the unique needs and goals of each individual. I believe that astrology is a tool not only for predicting the future but for enhancing the present and creating a more meaningful and successful life. Through astrological guidance, I empower you to make informed decisions and live a life that reflects your true potential.
+            <br />
+            <br />
+            Your life is a unique journey, and my goal is to help you understand it fully and navigate it with confidence. I am committed to guiding you towards a life filled with peace, success, and balance, so that you can realize your fullest potential and make your life truly meaningful.
           </p>
 
         </div>
