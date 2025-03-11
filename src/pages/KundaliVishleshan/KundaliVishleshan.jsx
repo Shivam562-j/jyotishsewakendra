@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { AnimatedCount, Button, ImageContent, SectionContent } from '../../components';
 import { layoutContainer, shortDetails } from '../../utils/constant';
 import bgImage from "../../assets/images/bg.png";
+import { RiWhatsappFill } from 'react-icons/ri';
+import { FaPhoneAlt } from 'react-icons/fa';
 
 const KundaliVishleshan = () => {
   const [formData, setFormData] = useState({
@@ -111,6 +113,26 @@ const KundaliVishleshan = () => {
             <div>
               <b className='text-[#0a122b]'>🔹 Astrological Remedies & Solutions –  </b>Gemstone recommendations, mantra chanting, yantras, and rituals for a balanced life.
             </div>
+          </div>
+
+          <div className='flex flex-col gap-2 mt-5 justify-between w-full text-base font-medium text-[#0a122b]'>
+
+            <h4 className='text-[#ff7900] font-bold text-2xl'>How to Get Your Kundali Analysis?</h4>
+            <b> ✔ Share your Janam Kundali or birth details. </b>
+            <b> ✔ Our astrologer will perform an in-depth analysis of planetary effects. </b>
+            <b> ✔ Receive predictions and remedies for career, marriage, health, and finance. </b>
+
+            <div className='flex flex-row gap-3 flex-wrap-reverse mt-5'>
+
+
+              <a href="tel:+919939967984" target='_blank' className='cursor-pointer bg-[#ff7900] text-[#fff] px-[30px] py-[15px] text-base font-medium hover:scale-95 scale-100 transition-transform duration-300 ease-in-out w-fit flex gap-2 flex-row items-center'> <FaPhoneAlt fontSize={14} /> Call Us</a>
+
+              <a target='_blank' href={'https://api.whatsapp.com/send?phone=+919431425134&text=Hi%20Jyotish%20Sewa%20Kendra%20from%20Website'}
+                className='bg-[#02c100] text-[#fff] px-[30px] py-[15px] text-base rounded flex flex-row gap-2 items-center cursor-pointer font-medium hover:scale-95 scale-100 transition-transform duration-300 ease-in-out w-fit'
+              > <RiWhatsappFill fontSize={24} /> Chat with Us on WhatsApp</a>
+
+            </div>
+
           </div>
 
         </div>
