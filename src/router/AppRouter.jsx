@@ -26,7 +26,7 @@ const AppRouter = () => {
           <Route path='/gallery' element={<Gallery />} />
           <Route path='/gallery/our-video' element={<OurVideo />} />
           <Route path='/gallery/our-products' element={<OurProducts />} />
-          <Route path='/gallery/news-and-publications' element={<NewsAndPublications />} />
+          {/* <Route path='/gallery/news-and-publications' element={<NewsAndPublications />} /> */}
           <Route path='/contact-us' element={<ContactUs />} />
           <Route path='/thank-you' element={<ThankYou />} />
           <Route path='*' element={<NotFound />} />

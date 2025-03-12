@@ -40,12 +40,6 @@ body {
   text-align: center;
 } */
 
-
-.swiper-wrapper {
-    display: flex !important;
-    overflow-x: hidden !important;
-}
-
 .custom-pagination .swiper-pagination-bullet {
     width: 10px;
     height: 10px;

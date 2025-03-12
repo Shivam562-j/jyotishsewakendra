@@ -2,6 +2,7 @@ import React from 'react';
 import { SectionContent, ImageContent, Button, ImageBox, AnimatedCount } from '../../components';
 import bgImage from "../../assets/images/bg.png";
 import { layoutContainer, servicesBoxContent, shortDetails } from '../../utils/constant';
+import heroImg from "../../assets/images/astrology.png"
 import WhyChooseUs from '../Components/WhyChooseUs';
 
 const Home = () => {
@@ -20,7 +21,10 @@ const Home = () => {
         <div className={`${layoutContainer} py-14 flex flex-col-reverse sm:flex-row gap-5 justify-between w-full border-[#182036] pt-24`}>
 
           <SectionContent />
-          <ImageContent />
+          <ImageContent imgUrl1={heroImg}
+            imgUrl2={false}
+            className='flex-row p-0 h-full'
+          />
 
         </div>
 

@@ -1,3 +1,9 @@
+import janamKundaliImg from "../assets/images/janam-kundali.png"
+import marriageAstrologyImg from "../assets/images/marriage-astrology.png"
+import childAstrologyImg from "../assets/images/child-astrology.png"
+import futureAstrologyImg from "../assets/images/future-astrology1.png"
+import futureAstrologyImg2 from "../assets/images/future-astrology.png"
+
 export const layoutContainer = "w-full px-3 md:container m-0 mx-auto lg:max-w-[1200px] lg:w-full";
 
 export const navItems = [
@@ -52,7 +58,8 @@ export const headerNavItems = [
 export const servicesBoxContent = [
     {
         id: 1,
-        image: "https://placehold.co/287x183",
+        // image: "https://placehold.co/287x183",
+        image: `${janamKundaliImg}`,
         name: "Janam Kundali",
         description: "Get a detailed birth chart analysis to understand your life path.",
         buttonName: "View Details",
@@ -61,7 +68,8 @@ export const servicesBoxContent = [
 
     {
         id: 2,
-        image: "https://placehold.co/287x183",
+        // image: "https://placehold.co/287x183",
+        image: `${janamKundaliImg}`,
         name: "Kundali Vishleshan",
         description: "Analyze planetary positions and their impact on your life journey.",
         buttonName: "View Details",
@@ -70,7 +78,8 @@ export const servicesBoxContent = [
 
     {
         id: 3,
-        image: "https://placehold.co/287x183",
+        // image: "https://placehold.co/287x183",
+        image: `${childAstrologyImg}`,
         name: "Child Astrology",
         description: "Discover your child’s potential, strengths, and future opportunities.",
         buttonName: "View Details",
@@ -79,7 +88,8 @@ export const servicesBoxContent = [
 
     {
         id: 4,
-        image: "https://placehold.co/287x183",
+        // image: "https://placehold.co/287x183",
+        image: `${futureAstrologyImg}`,
         name: "Future Astrology",
         description: " Gain insights into upcoming life events and make informed decisions.",
         buttonName: "View Details",
@@ -88,7 +98,8 @@ export const servicesBoxContent = [
 
     {
         id: 5,
-        image: "https://placehold.co/287x183",
+        // image: "https://placehold.co/287x183",
+        image: `${marriageAstrologyImg}`,
         name: "Marriage Astrology",
         description: " Ensure compatibility and harmony for a successful married life.",
         buttonName: "View Details",
@@ -97,7 +108,8 @@ export const servicesBoxContent = [
 
     {
         id: 6,
-        image: "https://placehold.co/287x183",
+        // image: "https://placehold.co/287x183",
+        image: `${childAstrologyImg}`,
         name: "Vastu Shastra",
         description: "Align your home or office with Vastu for positivity and success.",
         buttonName: "View Details",
@@ -132,13 +144,15 @@ export const testimonials = [
         id: 3,
         name: "Amit Khanna",
         feedback: "The remedies suggested were simple yet effective. I have seen a positive shift in my personal and professional life since following them.",
-        image: "https://xsgames.co/randomusers/assets/avatars/male/73.jpg",
+        // image: "https://xsgames.co/randomusers/assets/avatars/male/73.jpg",
+        image: "https://placehold.co/80",
     },
     {
         id: 4,
         name: "Neha Agarwal",
         feedback: "I was struggling with my relationship, and their guidance helped me bring stability and peace. A truly life-changing experience!",
-        image: "https://xsgames.co/randomusers/assets/avatars/female/60.jpg",
+        // image: "https://xsgames.co/randomusers/assets/avatars/female/60.jpg",
+        image: "https://placehold.co/80",
     },
 ];
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Lightbox from 'yet-another-react-lightbox';
-import "yet-another-react-lightbox/styles.css";
+// import Lightbox from 'yet-another-react-lightbox';
+// import "yet-another-react-lightbox/styles.css";
 
 
 const NewsAndPublications = () => {
@@ -56,7 +56,7 @@ const NewsAndPublications = () => {
                 ))}
 
                 {/* <Lightbox open={open} close={() => setOpen(false)} slides={images} index={currentIndex} /> */}
-                <Lightbox
+                {/* <Lightbox
                     open={open}
                     close={() => setOpen(false)}
                     slides={slides}
@@ -81,7 +81,7 @@ const NewsAndPublications = () => {
                             backdropFilter: "blur(10px)", // Blur effect
                         },
                     }}
-                />
+                /> */}
 
 
             </div>

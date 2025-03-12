@@ -9,10 +9,9 @@ import { layoutContainer, testimonials } from "../../utils/constant";
 
 const TestimonialSlider = () => {
 
+  const swiperRef = useRef(null);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
-  const swiperRef = useRef(null);
-
   return (
 
     <section className='w-full h-full bg-custom-footer bg-no-repeat bg-[length:100%_auto] bg-[-800px_-800px] overflow-y-hidden'>
@@ -61,7 +60,7 @@ const TestimonialSlider = () => {
                     swiper.navigation.init();
                     swiper.navigation.update();
                   }
-                }, 100); // Delay for proper initialization
+                }, 100);
               }}
             >
               {testimonials.map((testimonial) => (
