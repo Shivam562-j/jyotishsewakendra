@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
 import { layoutContainer, productBoxContent } from '../../utils/constant';
 import product1Img from "../../assets/images/product1.png";
 import product2Img from "../../assets/images/product2.png";
 
 const OurProducts = () => {
+
   return (
     <section className='w-full h-full bg-custom-footer bg-no-repeat bg-[length:100%_auto] bg-[-800px_-800px]'>
 
@@ -13,7 +14,7 @@ const OurProducts = () => {
           <div
             className={`flex flex-col gap-10 py-10 sm:flex-row-reverse`}
           >
-            <div className={`w-full sm:w-1/2 flex justify-center gap-5 h-full`}>
+            <div className={`w-full sm:w-1/2 flex justify-center gap-5 h-full overflow-hidden`}>
               <img src={product1Img} alt={productBoxContent[0].name} className="h-[450px] w-auto" />
             </div>
             <div className={`w-full sm:w-1/2' flex flex-col gap-5`}>

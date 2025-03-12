@@ -9,7 +9,7 @@ const Home = () => {
     <div>
 
       {/* hero section */}
-      <section className='relative w-full h-full mt-[110px] bg-transparent' style={{
+      <section className='relative w-full h-full mt-[154px] bg-transparent' style={{
         backgroundImage: `linear-gradient(220deg, #5846df 38%, #0a122b 0%)`,
       }}>
         <div

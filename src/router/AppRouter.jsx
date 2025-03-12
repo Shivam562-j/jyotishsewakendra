@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ComingSoon, ScrollToTop } from '../components';
-import { AboutUs, Appointment, ChildAstrology, ContactUs, FutureAstrology, Gallery, Home, JanamKundali, KundaliVishleshan, MarriageAstrology, OurProducts, OurVideo, Services, ThankYou, VastuShastra } from '../pages';
+import { AboutUs, Appointment, ChildAstrology, ContactUs, FutureAstrology, Gallery, Home, JanamKundali, KundaliVishleshan, MarriageAstrology, NewsAndPublications, OurProducts, OurVideo, Services, ThankYou, VastuShastra } from '../pages';
 import Layout from '../Layout/Layout';
 import NotFound from '../components/NotFound/NotFound';
 
@@ -26,6 +26,7 @@ const AppRouter = () => {
           <Route path='/gallery' element={<Gallery />} />
           <Route path='/gallery/our-video' element={<OurVideo />} />
           <Route path='/gallery/our-products' element={<OurProducts />} />
+          <Route path='/gallery/news-and-publications' element={<NewsAndPublications />} />
           <Route path='/contact-us' element={<ContactUs />} />
           <Route path='/thank-you' element={<ThankYou />} />
           <Route path='*' element={<NotFound />} />
