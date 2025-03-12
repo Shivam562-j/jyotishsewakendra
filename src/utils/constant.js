@@ -144,15 +144,15 @@ export const testimonials = [
         id: 3,
         name: "Amit Khanna",
         feedback: "The remedies suggested were simple yet effective. I have seen a positive shift in my personal and professional life since following them.",
-        // image: "https://xsgames.co/randomusers/assets/avatars/male/73.jpg",
-        image: "https://placehold.co/80",
+        image: "https://xsgames.co/randomusers/assets/avatars/male/73.jpg",
+        // image: "https://placehold.co/80",
     },
     {
         id: 4,
         name: "Neha Agarwal",
         feedback: "I was struggling with my relationship, and their guidance helped me bring stability and peace. A truly life-changing experience!",
-        // image: "https://xsgames.co/randomusers/assets/avatars/female/60.jpg",
-        image: "https://placehold.co/80",
+        image: "https://xsgames.co/randomusers/assets/avatars/female/60.jpg",
+        // image: "https://placehold.co/80",
     },
 ];
 

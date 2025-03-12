@@ -1,9 +1,33 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import { layoutContainer, productBoxContent } from '../../utils/constant';
 import product1Img from "../../assets/images/product1.png";
+import product11Img from "../../assets/images/product11.png";
 import product2Img from "../../assets/images/product2.png";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const OurProducts = () => {
+  const prevImgRef = useRef(null);
+  const nextImgRef = useRef(null);
+
+  React.useEffect(() => {
+    // Swiper instance ko navigation buttons assign karne ke liye
+    const timer = setTimeout(() => {
+      const swiper = document.querySelector(".swiper")?.swiper;
+      if (swiper) {
+        swiper.params.navigation.prevEl = prevImgRef.current;
+        swiper.params.navigation.nextEl = nextImgRef.current;
+        swiper.navigation.init();
+        swiper.navigation.update();
+      }
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <section className='w-full h-full bg-custom-footer bg-no-repeat bg-[length:100%_auto] bg-[-800px_-800px]'>
@@ -12,10 +36,61 @@ const OurProducts = () => {
         <div className='flex w-full flex-col items-center justify-center gap-10'>
 
           <div
-            className={`flex flex-col gap-10 py-10 sm:flex-row-reverse`}
+            className={`flex flex-col w-full h-full gap-10 py-10 sm:flex-row-reverse`}
           >
             <div className={`w-full sm:w-1/2 flex justify-center gap-5 h-full overflow-hidden`}>
-              <img src={product1Img} alt={productBoxContent[0].name} className="h-[450px] w-auto" />
+              <div className="relative w-full overflow-y-hidden">
+                <button
+                  ref={prevImgRef}
+                  className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#ff7900] text-white p-3 text-base rounded-full shadow-md hover:bg-[#e66b00] z-10"
+                >
+                  <FaArrowLeft />
+                </button>
+                <Swiper
+                  modules={[Pagination, Navigation]}
+                  // spaceBetween={20}
+                  slidesPerView={1}
+                  navigation={{
+                    prevEl: ".swiper-button-prev",
+                    nextEl: ".swiper-button-next",
+                  }}
+                  pagination={{
+                    clickable: true,
+                    el: ".custom-pagination",
+                  }}
+                  breakpoints={{
+                    640: { slidesPerView: 1 },
+                    768: { slidesPerView: 1 },
+                    1024: { slidesPerView: 1 },
+                  }}
+                  loop={true}
+                  className="w-full max-w-[90%] flex flex-row overflow-x-hidden"
+                  onSwiper={(swiper) => {
+                    setTimeout(() => {
+                      if (swiper?.params?.navigation) {
+                        swiper.params.navigation.prevEl = prevImgRef.current;
+                        swiper.params.navigation.nextEl = nextImgRef.current;
+                        swiper.navigation.init();
+                        swiper.navigation.update();
+                      }
+                    }, 100);
+                  }}
+                >
+                  <SwiperSlide className="h-auto w-full object-contain text-center flex justify-items-center overflow-x-hidden">
+                    <img src={product1Img} alt={productBoxContent[0].name} className="w-[320px] h-auto sm:h-[450px] sm:w-auto" />
+                  </SwiperSlide>
+                  <SwiperSlide className="h-auto w-full object-contain text-center flex justify-items-center overflow-x-hidden">
+                    <img src={product11Img} alt='image' className="w-[320px] h-auto sm:h-[450px] sm:w-auto" />
+                  </SwiperSlide>
+                  <div className="custom-pagination flex justify-center mt-5 space-x-2"></div>
+                </Swiper>
+                <button
+                  ref={nextImgRef}
+                  className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#ff7900] text-white p-3 text-base rounded-full shadow-md hover:bg-[#e66b00] z-10"
+                >
+                  <FaArrowRight />
+                </button>
+              </div>
             </div>
             <div className={`w-full sm:w-1/2' flex flex-col gap-5`}>
               <h4 className={`text-xl font-bold text-[#ff7900]`}>Product ━━ </h4>
