@@ -56,6 +56,36 @@ export const headerNavItems = [
     { path: "/contact-us", label: "Contact Us" },
 ];
 
+export const homeServicesBoxContent = [
+    {
+        id: 1,
+        // image: "https://placehold.co/287x183",
+        image: `${marriageAstrologyImg}`,
+        name: "Marriage Astrology",
+        description: " Ensure compatibility and harmony for a successful married life.",
+        buttonName: "View Details",
+        link: "/services/marriage-astrology"
+    },
+    {
+        id: 2,
+        // image: "https://placehold.co/287x183",
+        image: `${futureAstrologyImg}`,
+        name: "Future Astrology",
+        description: " Gain insights into upcoming life events and make informed decisions.",
+        buttonName: "View Details",
+        link: "/services/future-astrology"
+    },
+    {
+        id: 3,
+        // image: "https://placehold.co/287x183",
+        image: `${janamKundaliImg}`,
+        name: "Janam Kundali",
+        description: "Get a detailed birth chart analysis to understand your life path.",
+        buttonName: "View Details",
+        link: "/services/janam-kundali"
+    },
+]
+
 export const servicesBoxContent = [
     {
         id: 1,

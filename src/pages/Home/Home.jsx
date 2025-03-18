@@ -1,7 +1,7 @@
 import React from 'react';
 import { SectionContent, ImageContent, Button, ImageBox, AnimatedCount } from '../../components';
 import bgImage from "../../assets/images/bg.png";
-import { layoutContainer, servicesBoxContent, shortDetails } from '../../utils/constant';
+import { homeServicesBoxContent, layoutContainer, shortDetails } from '../../utils/constant';
 import heroImg from "../../assets/images/janam-kundali.png"
 import WhyChooseUs from '../Components/WhyChooseUs';
 import aboutUsImg from "../../assets/images/about-us.png"
@@ -68,7 +68,7 @@ const Home = () => {
           </div>
 
           <div className='flex w-full flex-col sm:flex-row gap-3'>
-            {servicesBoxContent?.slice(0, 3)?.map((service) =>
+            {homeServicesBoxContent?.map((service) =>
               <ImageBox
                 key={service.id}
                 image={service.image}
