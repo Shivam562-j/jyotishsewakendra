@@ -8,10 +8,9 @@ import { Button } from '../../components';
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
-
+import { useNavigate } from "react-router-dom";
 
 const ContactUs = () => {
-
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -19,7 +18,8 @@ const ContactUs = () => {
     mobileNo: "",
     service: "",
     message: ""
-  })
+  });
+  const navigate = useNavigate();
 
   const handleFormChange = (e) => {
 
@@ -36,6 +36,8 @@ const ContactUs = () => {
     e.preventDefault();
 
     console.log(formData);
+    navigate('/thank-you');
+
   };
 
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { layoutContainer } from '../../utils/constant';
 import { Button } from '../../components';
+import { useNavigate } from "react-router-dom";
 
 const Appointment = () => {
 
@@ -17,6 +18,7 @@ const Appointment = () => {
     gender: "",
     birthTime: "",
   });
+  const navigate = useNavigate();
 
   const handleFormChange = (e) => {
 
@@ -33,6 +35,7 @@ const Appointment = () => {
     e.preventDefault();
 
     console.log(formData);
+    navigate('/thank-you');
   };
 
   return (

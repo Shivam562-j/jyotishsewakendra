@@ -4,6 +4,7 @@ import { layoutContainer, shortDetails } from '../../utils/constant';
 import bgImage from "../../assets/images/bg.png";
 import { FaPhoneAlt } from 'react-icons/fa';
 import { RiWhatsappFill } from 'react-icons/ri';
+import { useNavigate } from 'react-router-dom';
 
 const FutureAstrology = () => {
   const [formData, setFormData] = useState({
@@ -11,7 +12,9 @@ const FutureAstrology = () => {
     email: "",
     mobileNo: "",
     message: ""
-  })
+  });
+  const navigate = useNavigate();
+
 
   const handleFormChange = (e) => {
 
@@ -28,6 +31,7 @@ const FutureAstrology = () => {
     e.preventDefault();
 
     console.log(formData);
+    navigate('/thank-you');
   };
 
   return (

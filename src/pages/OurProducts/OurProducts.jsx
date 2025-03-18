@@ -30,7 +30,7 @@ const OurProducts = () => {
   }, []);
 
   return (
-    <section className='w-full h-full bg-custom-footer bg-no-repeat bg-[length:100%_auto] bg-[-800px_-800px]'>
+    <section className='w-full h-full bg-custom-footer bg-no-repeat bg-[length:100%_auto] bg-[-800px_-800px] overflow-x-hidden'>
 
       <div className={`${layoutContainer} py-14 flex flex-col gap-8 justify-between w-full border-[#182036] pt-24`}>
         <div className='flex w-full flex-col items-center justify-center gap-10'>

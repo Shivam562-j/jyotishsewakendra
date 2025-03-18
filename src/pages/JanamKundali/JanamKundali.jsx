@@ -4,6 +4,8 @@ import { layoutContainer, shortDetails } from '../../utils/constant';
 import bgImage from "../../assets/images/bg.png";
 import { RiWhatsappFill } from 'react-icons/ri';
 import { FaPhoneAlt } from 'react-icons/fa';
+import { useNavigate } from "react-router-dom";
+
 
 const JanamKundali = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +14,8 @@ const JanamKundali = () => {
     mobileNo: "",
     message: ""
   })
+  const navigate = useNavigate();
+
 
   const handleFormChange = (e) => {
 
@@ -28,6 +32,7 @@ const JanamKundali = () => {
     e.preventDefault();
 
     console.log(formData);
+    navigate('/thank-you');
   };
 
   return (
