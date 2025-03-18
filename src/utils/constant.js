@@ -2,7 +2,8 @@ import janamKundaliImg from "../assets/images/janam-kundali.png"
 import marriageAstrologyImg from "../assets/images/marriage-astrology.png"
 import childAstrologyImg from "../assets/images/child-astrology.png"
 import futureAstrologyImg from "../assets/images/future-astrology1.png"
-import futureAstrologyImg2 from "../assets/images/future-astrology.png"
+import kundaliVishleshanImg from "../assets/images/kundali-vishleshan.png"
+import vastuShastraImg from "../assets/images/vastu-shastra.png"
 
 export const layoutContainer = "w-full px-3 md:container m-0 mx-auto lg:max-w-[1200px] lg:w-full";
 
@@ -69,7 +70,7 @@ export const servicesBoxContent = [
     {
         id: 2,
         // image: "https://placehold.co/287x183",
-        image: `${janamKundaliImg}`,
+        image: `${kundaliVishleshanImg}`,
         name: "Kundali Vishleshan",
         description: "Analyze planetary positions and their impact on your life journey.",
         buttonName: "View Details",
@@ -109,7 +110,7 @@ export const servicesBoxContent = [
     {
         id: 6,
         // image: "https://placehold.co/287x183",
-        image: `${childAstrologyImg}`,
+        image: `${vastuShastraImg}`,
         name: "Vastu Shastra",
         description: "Align your home or office with Vastu for positivity and success.",
         buttonName: "View Details",

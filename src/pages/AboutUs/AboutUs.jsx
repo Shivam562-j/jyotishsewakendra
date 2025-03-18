@@ -4,6 +4,8 @@ import { layoutContainer, shortDetails } from '../../utils/constant';
 import { AnimatedCount, ImageContent, SectionContent } from '../../components';
 import bgImage from "../../assets/images/bg.png";
 import WhyChooseUs from '../Components/WhyChooseUs';
+import aboutUsImg from "../../assets/images/about-us.png"
+
 
 const AboutUs = () => {
   return (
@@ -16,9 +18,10 @@ const AboutUs = () => {
           <div className='flex flex-col sm:flex-row gap-5 justify-between w-full'>
 
             <ImageContent
-              imgUrl1="https://placehold.co/263x208"
+              imgUrl1={aboutUsImg}
               imgUrl2={false}
               className='flex-row p-0 h-full'
+              isAboutImg={true}
             />
             <SectionContent
               subHeadingColor="text-[#ff7900]"

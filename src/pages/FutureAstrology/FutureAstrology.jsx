@@ -5,6 +5,7 @@ import bgImage from "../../assets/images/bg.png";
 import { FaPhoneAlt } from 'react-icons/fa';
 import { RiWhatsappFill } from 'react-icons/ri';
 import { useNavigate } from 'react-router-dom';
+import futureAstrologyImg from "../../assets/images/future-astrology1.png"
 
 const FutureAstrology = () => {
   const [formData, setFormData] = useState({
@@ -44,8 +45,8 @@ const FutureAstrology = () => {
           <div className='flex flex-col sm:flex-row gap-5 justify-between w-full'>
 
             <ImageContent
-              imgUrl1="https://placehold.co/40x208"
-              imgUrl2="https://placehold.co/263x208"
+              imgUrl1={futureAstrologyImg}
+              imgUrl2={false}
               className='flex-row p-0 h-full'
             />
             <SectionContent

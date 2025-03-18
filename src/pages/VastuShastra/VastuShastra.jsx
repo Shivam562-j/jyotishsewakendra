@@ -5,6 +5,7 @@ import bgImage from "../../assets/images/bg.png";
 import { FaPhoneAlt } from 'react-icons/fa';
 import { RiWhatsappFill } from 'react-icons/ri';
 import { useNavigate } from 'react-router-dom';
+import vastuShastraImg from "../../assets/images/vastu-shastra.png"
 
 const VastuShastra = () => {
   const [formData, setFormData] = useState({
@@ -44,8 +45,8 @@ const VastuShastra = () => {
           <div className='flex flex-col sm:flex-row gap-5 justify-between w-full'>
 
             <ImageContent
-              imgUrl1="https://placehold.co/40x208"
-              imgUrl2="https://placehold.co/263x208"
+              imgUrl1={vastuShastraImg}
+              imgUrl2={false}
               className='flex-row p-0 h-full'
             />
             <SectionContent
