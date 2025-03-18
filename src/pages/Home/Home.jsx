@@ -2,7 +2,7 @@ import React from 'react';
 import { SectionContent, ImageContent, Button, ImageBox, AnimatedCount } from '../../components';
 import bgImage from "../../assets/images/bg.png";
 import { layoutContainer, servicesBoxContent, shortDetails } from '../../utils/constant';
-import heroImg from "../../assets/images/astrology.png"
+import heroImg from "../../assets/images/janam-kundali.png"
 import WhyChooseUs from '../Components/WhyChooseUs';
 import aboutUsImg from "../../assets/images/about-us.png"
 
