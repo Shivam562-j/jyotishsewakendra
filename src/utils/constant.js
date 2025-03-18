@@ -1,3 +1,9 @@
+import janamKundaliImg from "../assets/images/janam-kundali.png"
+import marriageAstrologyImg from "../assets/images/marriage-astrology.png"
+import childAstrologyImg from "../assets/images/child-astrology.png"
+import futureAstrologyImg from "../assets/images/future-astrology1.png"
+import futureAstrologyImg2 from "../assets/images/future-astrology.png"
+
 export const layoutContainer = "w-full px-3 md:container m-0 mx-auto lg:max-w-[1200px] lg:w-full";
 
 export const navItems = [
@@ -52,56 +58,62 @@ export const headerNavItems = [
 export const servicesBoxContent = [
     {
         id: 1,
-        image: "https://placehold.co/287x183",
+        // image: "https://placehold.co/287x183",
+        image: `${janamKundaliImg}`,
         name: "Janam Kundali",
         description: "Get a detailed birth chart analysis to understand your life path.",
         buttonName: "View Details",
-        link: "/janam-kundali"
+        link: "/services/janam-kundali"
     },
 
     {
         id: 2,
-        image: "https://placehold.co/287x183",
+        // image: "https://placehold.co/287x183",
+        image: `${janamKundaliImg}`,
         name: "Kundali Vishleshan",
         description: "Analyze planetary positions and their impact on your life journey.",
         buttonName: "View Details",
-        link: "/kundali-vishleshan"
+        link: "/services/kundali-vishleshan"
     },
 
     {
         id: 3,
-        image: "https://placehold.co/287x183",
+        // image: "https://placehold.co/287x183",
+        image: `${childAstrologyImg}`,
         name: "Child Astrology",
         description: "Discover your child’s potential, strengths, and future opportunities.",
         buttonName: "View Details",
-        link: "/child-astrology"
+        link: "/services/child-astrology"
     },
 
     {
         id: 4,
-        image: "https://placehold.co/287x183",
+        // image: "https://placehold.co/287x183",
+        image: `${futureAstrologyImg}`,
         name: "Future Astrology",
         description: " Gain insights into upcoming life events and make informed decisions.",
         buttonName: "View Details",
-        link: "/future-astrology"
+        link: "/services/future-astrology"
     },
 
     {
         id: 5,
-        image: "https://placehold.co/287x183",
+        // image: "https://placehold.co/287x183",
+        image: `${marriageAstrologyImg}`,
         name: "Marriage Astrology",
         description: " Ensure compatibility and harmony for a successful married life.",
         buttonName: "View Details",
-        link: "/marriage-astrology"
+        link: "/services/marriage-astrology"
     },
 
     {
         id: 6,
-        image: "https://placehold.co/287x183",
+        // image: "https://placehold.co/287x183",
+        image: `${childAstrologyImg}`,
         name: "Vastu Shastra",
         description: "Align your home or office with Vastu for positivity and success.",
         buttonName: "View Details",
-        link: "/vastu-shastra"
+        link: "/services/vastu-shastra"
     },
 
 ]
@@ -119,25 +131,28 @@ export const testimonials = [
         id: 1,
         name: "Rahul Sharma",
         feedback: "The consultation was eye-opening! Medinikant Jha Ji provided deep insights into my career path, and his advice truly helped me make the right decisions.",
-        image: "https://placehold.co/80",
+        // image: "https://placehold.co/80",
+        image: "https://xsgames.co/randomusers/assets/avatars/male/61.jpg",
     },
     {
         id: 2,
         name: "Pooja Verma",
         feedback: "Accurate horoscope analysis! I was amazed at how precisely my life events matched the predictions. Highly recommended for anyone seeking clarity.",
-        image: "https://placehold.co/80",
+        image: "https://xsgames.co/randomusers/assets/avatars/female/32.jpg",
     },
     {
         id: 3,
         name: "Amit Khanna",
         feedback: "The remedies suggested were simple yet effective. I have seen a positive shift in my personal and professional life since following them.",
-        image: "https://placehold.co/80",
+        image: "https://xsgames.co/randomusers/assets/avatars/male/73.jpg",
+        // image: "https://placehold.co/80",
     },
     {
         id: 4,
         name: "Neha Agarwal",
         feedback: "I was struggling with my relationship, and their guidance helped me bring stability and peace. A truly life-changing experience!",
-        image: "https://placehold.co/80",
+        image: "https://xsgames.co/randomusers/assets/avatars/female/60.jpg",
+        // image: "https://placehold.co/80",
     },
 ];
 
@@ -190,18 +205,19 @@ export const bannerData = {
 export const productBoxContent = [
     {
         id: 1,
-        image: "https://placehold.co/287x183",
+        // image: "https://placehold.co/287x183",
+        image: "https://rukminim2.flixcart.com/image/832/832/xif0q/regionalbooks/v/n/a/puja-pushpanjali-original-imagu4vugdrwzrwn.jpeg?q=70&crop=false",
         name: "Puja Pushpanjali",
-        description: "Get a detailed birth chart analysis to understand your life path.",
+        description: '"Puja Pushpanjali" includes detailed procedures for Shiv Pooja Vidhi, Kalash Poojan, Bhagwati Pujan Vidhi, Maha Mrityunjay Jap Vidhi, Lakshmi Poojan Vidhi, Rudrabhishek, Havan Vidhi, Parthiv Shiv Poojan Vidhi, Shree Suktam, Kumbh Vivah, Chhag Balidan, and Mash Bali. This sacred text presents traditional Sanatan Dharma rituals in a simple and authentic manner, enabling devotees to perform pujas correctly and attain maximum spiritual benefits.',
         buttonName: "Buy Now",
-        link: "/"
-    }, 
+        link: "https://dl.flipkart.com/s/ATo9INuuuN"
+    },
     {
         id: 1,
         image: "https://placehold.co/287x183",
-        name: "Puja Pushpanjali 2",
-        description: "Get a detailed birth chart analysis to understand your life path.",
+        name: "ShreeTantra Mishran",
+        description: "ShreeTantra Mishran is a powerful blend of 30 Ayurvedic herbs, energized through tantric rituals to eliminate negative energy. Sprinkling it into a sacred fire for 21 days purifies your home, removes evil influences, and attracts peace, prosperity, and positivity. Protect your space and restore harmony with this ancient remedy.",
         buttonName: "Buy Now",
-        link: "/"
-    }, 
+        link: "https://api.whatsapp.com/send?phone=+919431425134&text=Hi,%20I%20was%20looking%20at%20this%20Tantra%20Samagri.%20How%20can%20I%20buy%20it?%20Please%20guide%20me%20through%20the%20process."
+    },
 ]

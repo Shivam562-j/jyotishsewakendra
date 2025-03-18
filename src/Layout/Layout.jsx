@@ -8,16 +8,19 @@ import Cta from '../pages/Components/Cta';
 
 const Layout = () => {
   const location = useLocation();
+  const isShowReviewAndCta = ['/home', '/about-us', '/services', "/services/janam-kundali", "/services/kundali-vishleshan", "/services/child-astrology", "/services/future-astrology", "/services/marriage-astrology", "/services/vastu-shastra", '/gallery', '/gallery/our-video', '/gallery/our-products'];
+
+  const isShowBanner = ['/about-us', '/services', "/services/janam-kundali", "/services/kundali-vishleshan", "/services/child-astrology", "/services/future-astrology", "/services/marriage-astrology", "/services/vastu-shastra", '/gallery', '/gallery/our-video', '/gallery/our-products', '/appointment', '/contact-us', '/thank-you'];
 
   return (
     <>
       <Header />
-      {(location.pathname !== "/" || location.pathname !== "/home") && bannerData[location.pathname] && (
+      {isShowBanner?.includes(location?.pathname) && bannerData[location.pathname] && (
         <Banner {...bannerData[location.pathname]} />
       )}
       <Outlet />
 
-      {location.pathname !== "/" &&
+      {isShowReviewAndCta?.includes(location?.pathname) &&
         <>
           <TestimonialSlider />
           <Cta />

@@ -4,6 +4,8 @@ import bgImage from "../../assets/images/bg.png";
 import { Button } from '../../components';
 import { RxDashboard } from "react-icons/rx";
 import { useNavigate } from 'react-router-dom';
+import { MdHomeFilled } from "react-icons/md";
+
 
 const Banner = ({
     heading = "About Us",
@@ -33,7 +35,7 @@ const Banner = ({
                         onClick={() => navigate(`${isSubBannerLink}`) }
                         className=' text-[#fff] px-[20px] py-[14px] text-base rounded flex flex-row gap-2 items-center border border-[#ff7900] transition hover:bg-[#ff7900] hover:text-[#fff] cursor-pointer z-10'
                     >
-
+                        {/* <MdHomeFilled size={24} /> */}
                         <RxDashboard size={20} />
                     </button>}
 

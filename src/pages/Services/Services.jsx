@@ -14,7 +14,8 @@ const Services = () => {
               className={`flex flex-row gap-10 py-10 ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}
             >
               <ImageContent
-                imgUrl1="https://placehold.co/300x208"
+                // imgUrl1="https://placehold.co/300x208"
+                imgUrl1={service?.image}
                 imgUrl2={false}
                 className='h-full'
               />

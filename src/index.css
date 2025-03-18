@@ -5,7 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*::selection{
+*::selection {
     background-color: #ffcd57;
     color: #0d1128 !important;
 }
@@ -28,7 +28,7 @@ html::-webkit-scrollbar-thumb {
     -o-border-radius: 2rem;
 }
 
-body{
+body {
     font-family: "Inter", serif;
 }
 
@@ -40,15 +40,15 @@ body{
   text-align: center;
 } */
 
-
 .custom-pagination .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
-    background: #ff7900; /* Custom color */
+    background: #ff7900;
     opacity: 0.5;
     transition: all 0.3s ease;
-  }
-  
+    cursor: pointer;
+}
+
 .custom-pagination .swiper-pagination-bullet-active {
     opacity: 1;
     transform: scale(1.2);
