@@ -10,6 +10,7 @@ import { IoLogoYoutube } from "react-icons/io5";
 import { IoIosArrowForward } from "react-icons/io";
 import { headerNavItems, layoutContainer } from "../../utils/constant";
 import logo from "../../assets/images/logo.png"
+import Img from "../LazyLoadImage/Img";
 // import logo from "../../assets/images/logo1.png"
 
 const Header = () => {
@@ -79,7 +80,7 @@ const Header = () => {
           <div className="container mx-auto flex justify-between items-center">
             <NavLink className="text-2xl font-bold text-[#ff7900]" to={'/'} onClick={scrollToTop}>
 
-                <img  src={logo} alt='logo' className='block w-auto h-[75px]' />
+                <Img  src={logo} alt='logo' className='block w-auto h-[75px]' />
             </NavLink>
 
             <nav className="hidden md:flex space-x-4">

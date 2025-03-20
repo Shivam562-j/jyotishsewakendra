@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Img } from '../../components';
 // import Lightbox from 'yet-another-react-lightbox';
 // import "yet-another-react-lightbox/styles.css";
 
@@ -46,7 +47,7 @@ const NewsAndPublications = () => {
         <div className='mt-[154px]'>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {images.map((image, index) => (
-                    <img
+                    <Img
                         key={index}
                         src={image.src}
                         alt={`News ${index + 1}`}

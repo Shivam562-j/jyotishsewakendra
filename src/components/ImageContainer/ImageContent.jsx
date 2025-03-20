@@ -1,4 +1,5 @@
 import React from 'react'
+import Img from '../LazyLoadImage/Img';
 
 const ImageContent = ({
         imgUrl1="https://placehold.co/406x203", 
@@ -9,8 +10,8 @@ const ImageContent = ({
     return (
         <div className={`w-full sm:w-1/2 flex justify-center gap-5 ${className}`}>
 
-            <img src={imgUrl1} alt='image' className={`${ isAboutImg ? 'h-[350px] w-auto' : !imgUrl2 ? 'w-full' : ""}`} />
-            {imgUrl2 && <img src={imgUrl2} alt='image' />}
+            <Img src={imgUrl1} alt='image' className={`${ isAboutImg ? 'h-[350px] w-auto' : !imgUrl2 ? 'w-full' : ""}`} />
+            {imgUrl2 && <Img src={imgUrl2} alt='image' />}
 
         </div>
     )

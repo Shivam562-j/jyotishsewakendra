@@ -5,6 +5,7 @@ import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import Img from '../../components/LazyLoadImage/Img';
 
 const ProductSlider = ({img1, img2, img1Alt="", img2Alt=""}) => {
    
@@ -67,10 +68,10 @@ const ProductSlider = ({img1, img2, img1Alt="", img2Alt=""}) => {
                 }}
             >
                 <SwiperSlide className="h-auto w-full object-contain text-center flex justify-items-center overflow-x-hidden">
-                    <img src={img1} alt={img1Alt} className="w-[320px] h-auto sm:h-[450px] sm:w-auto" />
+                    <Img src={img1} alt={img1Alt} className="w-[320px] h-auto sm:h-[450px] sm:w-auto" />
                 </SwiperSlide>
                 <SwiperSlide className="h-auto w-full object-contain text-center flex justify-items-center overflow-x-hidden">
-                    <img src={img2} alt={img1Alt} className="w-[320px] h-auto sm:h-[450px] sm:w-auto" />
+                    <Img src={img2} alt={img1Alt} className="w-[320px] h-auto sm:h-[450px] sm:w-auto" />
                 </SwiperSlide>
                 <div className={`custom-pagination custom-pagination-${uniqueId} flex justify-center mt-5 space-x-2`}></div>
             </Swiper>

@@ -7,6 +7,7 @@ import { IoLogoYoutube } from "react-icons/io5";
 import { NavLink } from 'react-router-dom';
 import { FaAngleRight } from "react-icons/fa6";
 import logo from "../../assets/images/logo.png"
+import Img from '../LazyLoadImage/Img';
 
 const Footer = () => {
 
@@ -24,7 +25,7 @@ const Footer = () => {
 
                 <div className='w-full sm:w-full md:w-1/4 flex flex-col gap-2 pb-[30px] justify-center sm:justify-start pr-0 sm:pr-2'>
                     <NavLink className="text-2xl font-bold text-[#ff7900]" to={'/'} onClick={scrollToTop}>
-                        <img src={logo} alt='logo' className='block w-auto h-[85px] object-cover text-center sm:text-left' />
+                        <Img src={logo} alt='logo' className='block w-auto h-[85px] object-cover text-center sm:text-left' />
                     </NavLink>
 
                     {/* <NavLink className="text-2xl font-bold text-[#ff7900]" to={'/'} onClick={scrollToTop}>

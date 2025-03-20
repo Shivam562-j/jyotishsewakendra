@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { layoutContainer, testimonials } from "../../utils/constant";
+import Img from "../../components/LazyLoadImage/Img";
 
 const TestimonialSlider = () => {
 
@@ -66,7 +67,7 @@ const TestimonialSlider = () => {
               {testimonials.map((testimonial) => (
                 <SwiperSlide key={testimonial.id}>
                   <div className="bg-white border border-gray-200 px-4 py-7 shadow-md rounded-lg text-center">
-                    <img
+                    <Img
                       src={testimonial?.image}
                       alt={testimonial?.name}
                       className="w-16 h-16 mx-auto rounded-full mb-3"
