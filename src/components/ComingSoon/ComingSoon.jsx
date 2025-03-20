@@ -9,11 +9,11 @@ const ComingSoon = () => {
       <div className="relative  flex flex-col items-center justify-center px-4 w-full">
 
         {/* Background Image */}
-        <img
+        {/* <img
           src={bgImg}
           alt="bg"
           className="absolute w-auto h-[200px] sm:h-[350px] md:h-[450px] lg:h-[550px] object-cover"
-        />
+        /> */}
 
         {/* Spinning Loader */}
         <img
@@ -24,9 +24,9 @@ const ComingSoon = () => {
 
       </div>
 
-      <div className="relative w-fit font-semibold text-[30px] sm:text-[45px] md:text-[55px] lg:text-[65px] animate-typing overflow-hidden whitespace-nowrap border-r-4 border-white text-white text-center ">
+      {/* <div className="relative w-fit font-semibold text-[30px] sm:text-[45px] md:text-[55px] lg:text-[65px] animate-typing overflow-hidden whitespace-nowrap border-r-4 border-white text-white text-center ">
         Coming Soon...
-      </div>
+      </div> */}
     </div>
   )
 }

@@ -8,7 +8,9 @@ import Cta from '../pages/Components/Cta';
 
 const Layout = () => {
   const location = useLocation();
-  const isShowReviewAndCta = ['/home', '/about-us', '/services', "/services/janam-kundali", "/services/kundali-vishleshan", "/services/child-astrology", "/services/future-astrology", "/services/marriage-astrology", "/services/vastu-shastra", '/gallery', '/gallery/our-video', '/gallery/our-products'];
+  const isShowReview = ['/home', '/about-us', '/services', '/gallery', '/gallery/our-video', '/gallery/our-products'];
+
+  const isShowCta = ['/home', '/about-us', '/services', "/services/janam-kundali", "/services/kundali-vishleshan", "/services/child-astrology", "/services/future-astrology", "/services/marriage-astrology", "/services/vastu-shastra", '/gallery', '/gallery/our-video', '/gallery/our-products'];
 
   const isShowBanner = ['/about-us', '/services', "/services/janam-kundali", "/services/kundali-vishleshan", "/services/child-astrology", "/services/future-astrology", "/services/marriage-astrology", "/services/vastu-shastra", '/gallery', '/gallery/our-video', '/gallery/our-products', '/appointment', '/contact-us', '/thank-you'];
 
@@ -20,12 +22,10 @@ const Layout = () => {
       )}
       <Outlet />
 
-      {isShowReviewAndCta?.includes(location?.pathname) &&
-        <>
-          <TestimonialSlider />
-          <Cta />
-        </>
-      }
+      {isShowReview?.includes(location?.pathname) && <TestimonialSlider /> }
+
+      {isShowCta?.includes(location?.pathname) && <Cta /> }
+      
       <Footer />
     </>
   )

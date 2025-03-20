@@ -5,8 +5,10 @@ import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import ImageBox from "./ImageBox/ImageBox";
 import ImageContent from "./ImageContainer/ImageContent";
+import Img from "./LazyLoadImage/Img";
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
 import SectionContent from "./SectionContent/SectionContent";
+
 export {
     ComingSoon,
     Header,
@@ -16,5 +18,6 @@ export {
     SectionContent,
     ImageBox,
     AnimatedCount,
-    ScrollToTop
+    ScrollToTop,
+    Img
 };

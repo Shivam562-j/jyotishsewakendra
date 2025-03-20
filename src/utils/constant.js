@@ -1,9 +1,9 @@
-import janamKundaliImg from "../assets/images/janam-kundali.png"
-import marriageAstrologyImg from "../assets/images/marriage-astrology.png"
-import childAstrologyImg from "../assets/images/child-astrology.png"
-import futureAstrologyImg from "../assets/images/future-astrology1.png"
-import kundaliVishleshanImg from "../assets/images/kundali-vishleshan.png"
-import vastuShastraImg from "../assets/images/vastu-shastra.png"
+import janamKundaliImg from "../assets/images/janam-kundali.webp"
+import marriageAstrologyImg from "../assets/images/marriage-astrology.webp"
+import childAstrologyImg from "../assets/images/child-astrology.webp"
+import futureAstrologyImg from "../assets/images/future-astrology1.webp"
+import kundaliVishleshanImg from "../assets/images/kundali-vishleshan.webp"
+import vastuShastraImg from "../assets/images/vastu-shastra.webp"
 
 export const layoutContainer = "w-full px-3 md:container m-0 mx-auto lg:max-w-[1200px] lg:w-full";
 

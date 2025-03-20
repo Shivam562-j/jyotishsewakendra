@@ -1,8 +1,8 @@
 import React from 'react';
-import { Button, ImageContent, SectionContent } from '../../components';
+import { Button, ImageContent, Img, SectionContent } from '../../components';
 import { layoutContainer, productBoxContent } from '../../utils/constant';
-import product1Img from "../../assets/images/product1.png";
-import product2Img from "../../assets/images/product2.png";
+import product1Img from "../../assets/images/product1.webp";
+import product2Img from "../../assets/images/product2.webp";
 
 
 const Gallery = () => {
@@ -59,7 +59,7 @@ const Gallery = () => {
                   className={`flex flex-col gap-10 py-10 ${index % 2 == 0 ? 'sm:flex-row-reverse' : 'sm:flex-row'}`}
                 >
                   <div className={`w-full sm:w-1/2 flex justify-center gap-5`}>
-                    <img src={index == 0 ? product1Img : product2Img} alt='image'  className={`h-[350px] w-auto`} />
+                    <Img src={index == 0 ? product1Img : product2Img} alt='image'  className={`h-[350px] w-auto`} />
                   </div>
                   <SectionContent
                     subHeadingColor="text-[#ff7900]"
