@@ -18,7 +18,8 @@ const OurProducts = () => {
             className={`flex flex-col w-full h-full gap-10 py-10 sm:flex-row-reverse`}
           >
             <div className={`w-full sm:w-1/2 flex justify-center gap-5 h-full overflow-hidden`}>
-              <ProductSlider img1={product1Img} img2={product11Img} img1Alt={productBoxContent[0].name} img2Alt={productBoxContent[0].name} />
+              {/* <ProductSlider img1={product1Img} img2={product11Img} img1Alt={productBoxContent[0].name} img2Alt={productBoxContent[0].name} /> */}
+              <ProductSlider img1={product1Img} img2={'https://rukminim2.flixcart.com/image/832/832/xif0q/regionalbooks/g/o/z/puja-pushpanjali-original-imagu4vurjjeecgs.jpeg?q=70&crop=false'} img1Alt={productBoxContent[0].name} img2Alt={productBoxContent[0].name} />
             </div>
             <div className={`w-full sm:w-1/2' flex flex-col gap-5`}>
               <h4 className={`text-xl font-bold text-[#ff7900]`}>Product ━━ </h4>

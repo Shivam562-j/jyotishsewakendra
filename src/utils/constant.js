@@ -1,9 +1,10 @@
-import janamKundaliImg from "../assets/images/janam-kundali.webp"
-import marriageAstrologyImg from "../assets/images/marriage-astrology.webp"
-import childAstrologyImg from "../assets/images/child-astrology.webp"
-import futureAstrologyImg from "../assets/images/future-astrology1.webp"
-import kundaliVishleshanImg from "../assets/images/kundali-vishleshan.webp"
-import vastuShastraImg from "../assets/images/vastu-shastra.webp"
+import janamKundaliImg from "../assets/images/janam-kundali.webp";
+import marriageAstrologyImg from "../assets/images/marriage-astrology.webp";
+import childAstrologyImg from "../assets/images/child-astrology.webp";
+import futureAstrologyImg from "../assets/images/future-astrology1.webp";
+import kundaliVishleshanImg from "../assets/images/kundali-vishleshan.webp";
+import vastuShastraImg from "../assets/images/vastu-shastra.webp";
+import kishoreReview from "../assets/images/kishore-review.webp";
 
 export const layoutContainer = "w-full px-3 md:container m-0 mx-auto lg:max-w-[1200px] lg:w-full";
 
@@ -60,20 +61,20 @@ export const homeServicesBoxContent = [
     {
         id: 1,
         // image: "https://placehold.co/287x183",
-        image: `${marriageAstrologyImg}`,
-        name: "Marriage Astrology",
-        description: " Ensure compatibility and harmony for a successful married life.",
-        buttonName: "View Details",
-        link: "/services/marriage-astrology"
-    },
-    {
-        id: 2,
-        // image: "https://placehold.co/287x183",
         image: `${futureAstrologyImg}`,
         name: "Future Astrology",
         description: " Gain insights into upcoming life events and make informed decisions.",
         buttonName: "View Details",
         link: "/services/future-astrology"
+    },
+    {
+        id: 2,
+        // image: "https://placehold.co/287x183",
+        image: `${marriageAstrologyImg}`,
+        name: "Marriage Astrology",
+        description: " Ensure compatibility and harmony for a successful married life.",
+        buttonName: "View Details",
+        link: "/services/marriage-astrology"
     },
     {
         id: 3,
@@ -168,18 +169,26 @@ export const testimonials = [
     {
         id: 2,
         name: "Pooja Verma",
-        feedback: "Accurate horoscope analysis! I was amazed at how precisely my life events matched the predictions. Highly recommended for anyone seeking clarity.",
-        image: "https://xsgames.co/randomusers/assets/avatars/female/32.jpg",
+        feedback: "Amazing experience! The astrologer’s predictions were incredibly accurate, and their advice was both practical and helpful. They take the time to listen and provide clear explanations. Definitely recommend!",
+        // image: "https://xsgames.co/randomusers/assets/avatars/female/32.jpg",
+        image: "https://lh3.googleusercontent.com/a-/ALV-UjWxfSHBmTw94SkOPfVpLh3Ex2ggRjoGjldEPSZss7IOdXiQhWhj=w45-h45-p-rp-mo-br100",
     },
     {
         id: 3,
+        name: "Braj Kishore",
+        feedback: "Accurate horoscope analysis! I was amazed at how precisely my life events matched the predictions. Highly recommended for anyone seeking clarity.",
+        image: `${kishoreReview}`,
+        // image: "https://xsgames.co/randomusers/assets/avatars/female/32.jpg",
+    },
+    {
+        id: 4,
         name: "Amit Khanna",
         feedback: "The remedies suggested were simple yet effective. I have seen a positive shift in my personal and professional life since following them.",
         image: "https://xsgames.co/randomusers/assets/avatars/male/73.jpg",
         // image: "https://placehold.co/80",
     },
     {
-        id: 4,
+        id: 5,
         name: "Neha Agarwal",
         feedback: "I was struggling with my relationship, and their guidance helped me bring stability and peace. A truly life-changing experience!",
         image: "https://xsgames.co/randomusers/assets/avatars/female/60.jpg",
