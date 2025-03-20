@@ -142,33 +142,6 @@ const MarriageAstrology = () => {
         </div>
       </section>
 
-
-      {/* short why chhose us section  */}
-      <section
-        className="relative w-full h-full bg-transparent"
-        style={{
-          backgroundImage: `linear-gradient(220deg, #0a122b 38%, #0a122b 0%)`,
-        }}
-      >
-        <div
-          className="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-20 transition-opacity duration-300"
-          style={{ backgroundImage: `url(${bgImage})` }}
-        ></div>
-
-        <div
-          className={`${layoutContainer} relative z-10 py-14 flex flex-row flex-wrap gap-8 justify-between w-full border-[#182036] pt-24`}
-        >
-
-          {shortDetails.map((item) => <div key={item.name} className='flex flex-col items-center gap-2'>
-            {/* <p className='text-7xl font-extrabold text-[#ff7900]'>{item?.name}</p> */}
-            <AnimatedCount value={item.name} />
-            <span className='text-3xl font-semibold text-[#fff]'>{item?.description}</span>
-          </div>)}
-
-        </div>
-
-      </section>
-
     </div>
   )
 }
