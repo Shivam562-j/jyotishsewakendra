@@ -29,7 +29,7 @@ function App() {
   }, []);
 
   return (
-    <div className='relative'>
+    <div className='relative overflow-y-hidden'>
       <AppRouter />
 
       <div className='fixed right-[50px] bottom-[50px] flex flex-col gap-3 z-[999]'>
