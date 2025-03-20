@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { FaPhoneAlt, FaArrowUp } from "react-icons/fa";
 import { RiWhatsappFill } from "react-icons/ri";
 
-
 function App() {
 
   const [showScrollButton, setShowScrollButton] = useState(false);
