@@ -1,45 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { layoutContainer } from '../../utils/constant';
 import { FaFacebookF } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io5";
-import { Button } from '../../components';
+import { Form } from '../../components';
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
 
 const ContactUs = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    mobileNo: "",
-    service: "",
-    message: ""
-  });
-  const navigate = useNavigate();
-
-  const handleFormChange = (e) => {
-
-    const { name, value } = e.target;
-    setFormData(prevData => ({
-      ...prevData,
-      [name]: value
-    }));
-
-  }
-
-
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-
-    console.log(formData);
-    navigate('/thank-you');
-
-  };
-
 
   return (
     <>
@@ -47,34 +17,7 @@ const ContactUs = () => {
 
         <div className={`${layoutContainer} py-14 flex flex-col sm:flex-row gap-5 justify-between w-full border-[#182036] pt-24`}>
 
-
-          <div className='flex flex-col gap-4 w-full sm:w-1/2'>
-
-            <div className='flex flex-col sm:flex-row gap-2'>
-
-              <input type='text' placeholder='First Name' name='firstName' value={formData?.firstName} onChange={handleFormChange} className='w-full sm:w-1/2 px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none' />
-
-              <input type='text' placeholder='Last Name' name='lastName' value={formData?.lastName} onChange={handleFormChange} className='w-full sm:w-1/2 px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none' />
-
-            </div>
-
-            <input type='email' placeholder='Email' name='email' value={formData?.email} onChange={handleFormChange} className='w-full px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none' />
-
-            <input type='number' placeholder='Phone No.' name='mobileNo' value={formData?.mobileNo} onChange={handleFormChange} className='w-full px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none' />
-
-            <select name='service' value={formData?.service || ""} onChange={handleFormChange} className='w-full px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none'>
-              <option value={""} disabled> Select a Service </option>
-              {["Janam Kundali", "Kundali Vishleshan", "Child Astrology", "Future Astrology", "Marriage Astrology", "Vastu Shastra", "Others"]?.map((ser, index) => <option value={ser} key={index}
-              >{ser}</option>)}
-            </select>
-
-            <textarea name='message' value={formData?.message} placeholder='Message' onChange={handleFormChange} className='w-full px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none' />
-
-            <Button onClick={handleFormSubmit}> Submit </Button>
-
-          </div>
-
-
+          <Form isContactForm={true} />
 
           <div className='flex flex-col gap-4 w-full sm:w-1/2'>
 

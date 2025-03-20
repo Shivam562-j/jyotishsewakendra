@@ -2,6 +2,7 @@ import { AnimatedCount } from "./AnimatedCount/AnimatedCount";
 import Button from "./Button/Button";
 import ComingSoon from "./ComingSoon/ComingSoon";
 import Footer from "./Footer/Footer";
+import Form from "./Form/Form";
 import Header from "./Header/Header";
 import ImageBox from "./ImageBox/ImageBox";
 import ImageContent from "./ImageContainer/ImageContent";
@@ -19,5 +20,6 @@ export {
     ImageBox,
     AnimatedCount,
     ScrollToTop,
-    Img
+    Img,
+    Form
 };
