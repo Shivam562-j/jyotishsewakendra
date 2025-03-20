@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import Button from '../Button/Button';
 
-const Form = ({ isContactForm = false }) => {
+const Form = ({ isContactForm = false, isServicePage  }) => {
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
