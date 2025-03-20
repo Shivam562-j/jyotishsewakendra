@@ -5,7 +5,7 @@ import bgImage from "../../assets/images/bg.png";
 import { RiWhatsappFill } from 'react-icons/ri';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
-import janamKundaliImg from "../../assets/images/janam-kundali.png"
+import janamKundaliImg from "../../assets/images/janam-kundali.webp"
 
 
 const JanamKundali = () => {

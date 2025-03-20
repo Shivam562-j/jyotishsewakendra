@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
 import { layoutContainer, productBoxContent } from '../../utils/constant';
-import product1Img from "../../assets/images/product1.png";
+import product1Img from "../../assets/images/product1.webp";
 import product11Img from "../../assets/images/product11.png";
 import product12Img from "../../assets/images/product12.png";
-import product2Img from "../../assets/images/product2.png";
+import product2Img from "../../assets/images/product2.webp";
 import ProductSlider from '../Components/ProductSlider';
 
 const OurProducts = () => {
@@ -37,7 +37,7 @@ const OurProducts = () => {
             </div>
           </div>
 
-          <div className={`flex flex-col gap-10 py-10 sm:flex-row`} >
+          <div className={`flex flex-col w-full h-full gap-10 py-10 sm:flex-row`} >
             <div className={`w-full sm:w-1/2 flex justify-center gap-5 h-full overflow-hidden`}>
               {/* <img src={product2Img} alt='image' className="w-full" /> */}
               <ProductSlider img1={product2Img} img2={product12Img} img1Alt={productBoxContent[0].name} img2Alt={productBoxContent[0].name} />

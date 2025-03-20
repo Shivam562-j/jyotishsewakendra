@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button, ImageContent, SectionContent } from '../../components';
 import { layoutContainer, productBoxContent } from '../../utils/constant';
-import product1Img from "../../assets/images/product1.png";
-import product2Img from "../../assets/images/product2.png";
+import product1Img from "../../assets/images/product1.webp";
+import product2Img from "../../assets/images/product2.webp";
 
 
 const Gallery = () => {

@@ -5,7 +5,7 @@ import bgImage from "../../assets/images/bg.png";
 import { FaPhoneAlt } from 'react-icons/fa';
 import { RiWhatsappFill } from 'react-icons/ri';
 import { useNavigate } from 'react-router-dom';
-import futureAstrologyImg from "../../assets/images/future-astrology1.png"
+import futureAstrologyImg from "../../assets/images/future-astrology1.webp"
 
 const FutureAstrology = () => {
   const [formData, setFormData] = useState({

@@ -5,7 +5,7 @@ import bgImage from "../../assets/images/bg.png";
 import { RiWhatsappFill } from 'react-icons/ri';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
-import kundaliVishleshanImg from "../../assets/images/kundali-vishleshan.png"
+import kundaliVishleshanImg from "../../assets/images/kundali-vishleshan.webp"
 
 const KundaliVishleshan = () => {
   const [formData, setFormData] = useState({
