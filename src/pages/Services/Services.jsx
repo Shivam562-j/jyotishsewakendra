@@ -11,7 +11,7 @@ const Services = () => {
 
           {servicesBoxContent?.map((service, index) =>
             <div key={index}
-              className={`flex flex-row gap-10 py-10 ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}
+              className={`flex flex-col gap-10 py-10 ${index % 2 === 0 ? 'sm:flex-row-reverse' : 'sm:flex-row'}`}
             >
               <ImageContent
                 // imgUrl1="https://placehold.co/300x208"
