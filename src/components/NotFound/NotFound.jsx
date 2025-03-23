@@ -1,7 +1,6 @@
 import React from 'react';
 import { layoutContainer } from '../../utils/constant';
 import bgImage from "../../assets/images/bg.png";
-import { Button } from '../../components';
 import { RxDashboard } from "react-icons/rx";
 import { useNavigate } from 'react-router-dom';
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import Banner from '../Components/Banner';
 import { layoutContainer, shortDetails } from '../../utils/constant';
 import { AnimatedCount, ImageContent, SectionContent } from '../../components';
 import bgImage from "../../assets/images/bg.png";

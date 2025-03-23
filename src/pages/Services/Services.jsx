@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImageBox, ImageContent, SectionContent } from '../../components';
+import { ImageContent, SectionContent } from '../../components';
 import { layoutContainer, servicesBoxContent } from '../../utils/constant';
 
 const Services = () => {
