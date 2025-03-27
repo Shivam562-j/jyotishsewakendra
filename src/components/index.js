@@ -8,9 +8,9 @@ import Header from "./Header/Header";
 import ImageBox from "./ImageBox/ImageBox";
 import ImageContent from "./ImageContainer/ImageContent";
 import Img from "./LazyLoadImage/Img";
+import Modal from "./Modal/Modal";
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
 import SectionContent from "./SectionContent/SectionContent";
-
 
 export {
     ComingSoon,
@@ -24,5 +24,6 @@ export {
     ScrollToTop,
     Img,
     Form,
-    ServiceForm
+    ServiceForm,
+    Modal
 };

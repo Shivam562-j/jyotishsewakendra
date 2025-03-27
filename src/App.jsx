@@ -3,10 +3,12 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from 'react';
 import { FaPhoneAlt, FaArrowUp } from "react-icons/fa";
 import { RiWhatsappFill } from "react-icons/ri";
+import { Modal } from './components';
 
 function App() {
 
   const [showScrollButton, setShowScrollButton] = useState(false);
+  const [openModal, setOpenModal] = useState(true)
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -27,6 +29,18 @@ function App() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
+  useEffect(() => {
+    if (openModal) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [openModal]);
 
   return (
     <div className='relative overflow-y-hidden'>
@@ -63,6 +77,8 @@ function App() {
         </motion.a>
 
       </div>
+
+      <Modal openModal={openModal} setOpenModal={setOpenModal} />
 
       {showScrollButton && (
         <motion.button
