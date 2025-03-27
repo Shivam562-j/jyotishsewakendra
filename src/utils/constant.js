@@ -6,6 +6,7 @@ import kundaliVishleshanImg from "../assets/images/kundali-vishleshan.webp";
 import vastuShastraImg from "../assets/images/vastu-shastra.webp";
 import kishoreReview from "../assets/images/kishore-review.webp";
 import vinayReview from "../assets/images/vinay-review.webp";
+import mukulReview from "../assets/images/mukul-review.webp";
 
 export const layoutContainer = "w-full px-3 md:container m-0 mx-auto lg:max-w-[1200px] lg:w-full";
 
@@ -162,7 +163,7 @@ export const shortDetails = [
 export const testimonials = [
     {
         id: 1,
-        name: "Vinay kumar ravat",
+        name: "Vinay Kumar Ravat",
         feedback: "The consultation was eye-opening! Medinikant Jha Ji provided deep insights into my career path, and his advice truly helped me make the right decisions.",
         image: `${vinayReview}`
         // image: "https://placehold.co/80",
@@ -184,9 +185,10 @@ export const testimonials = [
     },
     {
         id: 4,
-        name: "Amit Khanna",
+        name: "Mukul Karn",
         feedback: "The remedies suggested were simple yet effective. I have seen a positive shift in my personal and professional life since following them.",
-        image: "https://xsgames.co/randomusers/assets/avatars/male/73.jpg",
+        image: `${mukulReview}`,
+        // image: "https://xsgames.co/randomusers/assets/avatars/male/73.jpg",
         // image: "https://placehold.co/80",
     },
     {
