@@ -20,7 +20,7 @@ const Modal = ({ openModal = false, setOpenModal = () => { } }) => {
 
                 <div className="flex flex-col sm:flex-row gap-4 w-full">
 
-                    <div className='w-full sm:w-1/2 text-center'>
+                    <div className='w-full sm:w-1/2 text-center flex items-center justify-center'>
                         <Img
                             src={`${product1Img}`}
                             alt="Puja Pushpanjali"
@@ -38,7 +38,7 @@ const Modal = ({ openModal = false, setOpenModal = () => { } }) => {
                 <a
                     href='https://dl.flipkart.com/s/ATo9INuuuN'
                     target='_blank'
-                    className="w-full bg-[#ff7900] text-white rounded-md hover:scale-95 scale-100 transition-transform duration-300 ease-in-out px-[30px] py-[15px] text-base font-medium"
+                    className="w-full text-center bg-[#ff7900] text-white rounded-md hover:scale-95 scale-100 transition-transform duration-300 ease-in-out px-[30px] py-[15px] text-base font-medium"
                 >
                     Exclusive on Flipkart – Buy Now
                 </a>
