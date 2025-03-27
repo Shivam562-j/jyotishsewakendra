@@ -46,7 +46,7 @@ function App() {
     const allowedPaths = ["/", '/home', '/about-us', '/services', "/services/janam-kundali", "/services/kundali-vishleshan", "/services/child-astrology", "/services/future-astrology", "/services/marriage-astrology", "/services/vastu-shastra", '/gallery/our-video'];
     const currentPath = window.location.pathname;
 
-    if (allowedPaths.includes(currentPath)) {
+    if (allowedPaths.includes(currentPath) && openModal == false) {
       const timer = setTimeout(() => {
         setOpenModal(true);
       }, 20000);
