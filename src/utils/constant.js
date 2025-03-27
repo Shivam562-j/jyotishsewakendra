@@ -5,6 +5,7 @@ import futureAstrologyImg from "../assets/images/future-astrology1.webp";
 import kundaliVishleshanImg from "../assets/images/kundali-vishleshan.webp";
 import vastuShastraImg from "../assets/images/vastu-shastra.webp";
 import kishoreReview from "../assets/images/kishore-review.webp";
+import vinayReview from "../assets/images/vinay-review.webp";
 
 export const layoutContainer = "w-full px-3 md:container m-0 mx-auto lg:max-w-[1200px] lg:w-full";
 
@@ -161,10 +162,11 @@ export const shortDetails = [
 export const testimonials = [
     {
         id: 1,
-        name: "Rahul Sharma",
+        name: "Vinay kumar ravat",
         feedback: "The consultation was eye-opening! Medinikant Jha Ji provided deep insights into my career path, and his advice truly helped me make the right decisions.",
+        image: `${vinayReview}`
         // image: "https://placehold.co/80",
-        image: "https://xsgames.co/randomusers/assets/avatars/male/61.jpg",
+        // image: "https://xsgames.co/randomusers/assets/avatars/male/61.jpg",
     },
     {
         id: 2,
