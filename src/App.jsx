@@ -53,7 +53,7 @@ function App() {
 
       return () => clearTimeout(timer);
     }
-  }, []);
+  }, [window.location.pathname]);
 
 
   return (
