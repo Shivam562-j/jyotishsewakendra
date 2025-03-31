@@ -10,7 +10,7 @@ const Modal = ({ openModal = false, setOpenModal = () => { } }) => {
 
     return (
         <div className="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm flex justify-center items-center z-[999] overflow-auto">
-            <div className="bg-white rounded-lg p-6 w-[95vw] min-w-[50vw] max-w-md max-h-[90vh] overflow-y-auto shadow-lg relative flex flex-col gap-2">
+            <div className="bg-white rounded-lg p-2 sm:p-6 w-[95vw] min-w-[50vw] max-w-md max-h-[90vh] overflow-y-auto shadow-lg relative flex flex-col gap-2">
                 
                 <div className='flex flex-row justify-between'>
                     <h4 className={`text-2xl font-bold text-[#182036] text-center mb-4`}>Exclusive Offer for You!</h4>
@@ -18,7 +18,7 @@ const Modal = ({ openModal = false, setOpenModal = () => { } }) => {
                 </div>
 
 
-                <div className="flex flex-col sm:flex-row gap-4 w-full">
+                <div className="flex flex-col sm:flex-row sm:gap-4 w-full">
 
                     <div className='w-full sm:w-1/2 text-center flex items-center justify-center'>
                         <Img
@@ -38,7 +38,7 @@ const Modal = ({ openModal = false, setOpenModal = () => { } }) => {
                 <a
                     href='https://dl.flipkart.com/s/ATo9INuuuN'
                     target='_blank'
-                    className="w-full text-center bg-[#ff7900] text-white rounded-md hover:scale-95 scale-100 transition-transform duration-300 ease-in-out px-[30px] py-[15px] text-base font-medium"
+                    className="w-full text-center bg-[#ff7900] text-white rounded-md hover:scale-95 scale-100 transition-transform duration-300 ease-in-out py-[15px] text-base font-medium"
                 >
                     Exclusive on Flipkart – Buy Now
                 </a>
