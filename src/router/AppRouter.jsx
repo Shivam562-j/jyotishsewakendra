@@ -7,7 +7,8 @@ import NotFound from '../components/NotFound/NotFound';
 
 const AppRouter = () => {
   return (
-    <Router>
+    // <Router>
+    <>
       <ScrollToTop />
       <Routes>
         {/* <Route path='/' element={<ComingSoon />} /> */}
@@ -32,7 +33,8 @@ const AppRouter = () => {
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
-    </Router>
+    {/* </Router> */}
+    </>
   )
 }
 
