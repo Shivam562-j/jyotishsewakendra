@@ -44,44 +44,17 @@ function App() {
     };
   }, [openModal]);
 
-  // useEffect(() => {
-  //   const allowedPaths = ["/", '/home', '/about-us', '/services', "/services/janam-kundali", "/services/kundali-vishleshan", "/services/child-astrology", "/services/future-astrology", "/services/marriage-astrology", "/services/vastu-shastra", '/gallery/our-video'];
-  //   const currentPath = window.location.pathname;
-
-  //   if (allowedPaths.includes(currentPath) && openModal == false) {
-  //     const timer = setTimeout(() => {
-  //       setOpenModal(true);
-  //     }, 20000);
-
-  //     return () => clearTimeout(timer);
-  //   }
-  // }, [window.location.pathname]);
-
-  // Show modal after 20 sec only once per session
   useEffect(() => {
-    const allowedPaths = [
-      "/",
-      "/home",
-      "/about-us",
-      "/services",
-      "/services/janam-kundali",
-      "/services/kundali-vishleshan",
-      "/services/child-astrology",
-      "/services/future-astrology",
-      "/services/marriage-astrology",
-      "/services/vastu-shastra",
-      "/gallery/our-video",
-    ];
+    const allowedPaths = [ "/", "/home", "/about-us", "/services", "/services/janam-kundali", "/services/kundali-vishleshan", "/services/child-astrology", "/services/future-astrology", "/services/marriage-astrology", "/services/vastu-shastra", "/gallery/our-video", ];
 
     const currentPath = location.pathname;
 
-    // Check if modal was already shown for this page in session
     const modalShown = sessionStorage.getItem(`modalShown_${currentPath}`);
 
     if (allowedPaths.includes(currentPath) && !modalShown) {
       const timer = setTimeout(() => {
         setOpenModal(true);
-        sessionStorage.setItem(`modalShown_${currentPath}`, "true"); // Mark modal as shown
+        sessionStorage.setItem(`modalShown_${currentPath}`, "true");
       }, 20000);
 
       return () => clearTimeout(timer);
