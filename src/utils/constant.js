@@ -33,6 +33,7 @@ export const ourServicesFooterItem = [
 export const galleryItems = [
     { path: "/gallery/our-products", label: "Our Products" },
     { path: "/gallery/our-video", label: "Our Videos" },
+    // { path: "/gallery/news-and-publications", label: "News Media" },
 ];
 
 export const headerNavItems = [
