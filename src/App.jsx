@@ -9,7 +9,7 @@ import { useLocation } from 'react-router-dom';
 function App() {
 
   const [showScrollButton, setShowScrollButton] = useState(false);
-  const [openModal, setOpenModal] = useState(true);
+  const [openModal, setOpenModal] = useState(false);
   const location = useLocation();
 
   const scrollToTop = () => {
