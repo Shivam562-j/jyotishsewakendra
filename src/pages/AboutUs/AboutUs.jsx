@@ -3,8 +3,8 @@ import { layoutContainer, shortDetails } from '../../utils/constant';
 import { AnimatedCount, ImageContent, SectionContent } from '../../components';
 import bgImage from "../../assets/images/bg.png";
 import WhyChooseUs from '../Components/WhyChooseUs';
-// import aboutUsImg from "../../assets/images/about-us.webp"
-import aboutUsImg from "../../assets/images/about-us1.png"
+import aboutUsImg from "../../assets/images/about-us.webp"
+// import aboutUsImg from "../../assets/images/about-us1.png"
 
 
 const AboutUs = () => {
