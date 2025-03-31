@@ -13,9 +13,9 @@ const SectionContent = ({
         descriptionColor="text-[#fff]"
     }) => {
     return (
-        <div className={`${ctaText ? 'w-full sm:w-1/2' : "w-full"} flex flex-col gap-5 ${className}`}>
+        <div className={`${ctaText ? 'w-full sm:w-1/2' : "w-full"} flex flex-col gap-3 sm:gap-5 ${className}`}>
             <h4 className={`text-xl font-bold ${subHeadingColor}`}>{subHeading}</h4>
-            <h1 className={`text-4xl font-bold ${headingColor}`}>{heading}</h1>
+            <h1 className={`text-2xl sm:text-4xl font-bold ${headingColor}`}>{heading}</h1>
             <p className={`text-base font-medium ${descriptionColor}`}>{description}</p>
             {ctaText && <Button to={ctaUrl}>{ctaText}</Button>}
         </div>
