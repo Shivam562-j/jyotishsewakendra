@@ -4,7 +4,8 @@ import bgImage from "../../assets/images/bg.png";
 import { homeServicesBoxContent, layoutContainer, shortDetails } from '../../utils/constant';
 import heroImg from "../../assets/images/janam-kundali.webp"
 import WhyChooseUs from '../Components/WhyChooseUs';
-import aboutUsImg from "../../assets/images/about-us.png"
+import aboutUsImg from "../../assets/images/about-us.webp"
+// import aboutUsImg from "../../assets/images/about-us1.png"
 
 const Home = () => {
   return (

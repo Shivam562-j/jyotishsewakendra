@@ -74,7 +74,7 @@ const TestimonialSlider = () => {
                     <Img
                       src={testimonial?.image}
                       alt={testimonial?.name}
-                      className="w-16 h-16 mx-auto rounded-full mb-3"
+                      className="w-16 h-16 mx-auto rounded-full mb-3 object-cover object-center"
                     />
                     <h4 className="font-semibold text-lg text-[#182036]">
                       {testimonial.name}

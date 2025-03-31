@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Img } from '../../components';
-// import Lightbox from 'yet-another-react-lightbox';
-// import "yet-another-react-lightbox/styles.css";
+import Lightbox from 'yet-another-react-lightbox';
+import "yet-another-react-lightbox/styles.css";
 
 
 const NewsAndPublications = () => {
@@ -42,7 +42,6 @@ const NewsAndPublications = () => {
         };
     }, [open]);
 
-
     return (
         <div className='mt-[154px]'>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -57,7 +56,7 @@ const NewsAndPublications = () => {
                 ))}
 
                 {/* <Lightbox open={open} close={() => setOpen(false)} slides={images} index={currentIndex} /> */}
-                {/* <Lightbox
+                <Lightbox
                     open={open}
                     close={() => setOpen(false)}
                     slides={slides}
@@ -82,7 +81,7 @@ const NewsAndPublications = () => {
                             backdropFilter: "blur(10px)", // Blur effect
                         },
                     }}
-                /> */}
+                />
 
 
             </div>

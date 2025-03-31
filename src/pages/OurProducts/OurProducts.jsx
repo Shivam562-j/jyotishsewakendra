@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { layoutContainer, productBoxContent } from '../../utils/constant';
 import product1Img from "../../assets/images/product1.webp";
 import product11Img from "../../assets/images/product11.png";

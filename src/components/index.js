@@ -3,10 +3,12 @@ import Button from "./Button/Button";
 import ComingSoon from "./ComingSoon/ComingSoon";
 import Footer from "./Footer/Footer";
 import Form from "./Form/Form";
+import ServiceForm from "./Form/ServiceForm";
 import Header from "./Header/Header";
 import ImageBox from "./ImageBox/ImageBox";
 import ImageContent from "./ImageContainer/ImageContent";
 import Img from "./LazyLoadImage/Img";
+import Modal from "./Modal/Modal";
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
 import SectionContent from "./SectionContent/SectionContent";
 
@@ -21,5 +23,7 @@ export {
     AnimatedCount,
     ScrollToTop,
     Img,
-    Form
+    Form,
+    ServiceForm,
+    Modal
 };

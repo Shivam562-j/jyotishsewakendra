@@ -3,10 +3,14 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from 'react';
 import { FaPhoneAlt, FaArrowUp } from "react-icons/fa";
 import { RiWhatsappFill } from "react-icons/ri";
+import { Modal } from './components';
+import { useLocation } from 'react-router-dom';
 
 function App() {
 
   const [showScrollButton, setShowScrollButton] = useState(false);
+  const [openModal, setOpenModal] = useState(true);
+  const location = useLocation();
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -27,6 +31,36 @@ function App() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
+  useEffect(() => {
+    if (openModal) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [openModal]);
+
+  useEffect(() => {
+    const allowedPaths = [ "/", "/home", "/about-us", "/services", "/services/janam-kundali", "/services/kundali-vishleshan", "/services/child-astrology", "/services/future-astrology", "/services/marriage-astrology", "/services/vastu-shastra", "/gallery/our-video", ];
+
+    const currentPath = location.pathname;
+
+    const modalShown = sessionStorage.getItem(`modalShown_${currentPath}`);
+
+    if (allowedPaths.includes(currentPath) && !modalShown) {
+      const timer = setTimeout(() => {
+        setOpenModal(true);
+        sessionStorage.setItem(`modalShown_${currentPath}`, "true");
+      }, 20000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [location.pathname]);
+
 
   return (
     <div className='relative overflow-y-hidden'>
@@ -63,6 +97,8 @@ function App() {
         </motion.a>
 
       </div>
+
+      <Modal openModal={openModal} setOpenModal={setOpenModal} />
 
       {showScrollButton && (
         <motion.button
