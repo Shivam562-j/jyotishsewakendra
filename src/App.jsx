@@ -9,7 +9,7 @@ import { useLocation } from 'react-router-dom';
 function App() {
 
   const [showScrollButton, setShowScrollButton] = useState(false);
-  const [openModal, setOpenModal] = useState(false);
+  const [openModal, setOpenModal] = useState(true);
   const location = useLocation();
 
   const scrollToTop = () => {
@@ -44,10 +44,37 @@ function App() {
     };
   }, [openModal]);
 
+  // only one time 
+  // useEffect(() => {
+  //   const allowedPaths = [ "/", "/home", "/about-us", "/services", "/services/janam-kundali", "/services/kundali-vishleshan", "/services/child-astrology", "/services/future-astrology", "/services/marriage-astrology", "/services/vastu-shastra", "/gallery/our-video", ];
+
+  //   const currentPath = location.pathname;
+
+  //   const modalShown = sessionStorage.getItem(`modalShown_${currentPath}`);
+
+  //   if (allowedPaths.includes(currentPath) && !modalShown) {
+  //     const timer = setTimeout(() => {
+  //       setOpenModal(true);
+  //       sessionStorage.setItem(`modalShown_${currentPath}`, "true");
+  //     }, 20000);
+
+  //     return () => clearTimeout(timer);
+  //   }
+  // }, [location.pathname]);
+
   useEffect(() => {
-    const allowedPaths = [ "/", "/home", "/about-us", "/services", "/services/janam-kundali", "/services/kundali-vishleshan", "/services/child-astrology", "/services/future-astrology", "/services/marriage-astrology", "/services/vastu-shastra", "/gallery/our-video", ];
+    const allowedPaths = [
+      "/", "/home", "/about-us", "/services", "/services/janam-kundali",
+      "/services/kundali-vishleshan", "/services/child-astrology",
+      "/services/future-astrology", "/services/marriage-astrology",
+      "/services/vastu-shastra", "/gallery/our-video"
+    ];
 
     const currentPath = location.pathname;
+
+    window.addEventListener("beforeunload", () => {
+      sessionStorage.removeItem(`modalShown_${currentPath}`);
+    });
 
     const modalShown = sessionStorage.getItem(`modalShown_${currentPath}`);
 

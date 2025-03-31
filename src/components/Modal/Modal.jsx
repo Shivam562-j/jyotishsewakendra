@@ -30,8 +30,8 @@ const Modal = ({ openModal = false, setOpenModal = () => { } }) => {
                     </div>
 
                     <div className='w-full sm:w-1/2 text-center sm:text-left'>
-                        <h1 className={`text-lg font-bold text-[#ff7900]`}>Puja Pushpanjali</h1>
-                        <p className={`text-base font-medium text-[#0a122b] mt-1`}>"Puja Pushpanjali" includes detailed procedures for <b>Shiv Pooja Vidhi, Kalash Poojan, Bhagwati Pujan Vidhi, Maha Mrityunjay Jap Vidhi, Lakshmi Poojan Vidhi, Rudrabhishek, Havan Vidhi, Parthiv Shiv Poojan Vidhi, Shree Suktam, Kumbh Vivah, Chhag Balidan, and Mash Bali</b>. This sacred text presents traditional Sanatan Dharma rituals in a simple and authentic manner, enabling devotees to perform pujas correctly and attain maximum spiritual benefits.'</p>
+                        {/* <h1 className={`text-lg font-bold text-[#ff7900]`}>Puja Pushpanjali</h1> */}
+                        <p className={`text-base font-medium text-[#0a122b] mt-1`}> <b className='text-[#ff7900]'>Puja Pushpanjali </b>includes detailed procedures for <b>Shiv Pooja Vidhi, Kalash Poojan, Bhagwati Pujan Vidhi, Maha Mrityunjay Jap Vidhi, Lakshmi Poojan Vidhi, Rudrabhishek, Havan Vidhi, Parthiv Shiv Poojan Vidhi, Shree Suktam, Kumbh Vivah, Chhag Balidan, and Mash Bali</b>. <span className='hidden sm:inline'>This sacred text presents traditional Sanatan Dharma rituals in a simple and authentic manner, enabling devotees to perform pujas correctly and attain maximum spiritual benefits.'</span></p>
                     </div>
                 </div>
 
