@@ -10,7 +10,7 @@ const Layout = () => {
   const location = useLocation();
   const isShowReview = ['/', '/home', '/about-us', '/services', '/gallery', '/gallery/our-video', '/gallery/our-products'];
 
-  const isShowCta = ['/', '/home', '/about-us', '/services', "/services/janam-kundali", "/services/kundali-vishleshan", "/services/child-astrology", "/services/future-astrology", "/services/marriage-astrology", "/services/vastu-shastra", '/gallery', '/gallery/our-video', '/gallery/our-products'];
+  const isShowCta = ['/', '/home', '/about-us', '/services', "/services/janam-kundali", "/services/kundali-vishleshan", "/services/child-astrology", "/services/future-astrology", "/services/marriage-astrology", "/services/vastu-shastra", '/gallery', '/gallery/our-video', '/gallery/our-products', '/gallery/news-and-publications'];
 
   const isShowBanner = ['/about-us', '/services', "/services/janam-kundali", "/services/kundali-vishleshan", "/services/child-astrology", "/services/future-astrology", "/services/marriage-astrology", "/services/vastu-shastra", '/gallery', '/gallery/our-video', '/gallery/our-products', '/gallery/news-and-publications', '/appointment', '/contact-us', '/thank-you'];
 
