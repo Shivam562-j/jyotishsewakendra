@@ -4,7 +4,8 @@ import Lightbox from 'yet-another-react-lightbox';
 import "yet-another-react-lightbox/styles.css";
 
 
-const NewsAndPublications = () => {
+const 
+NewsAndPublications = () => {
 
     const images = [
         { src: "https://placehold.co/406x406" },
