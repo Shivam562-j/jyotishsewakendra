@@ -2,9 +2,15 @@ import React from 'react';
 import { SectionContent, ImageContent, Button, ImageBox, AnimatedCount } from '../../components';
 import bgImage from "../../assets/images/bg.png";
 import { homeServicesBoxContent, layoutContainer, shortDetails } from '../../utils/constant';
-import heroImg from "../../assets/images/janam-kundali.webp"
+import janamKundaliImg from "../../assets/images/janam-kundali.webp";
+import marriageAstrologyImg from "../../assets/images/marriage-astrology.webp";
+import childAstrologyImg from "../../assets/images/child-astrology.webp";
+import futureAstrologyImg from "../../assets/images/future-astrology1.webp";
+import kundaliVishleshanImg from "../../assets/images/kundali-vishleshan.webp";
+import vastuShastraImg from "../../assets/images/vastu-shastra.webp";
 import WhyChooseUs from '../Components/WhyChooseUs';
 import aboutUsImg from "../../assets/images/about-us.webp"
+import ProductSlider from '../Components/ProductSlider';
 // import aboutUsImg from "../../assets/images/about-us1.png"
 
 const Home = () => {
@@ -23,10 +29,13 @@ const Home = () => {
         <div className={`${layoutContainer} py-14 flex flex-col-reverse sm:flex-row gap-5 justify-between w-full border-[#182036] pt-24`}>
 
           <SectionContent />
-          <ImageContent imgUrl1={heroImg}
+          {/* <ImageContent imgUrl1={heroImg}
             imgUrl2={false}
             className='flex-row p-0 h-full'
-          />
+          /> */}
+          <div className='w-full sm:w-1/2'>
+            <ProductSlider sliderBtn={false} img1={futureAstrologyImg} img2={marriageAstrologyImg} img3={janamKundaliImg} img4={kundaliVishleshanImg} img5={childAstrologyImg} img6={vastuShastraImg} img1Alt={""} img2Alt={""} imgStyle="w-full" />
+          </div>
 
         </div>
 

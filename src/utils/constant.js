@@ -33,7 +33,7 @@ export const ourServicesFooterItem = [
 export const galleryItems = [
     { path: "/gallery/our-products", label: "Our Products" },
     { path: "/gallery/our-video", label: "Our Videos" },
-    // { path: "/gallery/news-and-publications", label: "News Media" },
+    { path: "/gallery/news-and-publications", label: "Our News Media" },
 ];
 
 export const headerNavItems = [
@@ -210,6 +210,11 @@ export const bannerData = {
     "/gallery": { heading: "Our Gallery", description: "Explore our gallery to see moments from consultations, events, and satisfied clients. Witness the transformative impact of astrology through our journey." },
     "/gallery/our-products": { heading: "Our Products", description: "Discover our range of astrological products designed to bring positivity, balance, and prosperity into your life. Explore remedies, gemstones, yantras, and more.", isSubBannerLink: "/gallery" },
     "/gallery/our-video": { heading: "Our Video", description: "Watch our insightful videos on astrology, horoscope analysis, and expert guidance. Gain deeper knowledge and practical tips for a harmonious life.", isSubBannerLink: "/gallery" },
+    "/gallery/news-and-publications": {
+        "heading": "Our News Media",
+        "description": "Explore our archive of past media coverage, newspaper cutouts, and featured articles showcasing our journey in astrology. See how our expertise has been recognized over the years.",
+        "isSubBannerLink": "/gallery"
+    },
     "/services/janam-kundali": {
         heading: "Janam Kundali",
         description: "Discover the blueprint of your life with a detailed Janam Kundali analysis. Get insights into your strengths, weaknesses, and future possibilities.",
