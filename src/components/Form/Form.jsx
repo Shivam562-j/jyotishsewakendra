@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import Button from '../Button/Button';
+import emailjs from '@emailjs/browser';
 
 const Form = ({ isContactForm = false }) => {
     const [formData, setFormData] = useState({
@@ -89,9 +90,35 @@ const Form = ({ isContactForm = false }) => {
             return;
         }
 
+        // .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, {
+
+        const emailParams = {
+            firstName: formData.firstName || '—',
+            lastName: formData.lastName || '—',
+            name: formData.name || '—',
+            email: formData.email || '—',
+            mobileNo: formData.mobileNo || '—',
+            service: formData.service || '—',
+            message: formData.message || '—',
+            address: formData.address || '—',
+            date: formData.date || '—',
+            dob: formData.dob || '—',
+            dop: formData.dop || '—',
+            gender: formData.gender || '—',
+            birthTime: formData.birthTime || '—',
+        };
+
         if (validateForm()) {
-            navigate("/thank-you");
+            emailjs
+                .send('service_g7bj4fh', 'template_2t0yems', emailParams, {
+                    publicKey: 'qgTFBezgWmOFw3yKR',
+                })
+                .then(
+                    (response) => { console.log("response::", response); console.log('SUCCESS!'); navigate("/thank-you") },
+                    (error) => { console.log('FAILED...', error.text); },
+                );
         }
+
     };
     return (
         <div className={`flex flex-col gap-4 w-full ${isContactForm ? 'sm:w-1/2' : ""}`}>
