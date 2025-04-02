@@ -34,7 +34,7 @@ const Home = () => {
             className='flex-row p-0 h-full'
           /> */}
           <div className='w-full sm:w-1/2'>
-            <ProductSlider sliderBtn={false} img1={futureAstrologyImg} img2={marriageAstrologyImg} img3={janamKundaliImg} img4={kundaliVishleshanImg} img5={childAstrologyImg} img6={vastuShastraImg} img1Alt={""} img2Alt={""} imgStyle="w-full" />
+            <ProductSlider sliderBtn={false} img1={futureAstrologyImg} img2={marriageAstrologyImg} img3={janamKundaliImg} img4={kundaliVishleshanImg} img5={childAstrologyImg} img6={vastuShastraImg} img1Alt={"Future Astrology"} img2Alt={"Marriage Astrology"} img3Alt={'Janam Kundali'} img4Alt={'Kundali Vishleshan'} img5Alt={"Child Astrology"} img6Alt={'Vashtu Shastra'} imgStyle="w-full" />
           </div>
 
         </div>
