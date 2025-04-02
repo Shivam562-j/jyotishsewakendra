@@ -19,6 +19,11 @@ const Form = ({ isContactForm = false }) => {
         birthTime: "",
     });
     const [errors, setErrors] = useState({});
+    const [inputTypes, setInputTypes] = useState({
+        dob: "text",
+        birthTime: "text",
+        date: "text",
+    });
     const navigate = useNavigate();
 
     const handleFormChange = (e) => {
@@ -29,6 +34,16 @@ const Form = ({ isContactForm = false }) => {
             [name]: value
         }));
 
+    };
+
+    const handleFocus = (field, type) => {
+        setInputTypes(prev => ({ ...prev, [field]: type }));
+    };
+
+    const handleBlur = (field, placeholderType) => {
+        if (!formData[field]) {
+            setInputTypes(prev => ({ ...prev, [field]: placeholderType }));
+        }
     };
 
     const validateForm = () => {
@@ -57,8 +72,22 @@ const Form = ({ isContactForm = false }) => {
         return Object.keys(newErrors).length === 0;
     };
 
+    const getMinDate = () => {
+        const now = new Date();
+        now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
+        return now.toISOString().slice(0, 16);
+    };
+
+
     const handleFormSubmit = (e) => {
         e.preventDefault();
+        const selectedDateTime = new Date(formData.date);
+        const now = new Date();
+
+        if (selectedDateTime < now) {
+            setErrors(prev => ({ ...prev, date: "Please select a future date & time" }));
+            return;
+        }
 
         if (validateForm()) {
             navigate("/thank-you");
@@ -116,7 +145,7 @@ const Form = ({ isContactForm = false }) => {
 
                         <input type='text' placeholder='Address' name='address' value={formData?.address} onChange={handleFormChange} className='w-full sm:w-1/2 px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none' />
 
-                        <input type="text" name="dob" value={formData.dob} onChange={handleFormChange} placeholder="Date of Birth" className="w-full sm:w-1/2 px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none" />
+                        <input type={inputTypes.dob} name="dob" value={formData.dob} onChange={handleFormChange} onFocus={() => handleFocus('dob', 'date')} onBlur={() => handleBlur('dob', 'text')} placeholder="Date of Birth" className="w-full sm:w-1/2 px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none" />
 
                     </div>
 
@@ -124,7 +153,7 @@ const Form = ({ isContactForm = false }) => {
 
                         <input type="text" name="dop" value={formData.dop} onChange={handleFormChange} placeholder="Place of Birth " className="w-full sm:w-1/2 px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none" />
 
-                        <input type='text' placeholder='Birth Time' name='birthTime' value={formData?.birthTime} onChange={handleFormChange} className='w-full sm:w-1/2 px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none' />
+                        <input type={inputTypes.birthTime} placeholder='Birth Time' name='birthTime' value={formData?.birthTime} onChange={handleFormChange} onFocus={() => handleFocus('birthTime', 'time')} onBlur={() => handleBlur('birthTime', 'text')} className='w-full sm:w-1/2 px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none' />
 
                     </div>
                 </>
@@ -132,7 +161,11 @@ const Form = ({ isContactForm = false }) => {
 
             <div className='flex flex-col sm:flex-row gap-2'>
 
-                {isContactForm == false && <input type="text" name="date" value={formData.date} onChange={handleFormChange} placeholder="Date of Service" className="w-full sm:w-1/2 px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none" />}
+                {isContactForm == false && <div className='w-full sm:w-1/2 flex flex-col gap-1'>
+                    <input type={inputTypes.date} name="date" value={formData.date} onChange={handleFormChange} onFocus={() => handleFocus('date', 'datetime-local')} onBlur={() => handleBlur('date', 'text')} min={getMinDate()} placeholder="Date of Service" className=" px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none" />
+                    {errors.date && <p className="text-red-600 text-sm font-medium">{errors.date}</p>}
+                </div>
+                }
 
                 <select name='service' value={formData?.service || ""} onChange={handleFormChange} className={`${isContactForm == false ? "sm:w-1/2 " : ""} w-full px-2 py-3 pl-3 bg-white border-black border shadow-inner rounded hover:outline-none focus:outline-none`}>
                     <option value={""} disabled> Select a Service </option>
